@@ -1,0 +1,5 @@
+auto: true
+server: true
+exclude:
+  - README.md
+baseurl: /relief-drc
