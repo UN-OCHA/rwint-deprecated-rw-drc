@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Internews - {{page.title}}</title>
+<link rel='shortcut icon' href='{{site.baseurl}}/images/favicon.ico' type='image/x-icon' />
+<link rel='stylesheet' href='{{site.baseurl}}/site.css' media='all'>
+<script src='{{site.baseurl}}/site.js'></script>
+</head>
+<body {% if page.url == '/index.html' %}class='frontpage'{% endif %}>
+  <div id='usertools' class='outer'>
+	<div class='limiter clearfix'>
+	  <div class='user-menu'>
+		<ul class="menu">
+		<li class="first leaf"><a href="/user/login" title="Login to ReliefWeb.">Login</a></li>
+		<li class="last leaf"><a href="/user/register" title="">Register</a></li>
+	   </ul>
+      </div>
+    </div>
+ </div>
+
+<div id='branding' class='outer'>
+ <div class='limiter clearfix'>
+  <a href="/" class="logo">ReliefWeb</a>      
+    <ul class="links main-menu">
+    <li class="menu-157 first"><a href="/home" title="ReliefWeb home page.">Home</a></li>
+	<li class="menu-981 active-trail active active"><a href="/updates" title="Updates" class="active-trail active active">Updates</a></li>
+	<li class="menu-1173"><a href="/countries" title="Countries">Countries</a></li>
+	<li class="menu-1257"><a href="/disasters" title="Disasters">Disasters</a></li>
+	<li class="menu-1056"><a href="/jobs" title="Jobs">Jobs</a></li>
+	<li class="menu-1057 last"><a href="/trainings" title="Trainings">Trainings</a></li>
+	</ul>  
+  </div>
+</div>
+
+
+<div id='page-title' class='outer'>
+	<div class='limiter clearfix '>
+	    <h1 class='page-title'>Country Interactive Map</h1>   
+        <h2 class='page-subtitle'>Interactive graphic related to this country</h2>  
+    </div>
+</div>
+     <div id='page' class='outer'>
+	   <div id='main-content' class='limiter clearfix'>
+          <div class='page-body clearfix'>
+	        <div id='content' class='page-content clearfix'>
+	          <div class="content-wrapper clearfix">
+		   
+ </div>
+	
+
+
+  {{content}}
+</body>
+</html>
