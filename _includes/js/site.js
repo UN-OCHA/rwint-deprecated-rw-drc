@@ -142,27 +142,12 @@ $(function () {
 
   // load sliders
   var famineSlider = new Dragdealer('slider', {
-    x: 0,
-    animationCallback: function(x, y) {
-      if(x <= 0.2) { $('div#slide-bar').html('May 11'); }
-      if(x > 0.2 || x >= 0.4) { $('div#slide-bar').html('Jun 11'); }
-      if(x > 0.4 || x >= 0.6) { $('div#slide-bar').html('Jul 11'); }
-      if(x > 0.6 || x >= 0.8) { $('div#slide-bar').html('Aug 11'); }
-      if(x > 0.8) { $('div#slide-bar').html('Sep 11'); }
-
-      if(x <= 0.5) {
-        $('div#mFamineProj img').css('opacity', '0');
-        $('div#mFaminePrev img').css('opacity', String(-2 * (x - 0.5)));
-        $('div#mFamineCur img').css('opacity', '1');
-      }
-      if(x > 0.5) {
-        $('div#mFaminePrev img').css('opacity', '0');
-        $('div#mFamineCur img').css('opacity', String(-2 * ((x - 0.5) - 0.5)));
-        $('div#mFamineProj img').css('opacity', '1');
-      }
-    }
+        x: 0,
+        steps: 48,
+        animationCallback: _.debounce(function(x, y) {
+            console.log('trigger map rebuild / data table rebuild for ' + Math.round(x * 48));
+        }, 200)
   });
-  
  /*
   
   // Define default map settings
