@@ -166,7 +166,8 @@ ul.layers li a {
   position: relative;
   float: left;
   width: 740px; 
-  height: 500px; 
+  height: 500px;
+  margin-top: 10px; 
   border: 1px solid #d8d8d4;
 }
 
@@ -220,7 +221,7 @@ Time Slider
 		cursor: pointer;
 	}
 	.dragdealer .bar {  
-		width: 120px;
+		width: 90px;
 		height: 30px;
 		background: #000;
 		color: #FFF;
@@ -243,8 +244,8 @@ Time Slider
 -------------------------------------*/
 #controls {
   position: absolute;
-  top: 75px;
-  left: 10px;
+  top: 8px;
+  left: 8px;
   background: white;
   border: 1px solid #999;
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
