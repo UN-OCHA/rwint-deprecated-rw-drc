@@ -144,11 +144,11 @@ $(function () {
   var famineSlider = new Dragdealer('slider', {
     x: 0,
     animationCallback: function(x, y) {
-      if(x <= 0.2) { $('div#slide-bar').html('Last 3 Months'); }
-      if(x > 0.2 || x >= 0.4) { $('div#slide-bar').html(''); }
-      if(x > 0.4 || x >= 0.6) { $('div#slide-bar').html('Now'); }
-      if(x > 0.6 || x >= 0.8) { $('div#slide-bar').html(''); }
-      if(x > 0.8) { $('div#slide-bar').html('Next 3 Months'); }
+      if(x <= 0.2) { $('div#slide-bar').html('May 11'); }
+      if(x > 0.2 || x >= 0.4) { $('div#slide-bar').html('Jun 11'); }
+      if(x > 0.4 || x >= 0.6) { $('div#slide-bar').html('Jul 11'); }
+      if(x > 0.6 || x >= 0.8) { $('div#slide-bar').html('Aug 11'); }
+      if(x > 0.8) { $('div#slide-bar').html('Sep 11'); }
 
       if(x <= 0.5) {
         $('div#mFamineProj img').css('opacity', '0');
@@ -177,16 +177,15 @@ $(function () {
     mConflict,
     mCommit,
     overlays;
-
 */
 
   //Build urlBase
   function tj(l) {
     var base = _.map(['a', 'b', 'c', 'd'], function (sub) {
-        return 'http://' + sub + '.tiles.mapbox.com/mapbox/1.0.0/' + l + '/';
+        return 'http://' + sub + '.tiles.mapbox.com/mapbox/v2/' + l + '/';
       }),
     obj = {
-      tilejson: '1.0.0',
+      tilejson: 'v2',
       scheme: 'tms',
       base: base,
       tiles:  _.map(base, function (b) {
@@ -207,14 +206,15 @@ $(function () {
   function step1() {
     step = 1;
     $('#slider').show()
+    $('#drought-slider').hide()
 
     //reset the slider
-    famineSlider.setValue(0.5);
+    famineSlider.setValue(1);
 
     // Famine maps 1 of 3
 
     $('#map')
-      .append('<div id="layers" class="map" style="z-index: 1;"></div>')
+      .append('<div id="mFamineProj" class="map" style="z-index: 1;"></div>')
       .each(function (){
 
         var layers = ['mapbox.world-blank-light',
@@ -299,12 +299,6 @@ $(function () {
       
       });
   } // End step1
-
-
-
-  
-
-  
 
 
 

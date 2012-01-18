@@ -213,6 +213,7 @@ Time Slider
 		height: 40px;;
 		background: url(../img/cr-hatch-light-gray.gif);
 		margin-bottom: 1em;
+		width: 20px;
 	}
 	.dragdealer .handle {
 		position: absolute;
