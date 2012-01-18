@@ -139,15 +139,26 @@ $(document).ready(function () {
 Slider
 -----------------*/
 $(function () {
+    
+    var refreshMap = function(time) {
+        // todo
+    };
+    
+    var refreshData = function(time) {
+        // todo
+    };
 
-  // load sliders
-  var famineSlider = new Dragdealer('slider', {
+    // load sliders
+    var famineSlider = new Dragdealer('slider', {
         x: 0,
         steps: 48,
         animationCallback: _.debounce(function(x, y) {
             console.log('trigger map rebuild / data table rebuild for ' + Math.round(x * 48));
+            var time = Math.round(x * 48); // turn nr into some date.
+            refreshMap(time);
+            refreshData(time);
         }, 200)
-  });
+    });
  /*
   
   // Define default map settings
