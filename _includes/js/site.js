@@ -133,8 +133,6 @@ $(document).ready(function () {
     });
 });
 
-
-
 /*-----------------
 Slider
 -----------------*/
@@ -149,15 +147,19 @@ $(function () {
     };
 
     // load sliders
+    var refreshAll = _.debounce(function(pos) {
+        console.log("TODO: refresh all data for " + pos)
+        refreshMap(pos);
+        refreshData(pos);
+    }, 200);
     var famineSlider = new Dragdealer('slider', {
         x: 0,
         steps: 48,
-        animationCallback: _.debounce(function(x, y) {
-            console.log('trigger map rebuild / data table rebuild for ' + Math.round(x * 48));
-            var time = Math.round(x * 48); // turn nr into some date.
-            refreshMap(time);
-            refreshData(time);
-        }, 200)
+        animationCallback: function(x, y) {
+            var pos = Math.round(x * 48);
+            dataCtrl[pos] && $('#slide-bar').html(dataCtrl[pos].label);
+            dataCtrl[pos] && refreshAll(pos);
+        }
     });
  /*
   
