@@ -1,0 +1,364 @@
+/* ------------------------------------------
+  Reset ♥
+  http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+---------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  }
+body { line-height: 1; }
+ol, ul { list-style: none;  }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+/* remember to define focus styles. Hee Haw */
+:focus { outline: 0; }
+
+
+
+body {
+  background: #f8f8f8, repeat 0 0;
+  font: 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#333;
+ font-size: 14px;
+}
+
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #404040;
+  font-weight: normal;
+  }
+input, select, textarea, body {
+font: 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-weight: normal;
+  }
+h1 { font-size: 22px; line-height: 24px; margin: 10px 0; }
+h2 { font-size: 23px; line-height: 20px; margin: 10px 0; }
+h3 { font-size: 14px; line-height: 14px; margin: 10px 0; font-weight: thin;}
+h5 { font-size: 13px; line-height: 15px; margin: 10px 0; }
+h6 { font-size: 11px; line-height: 18px; margin: 0; }
+em {
+  font-style: italic;
+  }
+
+
+a {
+  color:#18b;
+  text-decoration:none;
+  }
+
+.block a:hover,
+.view a:hover,
+.node a:hover { text-decoration:underline; }
+
+.confine {
+  margin: auto;
+  float: center;
+  max-width:1000px;
+  }
+
+
+.views-field img,
+.field img { display:block; }
+
+input.form-text,
+input.form-autocomplete,
+textarea.form-textarea,
+select.form-select { color:#333; }
+
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+  }
+  .clearfix:after {
+    clear:both;
+    }
+  .clearfix {
+    zoom:1; /* IE < 8 */
+    }
+
+/**
+ * Page title =================================================================
+ */
+
+.title {
+	position: relative;
+	float: left;    
+	left: 220px;
+	top: 40px;
+}
+#header {
+	background: #fff;
+	min-height:60px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#d8d8d4; 
+	line-height: 20px;
+}
+#header img {
+ float: left;
+ padding-top: 10px;
+ padding-left:10px;
+}
+#header h2 {
+	float: left;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+
+/*------------------------------
+Overview Drawer 
+-------------------------------*/
+.content {
+	margin-top: 10px;
+}
+.drawer {
+  float: right;
+  position: absolute;
+  width: 250px;
+  z-index: 200;
+ margin-left: 5px;
+  right: auto;
+  background: #f3f4ef;
+  min-height: 500px;
+  border: solid 1px #d8d8d4;
+}
+.inner {
+	padding: 5px 8px;
+    line-height: 24px; 
+    padding-bottom: 0px;
+  }
+.inner-subtitle {
+	padding: 0px 8px;
+ line-height: 18px;
+}
+
+.disclaimer {
+	padding: 0px 8px;
+ line-height: 16px;
+font-size: 90%;
+margin-top: 20px;
+}
+
+
+/*-----------------------
+Layer switching
+-----------------------*/
+.layers {
+	margin-top: 15px;
+	background: #e5e5e5;
+}
+
+ul.layers li a {
+  background: #e5e5e5;
+  border-bottom: 1px solid #EEE;
+  display: block;
+  color: #000;
+  padding: 0 13px;
+  height: 36px;
+  line-height: 35px;
+  font-size: 105;
+  }
+  ul.layers li a.active,
+  ul.layers li a:hover {
+    background: #777777 url(../images/arrow.png) no-repeat 97% center;
+    color: #fff;
+    border-bottom-color: rgba(0,0,0,0.15);
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    }
+ 
+
+/*-----------------------------------
+ Map
+-------------------------------------*/
+#map {
+  background: #555;
+  position: relative;
+  float: left;
+  width: 740px; 
+  height: 500px;
+  margin-top: 10px; 
+  border: 1px solid #d8d8d4;
+}
+
+
+/* Default map img styles */
+
+div#mFamineProj img { opacity: 1; }
+div#mFaminePrev img { opacity: 1; }
+div#mFamineCur img  { opacity: 1; }
+
+div#mDrought11 img { opacity: 1; }
+div#mDrought10 img  { opacity: 1; }
+
+/**
+
+
+
+/*-------------------------------
+Time Slider 
+-------------------------------*/
+/**
+ * Dragdealer JS v0.9.5
+ * http://code.ovidiu.ch/dragdealer-js
+ *
+ * Copyright (c) 2010, Ovidiu Chereches
+ * MIT License
+ * http://legal.ovidiu.ch/licenses/MIT
+ */
+
+#slider {
+  background: #555;
+  opacity: .8;
+  position: absolute;
+  float: left;
+  width: 742px; 
+  height: 32px;
+  top: 539px;
+  border-top: 2px solid #000;
+}	
+
+	.dragdealer {
+		position: relative;
+		float: left;
+		height: 40px;;
+		background: url(../img/cr-hatch-light-gray.gif);
+		margin-bottom: 1em;
+		width: 20px;
+	}
+	.dragdealer .handle {
+		position: absolute;
+		cursor: pointer;
+	}
+	.dragdealer .bar {  
+		width: 90px;
+		height: 30px;
+		background: #000;
+		color: #FFF;
+		line-height: 24px;
+		font-weight:bold;
+		text-align: center;
+	   border-radius:3px;
+	  -moz-border-radius:3px;
+	  -webkit-border-radius:3px;
+	}
+	.dragdealer .disabled {
+		background: #898989;
+	}
+
+
+
+
+/*-----------------------------------
+  Frontpage: Map Components
+-------------------------------------*/
+#controls {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: white;
+  border: 1px solid #999;
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+  height: 50px;
+  z-index: 50;
+  width: 60px;
+  }
+  #controls a {
+    font: bold 13px/28px 'Helvetica Neue', Helvetica, sans-serif;
+    color: #404040;
+    }
+    #controls a:active {
+      background-color: #ddd;
+      box-shadow:inset rgba(0,0,0,0.1) 0px 1px 3px;
+      -moz-box-shadow:inset rgba(0,0,0,0.1) 0px 1px 3px;
+      -webkit-box-shadow:inset rgba(0,0,0,0.1) 0px 1px 3px;
+      }
+  #controls a.share {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 22px;
+    width: 50px;
+    padding: 0 5px;
+    height: 27px;
+    border-top: 1px solid #999;
+    text-align: center;
+    }
+  #controls a.zoomer {
+    text-decoration: none;
+    position: absolute;
+    text-align: center;
+    width: 30px;
+    height: 22px;
+    line-height: 22px;
+    top: 0;
+    left: 0;
+    -moz-transition: color 0.1s linear;
+    -o-transition: color 0.1s linear;
+    -webkit-transition: color 0.1s linear;
+    transition: color 0.1s linear;
+    z-index: 100;
+    }
+    #controls a.zoomout {
+      left: 29px;
+      border-left: 1px solid #ccc;
+      }
+      #controls a.zoomdisabled:active,
+      #controls a.zoomdisabled {
+        background: #fff;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: #ccc;
+        cursor: default;
+        }
+
+/* CSS Animations */
+.map-tile-loaded {
+  -webkit-animation-name: 'fade-in';
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: .3s;
+  }
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    }
+  to {
+    opacity: 1;
+    }
+  }
+
