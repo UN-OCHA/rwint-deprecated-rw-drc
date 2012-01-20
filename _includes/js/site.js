@@ -1,7 +1,6 @@
 $(function() {
     var m;
     var mm = com.modestmaps;
-    var activeLayer = '';
     var baseLayers = [
         'mapbox.natural-earth-1',
         'reliefweb.un-borders-dark'
@@ -9,7 +8,7 @@ $(function() {
     var baseUrl = 'http://api.tiles.mapbox.com/v3/';
     var layers = window.layers = new Layers();
 
-    wax.tilejson(baseUrl + baseLayers.join(',') + (',') + layers.last() + '.jsonp',
+    wax.tilejson(baseUrl + baseLayers.join(',') + (',') + layers.current() + '.jsonp',
     function(tilejson) {
         tilejson.minzoom = 2;
         tilejson.maxzoom = 7;
@@ -29,8 +28,8 @@ $(function() {
         });
     });
 
-    function refreshMap(time) {
-        wax.tilejson(baseUrl + baseLayers.join(',') + (',') + layers.at(time) + '.jsonp',
+    function refreshMap() {
+        wax.tilejson(baseUrl + baseLayers.join(',') + (',') + layers.current() + '.jsonp',
         function(tilejson) {
             tilejson.minzoom = 2;
             tilejson.maxzoom = 7;
@@ -39,18 +38,29 @@ $(function() {
     }
 
     // load sliders
-    var refreshAll = _.debounce(function(pos) {
-        console.log("TODO: refresh all data for " + pos)
-        refreshMap(pos);
+    var refreshAll = _.debounce(function() {
+        refreshMap();
+        // TODO: refreshData();
     }, 200);
     new Dragdealer('slider', {
         x: 0,
         steps: layers.length(),
         animationCallback: function(x, y) {
             var pos = Math.round(x * (layers.length() - 1));
-            layers.at(pos) && $('#slide-bar').html(layers.month(pos));
-            refreshAll(pos);
+            if (pos < 0 || pos >= layers.length()) return;
+            layers.pos = pos;
+            $('#slide-bar').html(layers.month());
+            refreshAll();
         }
+    });
 
+    $('.layers li a').click(function(e) {
+        var el = $(e.currentTarget);
+        el.hasClass('active') ? el.removeClass('active') : el.addClass('active');
+        $('.layers li a').each(function(i, el) {
+            layers.active[$(el).attr('id')] = $(el).hasClass('active');
+        });
+        refreshAll();
+        return false;
     });
 });

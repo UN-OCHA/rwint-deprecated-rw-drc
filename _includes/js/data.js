@@ -1,4 +1,10 @@
 var Layers = function() {
+    this.active = {
+        sec: true,
+        lra: true,
+        idp: true,
+        ret: true
+    };
     this.layerCtrl = [
     {
         'month': 'Jan 2010',
@@ -208,20 +214,24 @@ var Layers = function() {
         }
     }
     ];
+    this.pos = this.layerCtrl.length - 1;
 };
 
-Layers.prototype.at = function(pos) {
-    if (!this.layerCtrl[pos]) return;
-    return _.toArray(this.layerCtrl[pos].layers).join(',');
+Layers.prototype.current = function() {
+    if (!this.layerCtrl[this.pos]) return;
+    return this.filter(this.layerCtrl[this.pos].layers).join(',');
 };
 
-Layers.prototype.last = function() {
-    return _.toArray(_.last(this.layerCtrl).layers).join(',');
+Layers.prototype.filter = function(layers) {
+    var active = this.active;
+    return _.filter(layers, function(v, k) {
+        return active[k];
+    });
 };
 
-Layers.prototype.month = function(pos) {
-    if (!this.layerCtrl[pos]) return;
-    return this.layerCtrl[pos].month;
+Layers.prototype.month = function() {
+    if (!this.layerCtrl[this.pos]) return;
+    return this.layerCtrl[this.pos].month;
 };
 
 Layers.prototype.length = function() {
