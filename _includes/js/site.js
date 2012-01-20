@@ -42,7 +42,7 @@ $(function() {
         refreshMap();
         // TODO: refreshData();
     }, 200);
-    new Dragdealer('slider', {
+    (new Dragdealer('slider', {
         x: 0,
         steps: layers.length(),
         animationCallback: function(x, y) {
@@ -52,7 +52,7 @@ $(function() {
             $('#slide-bar').html(layers.month());
             refreshAll();
         }
-    });
+    })).setValue(1);
 
     $('.layers li a').click(function(e) {
         var el = $(e.currentTarget);
