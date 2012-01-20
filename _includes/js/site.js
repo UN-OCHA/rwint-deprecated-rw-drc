@@ -43,7 +43,7 @@ $(function() {
         console.log("TODO: refresh all data for " + pos)
         refreshMap(pos);
     }, 200);
-    var famineSlider = new Dragdealer('slider', {
+    new Dragdealer('slider', {
         x: 0,
         steps: layers.length(),
         animationCallback: function(x, y) {
