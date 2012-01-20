@@ -35,10 +35,6 @@ $(function() {
             tilejson.minzoom = 2;
             tilejson.maxzoom = 7;
             m.setProvider(new wax.mm.connector(tilejson));
-            $('.wax-legends').remove();
-            wax.mm.legend(m, tilejson).appendTo(m.parent);
-            interaction.remove();
-            wax.mm.interaction(m, tilejson);
         });
     }
 
@@ -46,7 +42,6 @@ $(function() {
     var refreshAll = _.debounce(function(pos) {
         console.log("TODO: refresh all data for " + pos)
         refreshMap(pos);
-        refreshData(pos);
     },
     200);
     var famineSlider = new Dragdealer('slider', {
@@ -55,6 +50,7 @@ $(function() {
         animationCallback: function(x, y) {
             var pos = Math.round(x * (layers.length() - 1));
             layers.at(pos) && $('#slide-bar').html(layers.month(pos));
+            refreshAll(pos);
         }
 
     });
