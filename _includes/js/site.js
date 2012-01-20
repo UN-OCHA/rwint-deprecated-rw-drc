@@ -42,8 +42,7 @@ $(function() {
     var refreshAll = _.debounce(function(pos) {
         console.log("TODO: refresh all data for " + pos)
         refreshMap(pos);
-    },
-    200);
+    }, 200);
     var famineSlider = new Dragdealer('slider', {
         x: 0,
         steps: layers.length(),
