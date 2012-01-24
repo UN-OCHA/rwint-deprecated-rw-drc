@@ -1,0 +1,61 @@
+/*---------------
+The following is used for the embed site in combination with the site.css file
+----------------*/
+
+/*-----------------
+Header
+-----------------*/
+
+/*-----------------
+Map
+-----------------*/
+#map {
+ 	background: #555;
+	position: absolute;
+	float: left;
+	margin-right: 5px; 
+	border: 1px solid #d8d8d4;
+	width: 740px;
+	height: 500px;
+	margin-top: 10px;
+	}
+/*-----------------
+Drawer
+-----------------*/
+.drawer {
+ 	float: right;
+	position: relative;
+	z-index: 200;
+	right: auto;
+	background: #f3f4ef;
+	min-height: 500px;
+	border: solid 1px #d8d8d4;
+	height: 500px;
+	margin-top: 10px;
+	width: 25%;
+}
+/*-------------------------------
+Time Slider 
+-------------------------------*/
+/**
+ * Dragdealer JS v0.9.5
+ * http://code.ovidiu.ch/dragdealer-js
+ *
+ * Copyright (c) 2010, Ovidiu Chereches
+ * MIT License
+ * http://legal.ovidiu.ch/licenses/MIT
+ */
+#slider {
+  	background: #555;
+	opacity: .8;
+	position: absolute;
+	float: left;
+	height: 32px;
+	border-top: 2px solid #000;
+	top: 565px;
+	width: 741px;
+}
+
+/*-----------------
+Other
+-----------------*/

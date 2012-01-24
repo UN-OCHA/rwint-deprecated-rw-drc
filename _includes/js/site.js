@@ -2,7 +2,7 @@ $(function() {
     var m;
     var mm = com.modestmaps;
     var baseLayers = [
-        'mapbox.natural-earth-1',
+        'djohnson.goog-map-muted',
         'reliefweb.un-borders-dark'
     ];
     var baseUrl = 'http://api.tiles.mapbox.com/v3/';
@@ -54,13 +54,21 @@ $(function() {
         }
     })).setValue(1);
 
-    $('.layers li a').click(function(e) {
-        var el = $(e.currentTarget);
-        el.hasClass('active') ? el.removeClass('active') : el.addClass('active');
-        $('.layers li a').each(function(i, el) {
-            layers.active[$(el).attr('id')] = $(el).hasClass('active');
-        });
-        refreshAll();
-        return false;
-    });
+     	$('.layers li').click(function(e) {
+	 	    var el = $(e.currentTarget);
+		    var more = $('.more', el);
+			if (el.hasClass('active')) {
+				el.removeClass('active'); 
+				more.slideUp('fast');
+			}
+			else {
+				el.addClass('active'); 
+				more.slideDown('fast'); 
+			}
+		    $('.layers li').each(function(i, el) {
+		        layers.active[$(el).attr('id')] = $(el).hasClass('active');
+		    });
+		    refreshAll();
+		    return false;
+	});
 });

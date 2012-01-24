@@ -2,17 +2,18 @@ var Layers = function() {
     this.active = {
         sec: true,
         lra: true,
-        idp: true,
-        ret: true
+        ret: true,
+		idp: true
+
     };
     this.layerCtrl = [
     {
         'month': 'Jan 2010',
-        'layers': {
+        'layers': {           
+			'idp': 'djohnson.idp-mar-11',
+			'ret': 'djohnson.jan-mar-11-returnees', 
             'sec': 'djohnson.sec-all-jan11-2',
             'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-mar-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
         }
     },
     {
@@ -20,8 +21,8 @@ var Layers = function() {
         'layers': {
             'sec': 'djohnson.sec-all-jan11-2',
             'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-mar-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'ret': 'djohnson.jan-mar-11-returnees',
+			'idp': 'djohnson.idp-mar-11',
         }
     },
     {
@@ -207,10 +208,10 @@ var Layers = function() {
     {
         'month': 'Nov 2011',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-nov-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+			'idp': 'djohnson.idp-nov-11',
+			'ret': 'djohnson.jan-mar-11-returnees',
+			'sec': 'djohnson.sec-all-jan11-2',
+	        'lra': 'djohnson.sec-all-jan11-2',
         }
     }
     ];

@@ -1,3 +1,45 @@
+/* ------------------------------------------
+  Reset ♥
+  http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+---------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  }
+body { line-height: 1; }
+ol, ul { list-style: none;  }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+/* remember to define focus styles. Hee Haw */
+:focus { outline: 0; }
+
+
 body {
 	background: #f8f8f8, repeat 0 0;
 	font: 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -223,3 +265,114 @@ opacity: 1;
 
 }
 
+
+/*---------------
+The following is used for the full site in combination with the site.css file
+----------------*/
+/*-------------------------------
+Time Slider 
+-------------------------------*/
+/*--------------------------------
+ * Dragdealer JS v0.9.5
+ * http://code.ovidiu.ch/dragdealer-js
+ *
+ * Copyright (c) 2010, Ovidiu Chereches
+ * MIT License
+ * http://legal.ovidiu.ch/licenses/MIT
+---------------------------------*/
+#slider {
+	background: #555;
+	opacity:.8;
+	position: absolute;
+	float: left;
+	height: 32px;
+	border-top: 2px solid #000;
+	top: 620px;
+	width: 990px;
+}
+/*-----------------
+General properties
+-----------------*/
+.full {
+	height: 100%;
+	width: 100%;
+}
+
+/*-----------------
+Map
+-----------------*/
+#map {
+	background: #555;
+	position: absolute;
+	float: left;
+	margin-right: 5px; 
+	border: 1px solid #d8d8d4;
+	width: 78%;
+	height: 590px;
+}
+
+/*-----------------
+Drawer
+-----------------*/
+#drawer {
+  	float: right;
+	position: relative;
+	z-index: 200;
+	right: auto;
+	background: #f3f4ef;
+	min-height: 500px;
+	border: solid 2px #d8d8d4;
+	height: 590px;
+	width: 22%;
+}
+
+/*----------------------
+Page title 
+----------------------*/
+.title {
+	position: relative;
+	float: left;
+	left: 220px;
+	top: 40px;
+}
+#header {
+	background: #fff;
+	min-height: 60px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #d8d8d4;
+	line-height: 20px;
+}
+#header img {
+	float: left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#header h2 {
+	float: left;
+	padding-left: 10px;
+	padding-top: 8px;
+	position: relative;
+	
+.inner {
+	padding-top: 5px;
+	padding-left: 8px;
+	padding-right: 5px;
+	line-height: 24px;
+	padding-bottom: 0px;
+}
+.inner-subtitle {
+	padding: 0px 8px;
+	line-height: 18px;
+}
+
+.disclaimer {
+	padding: 0px 8px;
+	line-height: 16px;
+	font-size: 90%;
+	margin-top: 20px;
+}
+
+/*-----------------
+Other
+-----------------*/

@@ -1,3 +1,45 @@
+/* ------------------------------------------
+  Reset ♥
+  http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+---------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  }
+body { line-height: 1; }
+ol, ul { list-style: none;  }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+/* remember to define focus styles. Hee Haw */
+:focus { outline: 0; }
+
+
 body {
 	background: #f8f8f8, repeat 0 0;
 	font: 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -222,4 +264,67 @@ opacity: 1;
 }
 
 }
+
+
+/*---------------
+The following is used for the embed site in combination with the site.css file
+----------------*/
+
+/*-----------------
+Header
+-----------------*/
+
+/*-----------------
+Map
+-----------------*/
+#map {
+ 	background: #555;
+	position: absolute;
+	float: left;
+	margin-right: 5px; 
+	border: 1px solid #d8d8d4;
+	width: 740px;
+	height: 500px;
+	margin-top: 10px;
+	}
+/*-----------------
+Drawer
+-----------------*/
+.drawer {
+ 	float: right;
+	position: relative;
+	z-index: 200;
+	right: auto;
+	background: #f3f4ef;
+	min-height: 500px;
+	border: solid 1px #d8d8d4;
+	height: 500px;
+	margin-top: 10px;
+	width: 25%;
+}
+/*-------------------------------
+Time Slider 
+-------------------------------*/
+/**
+ * Dragdealer JS v0.9.5
+ * http://code.ovidiu.ch/dragdealer-js
+ *
+ * Copyright (c) 2010, Ovidiu Chereches
+ * MIT License
+ * http://legal.ovidiu.ch/licenses/MIT
+ */
+#slider {
+  	background: #555;
+	opacity: .8;
+	position: absolute;
+	float: left;
+	height: 32px;
+	border-top: 2px solid #000;
+	top: 565px;
+	width: 741px;
+}
+
+/*-----------------
+Other
+-----------------*/
 
