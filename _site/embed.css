@@ -77,6 +77,13 @@ a {
 	.node a:hover {
 	text-decoration: underline;
 }
+#header h1 {
+	float: left;
+	padding-left: 10px;
+	padding-top: 8px;
+	position: relative;
+}
+
 /*-----------------------
 Universal Time Slider Components
 ------------------------*/
@@ -114,15 +121,10 @@ Universal Time Slider Components
 /*-----------------------
 Layer switching
 -----------------------*/
-.layers {
-	margin-top: 15px;
-	background: #d8d8d8;
-	border-top: solid 1px #e9e9e9;
-}
-ul.layers li a {
+
+ul.layers li a{
 	color: #000;
-	background-color: #e7e7e7;
-	border-bottom-color: rgba(2,2,2,0.15);
+	background-color: #d9d9d9;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
 	padding-left: 2px;
 	display: block;
@@ -132,31 +134,29 @@ ul.layers li a {
 	font-size: 105;
 	overflow: hidden;
 }
-ul.layers li a.active {
-	color: #fff;
-	background-color: #000;
+ul.layers li.active {
+	color: #000;
+	background-color: #e7e7e7;
 	display: block;
-	border-bottom-color: rgba(2,2,2,0.15);
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
 }
-ul.layers li a:hover {
-    background: #b8b8b;
+ul.layers li:hover .icon {
+    background: #d9d9d9 url(images/sprite.png);
+	background-position: 181px 258px;
+	padding-left: 27px;
+	margin-left: 3px;
+	border:1 px solid #555;
 }
 li.active .icon {
 	background: rgba(0,0,0,0);
 }
 .icon {
-	background: #e7e7e7 url(images/sprite.png);
+	background: #d9d9d9 url(images/sprite.png);
 	background-position: 181px 258px;
 	padding-left: 27px;
 	margin-left: 3px;
 }
-li:hover .icon {
-	background: #e7e7e7 url(images/sprite.png);
-	background-position: 181px 258px;
-	padding-left: 27px;
-	margin-left: 3px;
-}
+
 .more {
 	margin-left: 26px;
 }
@@ -170,12 +170,11 @@ Universal Drawer Properties
     padding-right: 5px;
     line-height: 24px; 
     padding-bottom: 0px;
-  }
+}
 .inner-subtitle {
 	padding: 0px 8px;
     line-height: 18px;
 }
-
 .disclaimer {
     padding: 0px 8px;
 	line-height: 16px;
@@ -271,8 +270,50 @@ The following is used for the embed site in combination with the site.css file
 ----------------*/
 
 /*-----------------
+Branding
+-----------------*/
+#brand-light {
+	background: #e8e8e4;
+	width: 1000px;
+	float: center;
+	height: 20px;
+	border: solid 1px #d8d8d4;
+	border-bottom: none;
+}
+#brand-dark {
+	background: #f4f4f0;
+	width: 1000px;
+	float: center;
+	height: 40px;
+	border: solid 1px #e4e4e0;
+	border-bottom: solid 1px #d4d4d0;
+	
+}
+.logo {
+    display: block;
+    height: 40px;
+    width: 180px;
+	background-image: url(images/sprite.png);
+	background-position: 0px 0px;
+}
+
+/*-----------------
 Header
 -----------------*/
+#header {
+	background: #fff;
+	min-height: 60px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #e4e4e0;
+	line-height: 20px;
+	margin-top: 5px;
+}
+#header img {
+	float: left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
 
 /*-----------------
 Map
@@ -286,7 +327,7 @@ Map
 	width: 740px;
 	height: 500px;
 	margin-top: 10px;
-	}
+}
 /*-----------------
 Drawer
 -----------------*/
@@ -314,13 +355,25 @@ Time Slider
  * http://legal.ovidiu.ch/licenses/MIT
  */
 #slider {
-  	background: #555;
+  	background-image: linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+	background-image: -o-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+	background-image: -moz-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+	background-image: -webkit-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+	background-image: -ms-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.16, rgb(3,3,3)),
+		color-stop(0.58, rgb(107,107,107)),
+		color-stop(0.79, rgb(153,153,153))
+	);
 	opacity: .8;
 	position: absolute;
 	float: left;
 	height: 32px;
-	border-top: 2px solid #000;
-	top: 565px;
+	top: 610px;
 	width: 741px;
 }
 

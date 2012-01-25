@@ -13,7 +13,20 @@ Time Slider
  * http://legal.ovidiu.ch/licenses/MIT
 ---------------------------------*/
 #slider {
-	background: #555;
+	background-image: linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+	background-image: -o-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+	background-image: -moz-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+	background-image: -webkit-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+	background-image: -ms-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.16, rgb(3,3,3)),
+		color-stop(0.58, rgb(107,107,107)),
+		color-stop(0.79, rgb(153,153,153))
+	);
 	opacity:.8;
 	position: absolute;
 	float: left;
@@ -53,7 +66,7 @@ Drawer
 	right: auto;
 	background: #f3f4ef;
 	min-height: 500px;
-	border: solid 2px #d8d8d4;
+	border: solid 1px #d8d8d4;
 	height: 590px;
 	width: 22%;
 }
@@ -79,13 +92,7 @@ Page title
 	float: left;
 	padding-top: 10px;
 	padding-left: 10px;
-}
-#header h2 {
-	float: left;
-	padding-left: 10px;
-	padding-top: 8px;
-	position: relative;
-	
+}	
 .inner {
 	padding-top: 5px;
 	padding-left: 8px;

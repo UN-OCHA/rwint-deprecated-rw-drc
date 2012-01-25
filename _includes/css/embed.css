@@ -3,8 +3,50 @@ The following is used for the embed site in combination with the site.css file
 ----------------*/
 
 /*-----------------
+Branding
+-----------------*/
+#brand-light {
+	background: #e8e8e4;
+	width: 1000px;
+	float: center;
+	height: 20px;
+	border: solid 1px #d8d8d4;
+	border-bottom: none;
+}
+#brand-dark {
+	background: #f4f4f0;
+	width: 1000px;
+	float: center;
+	height: 40px;
+	border: solid 1px #e4e4e0;
+	border-bottom: solid 1px #d4d4d0;
+	
+}
+.logo {
+    display: block;
+    height: 40px;
+    width: 180px;
+	background-image: url(images/sprite.png);
+	background-position: 0px 0px;
+}
+
+/*-----------------
 Header
 -----------------*/
+#header {
+	background: #fff;
+	min-height: 60px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #e4e4e0;
+	line-height: 20px;
+	margin-top: 5px;
+}
+#header img {
+	float: left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
 
 /*-----------------
 Map
@@ -18,7 +60,7 @@ Map
 	width: 740px;
 	height: 500px;
 	margin-top: 10px;
-	}
+}
 /*-----------------
 Drawer
 -----------------*/
@@ -46,13 +88,25 @@ Time Slider
  * http://legal.ovidiu.ch/licenses/MIT
  */
 #slider {
-  	background: #555;
+  	background-image: linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+	background-image: -o-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+	background-image: -moz-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+	background-image: -webkit-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+	background-image: -ms-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.16, rgb(3,3,3)),
+		color-stop(0.58, rgb(107,107,107)),
+		color-stop(0.79, rgb(153,153,153))
+	);
 	opacity: .8;
 	position: absolute;
 	float: left;
 	height: 32px;
-	border-top: 2px solid #000;
-	top: 565px;
+	top: 610px;
 	width: 741px;
 }
 
