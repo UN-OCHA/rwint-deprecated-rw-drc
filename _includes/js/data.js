@@ -4,7 +4,6 @@ var Layers = function() {
         lra: true,
         ret: true,
 		idp: true
-
     };
     this.layerCtrl = [
     {
@@ -13,7 +12,7 @@ var Layers = function() {
 			'idp': 'djohnson.idp-mar-11',
 			'ret': 'djohnson.jan-mar-11-returnees', 
             'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
+            'lra': 'djohnson.sec-all-jan11-2'
         }
     },
     {
@@ -22,7 +21,7 @@ var Layers = function() {
             'sec': 'djohnson.sec-all-jan11-2',
             'lra': 'djohnson.sec-all-jan11-2',
             'ret': 'djohnson.jan-mar-11-returnees',
-			'idp': 'djohnson.idp-mar-11',
+			'idp': 'djohnson.idp-mar-11'
         }
     },
     {
@@ -211,7 +210,7 @@ var Layers = function() {
 			'idp': 'djohnson.idp-nov-11',
 			'ret': 'djohnson.jan-mar-11-returnees',
 			'sec': 'djohnson.sec-all-jan11-2',
-	        'lra': 'djohnson.sec-all-jan11-2',
+	        'lra': 'djohnson.sec-all-jan11-2'
         }
     }
     ];

@@ -1,11 +1,11 @@
 ---
 ---
 
+;{% include js/libs/jquery.min.js %}
+;{% include js/libs/underscore.js %}
+;{% include js/libs/dragdealer.min.js %}
+;{% include js/libs/modestmaps.min.js %}
+;{% include js/libs/wax.mm.min.js %}
 ;{% include js/data.js %}
-;{% include js/libraries/underscore.js %}
-;{% include js/libraries/jquery.min.js %}
-;{% include js/libraries/modestmaps.min.js %}
-;{% include js/libraries/wax.mm.min.js %}
 ;{% include js/site.js %}
-;{% include js/templates.js %}
-;{% include js/libraries/dragdealer.js %}
+
