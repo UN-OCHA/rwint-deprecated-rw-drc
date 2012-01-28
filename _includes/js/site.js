@@ -63,7 +63,6 @@ var RW = RW || {};
         // load sliders
         var refreshAll = _.debounce(function() {
             refreshMap();
-            // TODO: refreshData();
         }, 200);
         (new Dragdealer('slider', {
             x: 0,

@@ -1,28 +1,28 @@
 body {
-  background: #f8f8f8, repeat 0 0;
-  font: 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: #fff, repeat 0 0;
+  font: 13px/22px 'Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #333;
-  font-size: 14px;
   }
 
-input, select, textarea, body {
-  font: 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+/* --------------------------------------
+  Typography
+----------------------------------------- */
+input, select, textarea  {
+  font: 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
   }
-
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
   font-weight: normal;
   }
 h1 {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 24px;
   margin: 10px 0;
   }
   #header h1 {
     float: left;
-    padding-left: 10px;
-    padding-top: 8px;
-    position: relative;
+    margin-left: 10px;
+    line-height: 40px;
     }
 h2 {
   font-size: 18px;
@@ -37,141 +37,63 @@ a {
   text-decoration: none;
   }
 
-.block a:hover,
-.view a:hover,
-.node a:hover {
-  text-decoration: underline;
+/* --------------------------------------
+  Page Layout and basic styling
+----------------------------------------- */
+#header {
+	background: #fff;
+	height: 60px;
+	border-bottom: 1px solid #d8d8d4;
   }
-
-/*-----------------------
-Universal Time Slider Components
-------------------------*/
-.confine {
-  margin: auto;
-  float: center;
-  max-width: 1000px;
-  }
-
-.dragdealer {
-  position: relative;
-  float: left;
-  height: 40px;;
-  margin-bottom: 1em;
-  }
-  .dragdealer .handle {
-    position: absolute;
-    cursor: pointer;
-    }
-  .dragdealer .bar {
-    width: 90px;
-    height: 30px;
-    background: #000;
-    color: #FFF;
-    line-height: 24px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    }
-  .dragdealer-small .disabled {
-    background: #898989;
+  #header img {
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
     }
 
-#slider {
-  background-image: linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
-  background-image: -o-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
-  background-image: -moz-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
-  background-image: -webkit-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
-  background-image: -ms-linear-gradient(bottom, rgb(3,3,3) 16%, rgb(107,107,107) 58%, rgb(153,153,153) 79%);
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.16, rgb(3,3,3)),
-    color-stop(0.58, rgb(107,107,107)),
-    color-stop(0.79, rgb(153,153,153))
-  );
-  opacity:.8;
+.title {
+	position: relative;
+	float: left;
+	left: 220px;
+	top: 40px;
+  }
+
+#interactive {
+	position: relative;
+  height: 590px;
+  }
+#map {
   position: absolute;
-  float: left;
-  height: 32px;
-  border-top: 2px solid #000;
-  top: 620px;
-  width: 990px;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 75%;
+  height: 100%;
+  }
+#sidebar {
+  position: absolute;
+  right: 0;
+  z-index: 100;
+  background: #f3f4ef;
+  border-left: solid 1px #d8d8d4;
+  width: 25%;
+  height: 100%;
+  }
+#slider {
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  width: 75%%;
   }
 
-/*-----------------------
-Layer switching
------------------------*/
-
-ul.layers li a{
-  color: #000;
-  background-color: #d9d9d9;
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
-  padding-left: 2px;
-  display: block;
-  height: 36px;
-  padding-left: 10px;
-  line-height: 35px;
-  font-size: 105;
-  overflow: hidden;
-  }
-  ul.layers li.active {
-    color: #000;
-    background-color: #e7e7e7;
-    display: block;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
-    }
-    ul.layers li:hover .icon {
-      background: #d9d9d9 url(images/sprite.png);
-      background-position: 181px 258px;
-      padding-left: 27px;
-      margin-left: 3px;
-      border:1 px solid #555;
-      }
-    li.active .icon {
-      background: rgba(0,0,0,0);
-      }
-
-.icon {
-  background: #d9d9d9 url(images/sprite.png);
-  background-position: 181px 258px;
-  padding-left: 27px;
-  margin-left: 3px;
-  }
-.more {
-  margin-left: 26px;
-  }
-
-/*---------------------
-Universal Drawer Properties
----------------------*/
-.inner {
-	padding-top: 5px;
-	padding-left: 8px;
-	padding-right: 5px;
-	line-height: 24px;
-	padding-bottom: 0px;
-  }
-.inner-subtitle {
-	padding: 0px 8px;
-	line-height: 18px;
-  }
-.disclaimer {
-	padding: 0px 8px;
-	line-height: 16px;
-	font-size: 90%;
-	margin-top: 20px;
-  }
-
-/*-----------------------------------
-  Frontpage: Map Components
--------------------------------------*/
+/* --------------------------------------
+  Map
+----------------------------------------- */
 #controls {
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 10px;
+  left: 10px;
   background: white;
   border: 1px solid #999;
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
@@ -186,7 +108,6 @@ Universal Drawer Properties
     color: #404040;
     }
     #controls a:active {
-      background-color: #ddd;
       box-shadow: inset rgba(0,0,0,0.1) 0px 1px 3px;
       -moz-box-shadow: inset rgba(0,0,0,0.1) 0px 1px 3px;
       -webkit-box-shadow: inset rgba(0,0,0,0.1) 0px 1px 3px;
@@ -245,53 +166,104 @@ to {
   opacity: 1;
   }
 
-/*General properties*/
-.full {
-	height: 100%;
-	width: 100%;
-}
-
-/*Map*/
-#map {
-  background: #555;
-  position: absolute;
-  float: left;
-  margin-right: 5px; 
-  border: 1px solid #d8d8d4;
-  width: 78%;
-  height: 590px;
+/* --------------------------------------
+  Sidebar
+----------------------------------------- */
+.inner {
+	padding-top: 5px;
+	padding-left: 8px;
+	padding-right: 5px;
+	line-height: 24px;
+	padding-bottom: 0px;
+  }
+.inner-subtitle {
+	padding: 0px 8px;
+	line-height: 18px;
+  }
+.disclaimer {
+	padding: 0px 8px;
+	line-height: 16px;
+	font-size: 90%;
+	margin-top: 20px;
   }
 
-/*Drawer*/
-#drawer {
-  float: right;
-  position: relative;
-  z-index: 200;
-  right: auto;
-  background: #f3f4ef;
-  min-height: 500px;
-  border: solid 1px #d8d8d4;
-  height: 590px;
-  width: 22%;
+/* Layer Switcher */
+ul.layers li a{
+  color: #000;
+  background-color: #d9d9d9;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+  padding-left: 2px;
+  display: block;
+  height: 36px;
+  padding-left: 10px;
+  line-height: 35px;
+  font-size: 105;
+  overflow: hidden;
   }
-
-/*Page title*/
-.title {
-	position: relative;
-	float: left;
-	left: 220px;
-	top: 40px;
-  }
-#header {
-	background: #fff;
-	min-height: 60px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #d8d8d4;
-	line-height: 20px;
-  }
-  #header img {
-    float: left;
-    padding-top: 10px;
-    padding-left: 10px;
+  ul.layers li.active {
+    color: #000;
+    background-color: #e7e7e7;
+    display: block;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
     }
+    ul.layers li:hover .icon {
+      background: #d9d9d9 url(images/sprite.png);
+      background-position: 181px 258px;
+      padding-left: 27px;
+      margin-left: 3px;
+      border:1 px solid #555;
+      }
+    li.active .icon {
+      background: rgba(0,0,0,0);
+      }
+
+.icon {
+  background: #d9d9d9 url(images/sprite.png);
+  background-position: 181px 258px;
+  padding-left: 27px;
+  margin-left: 3px;
+  }
+.more {
+  margin-left: 26px;
+  }
+
+/* --------------------------------------
+  Time Slider
+----------------------------------------- */
+.dragdealer {
+  position: relative;
+  float: left;
+  height: 40px;;
+  margin-bottom: 1em;
+  }
+  .dragdealer .handle {
+    position: absolute;
+    cursor: pointer;
+    }
+  .dragdealer .bar {
+    width: 90px;
+    height: 30px;
+    background: #000;
+    color: #FFF;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    }
+
+/* --------------------------------------
+  Markup free clearing
+  Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack
+----------------------------------------- */
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  }
+
+* html .clearfix { height: 1%; } /* IE6 */
+*:first-child + html .clearfix { min-height: 1%; } /* IE7 */
