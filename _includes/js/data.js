@@ -8,7 +8,7 @@ var Layers = function() {
     this.layerCtrl = [
     {
         'month': 'Jan 2010',
-        'layers': {           
+        'layers': {
 			'idp': 'djohnson.idp-mar-11',
 			'ret': 'djohnson.jan-mar-11-returnees', 
             'sec': 'djohnson.sec-all-jan11-2',

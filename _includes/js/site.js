@@ -18,12 +18,11 @@
 //  See the root `_includes/map-interactive.html` page as example.
 
 (function(context) {
-var RW = RW || {};
+    var RW = RW || {};
 
     RW.interactive = function() {
 
-        var m;
-        var mm = com.modestmaps;
+        var m, mm = com.modestmaps;
         var baseLayers = [
             'djohnson.goog-map-muted',
             'reliefweb.un-borders-dark'
@@ -31,39 +30,54 @@ var RW = RW || {};
         var baseUrl = 'http://api.tiles.mapbox.com/v3/';
         var layers = window.layers = new Layers();
 
-        wax.tilejson(baseUrl + baseLayers.join(',') + (',') + layers.current() + '.jsonp',
-        function(tilejson) {
-            tilejson.minzoom = 2;
-            tilejson.maxzoom = 7;
-            m = new mm.Map('map',
-                new wax.mm.connector(tilejson), null, [
-                    new mm.MouseHandler(),
-                    new mm.TouchHandler()
-                ]
-            );
-            m.setCenterZoom(new mm.Location( - 0.5, 26), 6);
-            wax.mm.legend(m, tilejson).appendTo(m.parent);
-            wax.mm.interaction(m, tilejson);
-            wax.mm.zoomer(m, tilejson).appendTo($('#controls')[0]);
-            wax.mm.bwdetect(m, {
-                auto: true,
-                png: '.png64?'
-            });
-        });
+        var drawMap = function() {
+            var om;
 
-        function refreshMap() {
+            if (RW._map) {
+                $('#map-bg').remove();
+                $('#map').attr('id','map-bg').after('<div id="map"></div>');
+            }
+
             wax.tilejson(baseUrl + baseLayers.join(',') + (',') + layers.current() + '.jsonp',
             function(tilejson) {
                 tilejson.minzoom = 2;
                 tilejson.maxzoom = 7;
-                m.setProvider(new wax.mm.connector(tilejson));
+                m = new mm.Map('map',
+                    new wax.mm.connector(tilejson), null, [
+                        new mm.MouseHandler(),
+                        new mm.TouchHandler()
+                    ]
+                );
+
+                if (RW._map) {
+                    m.coordinate = RW._map.coordinate;
+                    m.draw();
+                    // Link panning and zooming for old and new maps.
+                    om = RW._map;
+                    m.addCallback('panned', function(m, coords) { om.panBy(coords[0], coords[1]); });
+                    m.addCallback('zoomed', function(m, offset) { om.zoomBy(offset); });
+                } else {
+                    m.setCenterZoom(new mm.Location(-0.5,26), 6);
+                }
+
+                wax.mm.legend(m, tilejson).appendTo(m.parent);
+                wax.mm.interaction(m, tilejson);
+
+                $('.zoomer').remove();
+                wax.mm.zoomer(m, tilejson).appendTo($('#controls')[0]);
+                wax.mm.bwdetect(m, {
+                    auto: true,
+                    png: '.png64?'
+                });
+                RW._map = m;
             });
         }
 
         // load sliders
         var refreshAll = _.debounce(function() {
-            refreshMap();
+            drawMap();
         }, 200);
+
         (new Dragdealer('slider', {
             x: 0,
             steps: layers.length(),
@@ -76,22 +90,26 @@ var RW = RW || {};
             }
         })).setValue(1);
 
-            $('.layers li').click(function(e) {
-                var el = $(e.currentTarget);
-                var more = $('.more', el);
-                if (el.hasClass('active')) {
-                    el.removeClass('active');
-                    more.slideUp('fast');
-                }
-                else {
-                    el.addClass('active');
-                    more.slideDown('fast');
-                }
-                $('.layers li').each(function(i, el) {
-                    layers.active[$(el).attr('id')] = $(el).hasClass('active');
-                });
-                refreshAll();
-                return false;
+        $('.layers li').click(function(e) {
+            e.preventDefault();
+
+            var el = $(e.currentTarget);
+            var more = $('.more', el);
+
+            if (el.hasClass('active')) {
+                el.removeClass('active');
+                more.slideUp();
+            }
+            else {
+                el.addClass('active');
+                more.slideDown();
+            }
+
+            $('.layers li').each(function(i, el) {
+                layers.active[$(el).attr('id')] = $(el).hasClass('active');
+            });
+
+            refreshAll();
         });
     }
 
