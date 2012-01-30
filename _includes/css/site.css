@@ -14,21 +14,21 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0;
   font-weight: normal;
   }
-h1 {
-  font-size: 18px;
-  line-height: 24px;
-  margin: 10px 0;
-  }
-  #header h1 {
-    float: left;
-    margin-left: 10px;
-    line-height: 40px;
-    }
-h2 {
-  font-size: 18px;
+
+h1 { font-size: 18px; line-height: 24px; margin: 10px 0; }
+h2 { font-size: 18px; line-height: 24px; margin: 10px 0; }
+h3 { font-size: 16px; margin: 10px 0; }
+h5 { font-size: 13px; margin: 10px 0; }
+h6 { font-size: 11px; margin: 0; }
+
+#header h1 {
+  margin-left: 10px;
   line-height: 20px;
-  margin: 10px 0;
   }
+h2.title {
+  margin: 20px 0 10px;
+  }
+
 em {
   font-style: italic;
   }
@@ -37,26 +37,30 @@ a {
   text-decoration: none;
   }
 
+.icon {
+  background: transparent url(images/sprite.png) no-repeat 0 0;
+  display: block;
+  text-indent: -999em;
+  }
+
 /* --------------------------------------
   Page Layout and basic styling
 ----------------------------------------- */
 #header {
-	background: #fff;
-	height: 60px;
-	border-bottom: 1px solid #d8d8d4;
+  background: white;
+  height: 40px;
+  border-bottom: 1px solid #999;
+  -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+  position: relative;
+  z-index: 1000;
+  padding: 10px;
   }
-  #header img {
+  #header a,
+  #header h1 {
     float: left;
-    padding-top: 10px;
-    padding-left: 10px;
     }
-
-.title {
-	position: relative;
-	float: left;
-	left: 220px;
-	top: 40px;
-  }
 
 #interactive {
 	position: relative;
@@ -75,17 +79,26 @@ a {
   position: absolute;
   right: 0;
   z-index: 100;
-  background: #f3f4ef;
-  border-left: solid 1px #d8d8d4;
   width: 25%;
   height: 100%;
+  background: #fff;
+  border-left: 1px solid #999;
+  border-left: 1px solid rgba(0, 0, 0, .45);
+  -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   }
 #slider {
-  background: #000;
+  background: white;
   position: absolute;
   bottom: 0;
-  height: 30px;
-  width: 75%%;
+  height: 40px;
+  width: 75%;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  }
+.inner {
+	padding: 0 10px;
   }
 
 /* --------------------------------------
@@ -145,7 +158,6 @@ a {
       }
     #controls a.zoomdisabled:active,
     #controls a.zoomdisabled {
-      background: #fff;
       -moz-box-shadow: none;
       -webkit-box-shadow: none;
       box-shadow: none;
@@ -158,7 +170,7 @@ a {
   position: absolute;
   height: auto;
   background: #fff;
-  border: 1px solid #8C8C8C;
+  border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, .45);
   -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
@@ -169,79 +181,37 @@ a {
   right: 10px;
   }
 
-/* CSS Animations */
-.map-tile-loaded {
-  -webkit-animation-name: 'fade-in';
-  -webkit-animation-timing-function: ease-in;
-  -webkit-animation-duration: .3s;
-  }
-@-webkit-keyframes fade-in {
-  from {
-  opacity: 0;
-  }
-to {
-  opacity: 1;
-  }
-
 /* --------------------------------------
   Sidebar
 ----------------------------------------- */
-.inner {
-	padding-top: 5px;
-	padding-left: 8px;
-	padding-right: 5px;
-	line-height: 24px;
-	padding-bottom: 0px;
+ul.layers {
+  margin: 20px 0;
   }
-.inner-subtitle {
-	padding: 0px 8px;
-	line-height: 18px;
-  }
-.disclaimer {
-	padding: 0px 8px;
-	line-height: 16px;
-	font-size: 90%;
-	margin-top: 20px;
-  }
-
-/* Layer Switcher */
-ul.layers li a{
-  color: #000;
-  background-color: #d9d9d9;
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
-  padding-left: 2px;
-  display: block;
-  height: 36px;
-  padding-left: 10px;
-  line-height: 35px;
-  font-size: 105;
-  overflow: hidden;
-  }
-  ul.layers li.active {
+  ul.layers li a{
     color: #000;
-    background-color: #e7e7e7;
-    display: block;
+    background-color: #999;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    padding-left: 2px;
+    display: block;
+    height: 36px;
+    padding-left: 10px;
+    line-height: 35px;
+    font-size: 105;
+    overflow: hidden;
     }
-    ul.layers li:hover .icon {
-      background: #d9d9d9 url(images/sprite.png);
-      background-position: 181px 258px;
-      padding-left: 27px;
-      margin-left: 3px;
-      border:1 px solid #555;
-      }
-    li.active .icon {
-      background: rgba(0,0,0,0);
+    ul.layers li.active {
+      color: #000;
+      background-color: #e7e7e7;
+      display: block;
+      text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
       }
 
-.icon {
-  background: #d9d9d9 url(images/sprite.png);
-  background-position: 181px 258px;
-  padding-left: 27px;
-  margin-left: 3px;
-  }
 .more {
   margin-left: 26px;
+  }
+.disclaimer {
+  position: absolute;
+  bottom: 0;
   }
 
 /* --------------------------------------
@@ -250,25 +220,39 @@ ul.layers li a{
 .dragdealer {
   position: relative;
   float: left;
-  height: 40px;;
-  margin-bottom: 1em;
+  height: 60px;
   }
   .dragdealer .handle {
     position: absolute;
+    bottom: 0;
     cursor: pointer;
     }
   .dragdealer .bar {
-    width: 90px;
-    height: 30px;
-    background: #000;
-    color: #FFF;
-    line-height: 24px;
+    background: transparent url(images/sprite.png) no-repeat 0 -340px;
+    width: 120px;
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.80);
+    line-height: 78px;
     font-weight: bold;
     text-align: center;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+    height: 60px;
     }
+
+/*-----------------------------------
+  Misc.
+-------------------------------------*/
+
+/*Loading DIV*/
+.loading {
+  position: fixed;
+  left: 50%;
+  top: 360px;
+  width: 80px;
+  height: 45px;
+  padding: 25px 0 0;
+  margin: 0 0 0 -50px;
+  z-index: 99999;
+  }
 
 /* --------------------------------------
   Markup free clearing
@@ -281,6 +265,22 @@ ul.layers li a{
   clear: both;
   visibility: hidden;
   }
-
 * html .clearfix { height: 1%; } /* IE6 */
 *:first-child + html .clearfix { min-height: 1%; } /* IE7 */
+
+/*-----------------------------------
+  CSS Animations
+-------------------------------------*/
+.map-tile-loaded {
+  -webkit-animation-name: 'fade-in';
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: .3s;
+  }
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
