@@ -59,8 +59,9 @@ a {
   }
 
 #interactive {
-	position: relative;
-  height: 590px;
+	position: absolute;
+  height: 100%;
+  width: 100%;
   }
 #map {
   position: absolute;
@@ -80,11 +81,12 @@ a {
   height: 100%;
   }
 #slider {
-  background: #000;
+  background: black;
   position: absolute;
-  bottom: 0;
+  bottom: 48px;
   height: 30px;
   width: 75%%;
+  z-index: 10000;
   }
 
 /* --------------------------------------
