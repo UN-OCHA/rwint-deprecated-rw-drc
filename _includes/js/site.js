@@ -93,11 +93,13 @@
 
         // load sliders
         var refreshAll = _.debounce(function() {
+            $('.layers li.active').length > 0 ? $('.dragdealer').fadeIn() : $('.dragdealer').fadeOut();
             drawMap();
         }, 100);
 
         (new Dragdealer('slider', {
             x: 0,
+            speed: 10,
             steps: layers.length(),
             animationCallback: function(x) {
                  loading();
