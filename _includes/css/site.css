@@ -71,8 +71,10 @@ a {
 #interactive {
 	position: relative;
   height: 590px;
+  border-bottom: 1px solid #999;
   }
 #map-container {
+  background: #fff url(images/bg.png) repeat 0 0;
   position: absolute;
   left: 0;
   top: 0;
@@ -97,7 +99,6 @@ a {
   height: 100%;
   background: #fff;
   border-left: 1px solid #999;
-  border-bottom: 1px solid #999;
   -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
@@ -114,7 +115,9 @@ a {
   height: 40px;
   width: 100%;
   border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
+  -moz-box-shadow: inset 0 4px 4px rgba(0, 0, 0, .15);
+  -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, .15);
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, .15);
   }
 .inner {
 	padding: 0 10px;
@@ -205,33 +208,31 @@ a {
 -------------------------------------*/
 #overlay {
   display: none;
-  position: fixed;
+  position: absolute;
   top: -100%;
   left: 0;
   bottom: 0px;
   right: 0px;
   width: 100%;
   height: 100%;
-  background: black;
+  background: rgba(0,0,0,0.30);
   z-index: 9999;
   opacity: 0;
   -moz-opacity: 0;
   filter:alpha(opacity=0);
-  background: -webkit-radial-gradient(rgba(127, 127, 127, 0.9), rgba(127, 127, 127, 0.9) 35%, rgba(0, 0, 0, 0.9));
-  display: -webkit-box;
   }
   #overlay.active {
     top: 0;
     display: block;
-    opacity: 0.5;
-    -moz-opacity: 0.5;
-    filter:alpha(opacity=50);
+    opacity: 1;
+    -moz-opacity: 1;
+    filter:alpha(opacity=100);
     }
 
 /* Modal windows */
 .modal {
   background: #fff;
-  position: fixed;
+  position: absolute;
   top: -100%;
   left: 50%;
   z-index: 9999;
@@ -241,12 +242,12 @@ a {
   -o-transition: top 0.5s ease;
   -webkit-transition: top 0.5s ease;
   transition: top 0.5s ease;
-  -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .3);
   }
   .modal .inner {
-    padding: 10px;
+    padding: 5px 10px 10px;
     }
   .modal.active {
     top: 20%;
@@ -321,6 +322,16 @@ ul.layers {
     ul.layers li.active a{
       background-position: -215px -20px;
       }
+      ul.layers li a span {
+        float: right;
+        width: 20px;
+        height: 20px;
+        margin: 5px 10px 0 0;
+        }
+        ul.layers li a#ret span { background-position: -220px -75px; }
+        ul.layers li a#idp span { background-position: -220px -100px; }
+        ul.layers li a#lra span { background-position: -220px -125px; }
+        ul.layers li a#sec span { background-position: -220px -150px; }
 
 .more {
   padding: 10px 25px;
@@ -356,7 +367,7 @@ ul.layers {
     color: white;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.30);
     bottom: -1px;
-    line-height: 70px;
+    line-height: 68px;
     font-weight: bold;
     text-align: center;
     height: 55px;

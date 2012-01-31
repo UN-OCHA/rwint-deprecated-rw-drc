@@ -73,24 +73,6 @@
             });
         }
 
-        var loading = function() {
-            if ($("#loading").length != 0) {
-                $('#map').append('<div id="loading" class="loading"></div>');
-                var opts = {
-                    lines: 16,
-                    length: 5,
-                    width: 3,
-                    radius: 20,
-                    color: '#202020',
-                    speed: 2.2,
-                    trail: 80,
-                    shadow: false
-                };
-                var target = document.getElementById('loading');
-                var spinner = new Spinner(opts).spin(target);
-            }
-        }
-
         // load sliders
         var refreshAll = _.debounce(function() {
             $('.layers li.active').length > 0 ? $('.dragdealer').fadeIn('fast') : $('.dragdealer').fadeOut('fast');
@@ -102,7 +84,6 @@
             speed: 10,
             steps: layers.length(),
             animationCallback: function(x) {
-                 loading();
                 var pos = Math.round(x * (layers.length() - 1));
                 if (pos < 0 || pos >= layers.length()) return;
                 layers.pos = pos;
@@ -110,7 +91,6 @@
                  _.once(refreshAll());
             },
             callback: function(x) {
-                $('#loading').remove();
                 refreshAll();
             }
         })).setValue(1);
