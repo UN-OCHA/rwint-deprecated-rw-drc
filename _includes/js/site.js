@@ -94,7 +94,7 @@
         // load sliders
         var refreshAll = _.debounce(function() {
             drawMap();
-        }, 200);
+        }, 100);
 
         (new Dragdealer('slider', {
             x: 0,
@@ -129,7 +129,7 @@
             }
 
             $('.layers li').each(function(i, el) {
-                layers.active[$(el).attr('id')] = $(el).hasClass('active');
+                layers.active[$(el).find('a').attr('id')] = $(el).hasClass('active');
             });
 
             refreshAll();

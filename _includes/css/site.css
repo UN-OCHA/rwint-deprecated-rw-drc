@@ -1,6 +1,6 @@
 body {
   background: #fff, repeat 0 0;
-  font: 13px/22px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font: 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #333;
   }
 
@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6 {
   }
 
 h1 { font-size: 18px; line-height: 24px; margin: 10px 0; }
-h2 { font-size: 18px; line-height: 24px; margin: 10px 0; }
+h2 { font-size: 20px; line-height: 24px; margin: 10px 0; font-weight: bold; }
 h3 { font-size: 16px; margin: 10px 0; }
 h5 { font-size: 13px; margin: 10px 0; }
 h6 { font-size: 11px; margin: 0; }
@@ -28,7 +28,13 @@ h6 { font-size: 11px; margin: 0; }
 h2.title {
   margin: 20px 0 10px;
   }
-
+small {
+  font-size: 11px;
+  line-height: 16px;
+  }
+strong {
+  font-weight: bold;
+  }
 em {
   font-style: italic;
   }
@@ -72,28 +78,34 @@ a {
   z-index: 0;
   left: 0;
   top: 0;
-  width: 75%;
+  width: 70%;
   height: 100%;
   }
 #sidebar {
   position: absolute;
   right: 0;
+  bottom: 0;
   z-index: 100;
-  width: 25%;
+  width: 30%;
   height: 100%;
   background: #fff;
   border-left: 1px solid #999;
-  border-left: 1px solid rgba(0, 0, 0, .45);
+  border-bottom: 1px solid #999;
   -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   }
+  #sidebar-inner {
+    padding-bottom: 110px;
+    overflow: auto;
+    height: 480px;
+    }
 #slider {
   background: white;
   position: absolute;
   bottom: 0;
   height: 40px;
-  width: 75%;
+  width: 70%;
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
   }
@@ -187,31 +199,40 @@ a {
 ul.layers {
   margin: 20px 0;
   }
-  ul.layers li a{
-    color: #000;
-    background-color: #999;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
-    padding-left: 2px;
-    display: block;
-    height: 36px;
-    padding-left: 10px;
-    line-height: 35px;
-    font-size: 105;
-    overflow: hidden;
+  ul.layers li {
+    background: transparent url(images/sprite.png) repeat-x -215px -170px;
     }
-    ul.layers li.active {
-      color: #000;
-      background-color: #e7e7e7;
-      display: block;
-      text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+  ul.layers li a{
+    color: #666;
+    background: transparent url(images/sprite.png) no-repeat -215px 5px;
+    border-top: 1px solid #D4D4D0;
+    display: block;
+    height: 30px;
+    padding-left: 25px;
+    line-height: 30px;
+    font-size: 11px;
+    overflow: hidden;
+    font-weight: bold;
+    }
+    ul.layers li.last a { border-bottom: 1px solid #d4d4d0; }
+    ul.layers li.active.last a { border-bottom: none; }
+    ul.layers li.active a{
+      background-position: -215px -20px;
       }
 
 .more {
-  margin-left: 26px;
+  padding: 10px 25px;
   }
 .disclaimer {
+  background: #fff8e0;
+  color: #666;
   position: absolute;
   bottom: 0;
+  padding: 10px;
+  height: 60px;
+  height: auto!important;
+  max-height: 80px;
+  overflow: hidden;
   }
 
 /* --------------------------------------
@@ -228,14 +249,15 @@ ul.layers {
     cursor: pointer;
     }
   .dragdealer .bar {
-    background: transparent url(images/sprite.png) no-repeat 0 -340px;
-    width: 120px;
+    background: transparent url(images/sprite.png) no-repeat 0 -40px;
+    width: 85px;
     color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.80);
-    line-height: 78px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.30);
+    bottom: -1px;
+    line-height: 70px;
     font-weight: bold;
     text-align: center;
-    height: 60px;
+    height: 55px;
     }
 
 /*-----------------------------------
