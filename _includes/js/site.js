@@ -93,7 +93,7 @@
 
         // load sliders
         var refreshAll = _.debounce(function() {
-            $('.layers li.active').length > 0 ? $('.dragdealer').fadeIn() : $('.dragdealer').fadeOut();
+            $('.layers li.active').length > 0 ? $('.dragdealer').fadeIn('fast') : $('.dragdealer').fadeOut('fast');
             drawMap();
         }, 100);
 
@@ -116,6 +116,7 @@
         })).setValue(1);
 
         $('.layers li').click(function(e) {
+            $(window).resize();
             e.preventDefault();
 
             var el = $(e.currentTarget);
@@ -135,6 +136,39 @@
             });
 
             refreshAll();
+        });
+
+        $('a.close').click(function(e) {
+            e.preventDefault();
+            $('.modal, #overlay').removeClass('active');
+        });
+
+        // Trigger close buttons with the escape key
+        $(document.documentElement).keydown(function (e) {
+            if (e.keyCode === 27) { $('a.close').trigger('click'); }
+        });
+
+        $('a.share').click(function(e){
+            e.preventDefault();
+            $('.modal, #overlay').addClass('active');
+
+            var shareContent = $('.share-content');
+            var twitter = 'http://twitter.com/intent/tweet?status=' +
+            'Mapping Conflict in the DRC' + encodeURIComponent(window.location);
+            var facebook = 'https://www.facebook.com/sharer.php?t=Relief%20Web%20|%20Mapping%20Conflict%20in%20the%20DRC&u=' +
+            encodeURIComponent(window.location);
+
+            document.getElementById('twitter').href = twitter;
+            document.getElementById('facebook').href = facebook;
+
+            var center = m.pointLocation(new mm.Point(m.dimensions.x/2,m.dimensions.y/2));
+            var embedUrl = 'http://api.tiles.mapbox.com/v2/' + baseLayers.join(',') + (',') + layers.current() + '/mm/zoompan,tooltips,legend,bwdetect.html#' + m.coordinate.zoom +
+                            '/' + center.lat + '/' + center.lon;
+            $('#embed-code-field textarea').attr('value', '<iframe src="' + embedUrl +
+                '" frameborder="0" width="650" height="500"></iframe>');
+
+            $('#embed-code')[0].tabindex = 0;
+            $('#embed-code')[0].select();
         });
     }
 
