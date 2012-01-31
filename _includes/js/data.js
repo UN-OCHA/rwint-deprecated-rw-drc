@@ -9,208 +9,208 @@ var Layers = function() {
     {
         'month': 'Jan 2010',
         'layers': {
-			'idp': 'djohnson.idp-mar-11',
-			'ret': 'djohnson.jan-mar-11-returnees', 
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2'
+			'idp': '',
+			'ret': '',
+            'sec': '',
+            'lra': ''
         }
     },
     {
         'month': 'Feb 2010',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'ret': 'djohnson.jan-mar-11-returnees',
-			'idp': 'djohnson.idp-mar-11'
+            'sec': '',
+            'lra': '',
+            'ret': '',
+			'idp': ''
         }
     },
     {
         'month': 'Mar 2010',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-mar-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'Apr 2010',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-mar-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'May 2010',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-mar-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'Jun 2010',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-mar-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'Jul 2010',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-mar-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'Aug 2010',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-mar-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'Sep 2010',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-mar-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'Oct 2010',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-mar-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'Nov 2010',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-nov-10',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'Dec 2010',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-dec-10',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'Jan 2011',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-dec-10',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'Feb 2011',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-dec-10',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'Mar 2011',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-mar-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'Apr 2011',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-mar-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'sec': '',
+            'lra': '',
+            'idp': '',
+            'ret': ''
         }
     },
     {
         'month': 'May 2011',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-mar-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'idp': '',
+			'ret': '',
+			'sec': 'djohnson.sec-may-11',
+	        'lra': 'djohnson.lra-may-11'
         }
     },
     {
-        'month': 'Jun 2011',
+		'month': 'Jun 2011',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-jun-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'idp': '',
+			'ret': '',
+			'sec': 'djohnson.sec-jun-11',
+	        'lra': 'djohnson.lra-jun-11'
         }
     },
     {
         'month': 'Jul 2011',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-jun-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'idp': '',
+			'ret': '',
+			'sec': 'djohnson.sec-jul-11',
+	        'lra': 'djohnson.lra-jul-11'
         }
     },
     {
         'month': 'Aug 2011',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-jun-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'idp': '',
+			'ret': '',
+			'sec': 'djohnson.sec-aug-11',
+	        'lra': 'djohnson.lra-aug-11'
         }
     },
     {
         'month': 'Sep 2011',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-sep-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'idp': '',
+			'ret': '',
+			'sec': 'djohnson.sec-sep-11',
+	        'lra': 'djohnson.lra-sep-11'
         }
     },
     {
         'month': 'Oct 2011',
         'layers': {
-            'sec': 'djohnson.sec-all-jan11-2',
-            'lra': 'djohnson.sec-all-jan11-2',
-            'idp': 'djohnson.idp-sep-11',
-            'ret': 'djohnson.jan-mar-11-returnees'
+            'idp': '',
+			'ret': '',
+			'sec': 'djohnson.sec-oct-11',
+	        'lra': 'djohnson.lra-oct-11'
         }
     },
     {
         'month': 'Nov 2011',
         'layers': {
-			'idp': 'djohnson.idp-nov-11',
-			'ret': 'djohnson.jan-mar-11-returnees',
-			'sec': 'djohnson.sec-all-jan11-2',
-	        'lra': 'djohnson.sec-all-jan11-2'
+			'idp': '',
+			'ret': '',
+			'sec': 'djohnson.sec-nov-11',
+	        'lra': 'djohnson.lra-nov-11'
         }
     }
     ];
