@@ -24,8 +24,8 @@
 
         var m, mm = com.modestmaps;
         var baseLayers = [
-            'djohnson.goog-map-muted',
-            'reliefweb.un-borders-dark'
+            'mapbox.world-blank-bright',
+            'djohnson.africa_borders'
         ];
         var baseUrl = 'http://api.tiles.mapbox.com/v3/';
         var layers = window.layers = new Layers();
@@ -57,7 +57,11 @@
                     m.addCallback('panned', function(m, coords) { om.panBy(coords[0], coords[1]); });
                     m.addCallback('zoomed', function(m, offset) { om.zoomBy(offset); });
                 } else {
+<<<<<<< HEAD
                     m.setCenterZoom(new mm.Location(-1.642,29.582), 6);
+=======
+                    m.setCenterZoom(new mm.Location(-3,23), 5);
+>>>>>>> 7bfd995ed7ab3fb0f7db3b0125fc38bf1d2e7f86
                 }
 
                 wax.mm.legend(m, tilejson).appendTo(m.parent);
