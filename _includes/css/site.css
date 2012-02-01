@@ -78,7 +78,7 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  width: 70%;
+  width: 60%;
   height: 100%;
   }
 #map-bg,
@@ -95,7 +95,7 @@ a {
   right: 0;
   bottom: 0;
   z-index: 100;
-  width: 30%;
+  width: 40%;
   height: 100%;
   background: #fff;
   border-left: 1px solid #999;
@@ -197,7 +197,8 @@ a {
   -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  width: 238px;
+  width: 218px;
+  padding: 10px;
   z-index: 2000;
   top: 10px;
   right: 10px;
@@ -337,16 +338,19 @@ ul.layers {
   padding: 10px 25px;
   }
 .disclaimer {
-  background: #fff8e0;
-  color: #666;
   position: absolute;
+  width: 100%;
   bottom: 0;
-  padding: 10px;
-  height: 60px;
-  height: auto!important;
-  max-height: 80px;
-  overflow: hidden;
   }
+  .disclaimer-inner {
+    background: #fff8e0;
+    color: #666;
+    padding: 10px;
+    height: 60px;
+    height: auto!important;
+    max-height: 80px;
+    overflow: hidden;
+    }
 
 /* --------------------------------------
   Time Slider
@@ -367,7 +371,7 @@ ul.layers {
     color: white;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.30);
     bottom: -1px;
-    line-height: 68px;
+    line-height: 65px;
     font-weight: bold;
     text-align: center;
     height: 55px;

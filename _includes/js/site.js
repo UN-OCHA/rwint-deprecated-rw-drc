@@ -57,7 +57,7 @@
                     m.addCallback('panned', function(m, coords) { om.panBy(coords[0], coords[1]); });
                     m.addCallback('zoomed', function(m, offset) { om.zoomBy(offset); });
                 } else {
-                    m.setCenterZoom(new mm.Location(-0.5,26), 6);
+                    m.setCenterZoom(new mm.Location(-1.642,29.582), 6);
                 }
 
                 wax.mm.legend(m, tilejson).appendTo(m.parent);
@@ -95,11 +95,11 @@
             }
         })).setValue(1);
 
-        $('.layers li').click(function(e) {
+        $('.layers li a').click(function(e) {
             $(window).resize();
             e.preventDefault();
 
-            var el = $(e.currentTarget);
+            var el = $(e.currentTarget).parent();
             var more = $('.more', el);
 
             if (el.hasClass('active')) {
