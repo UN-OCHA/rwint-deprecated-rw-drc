@@ -9,10 +9,10 @@ var Layers = function() {
     {
         'month': 'Jan 2010',
         'layers': {
-			'idp': '',
-			'ret': '',
             'sec': '',
-            'lra': ''
+            'lra': '',
+            'idp': '',
+			'ret': ''
         }
     },
     {
@@ -20,8 +20,8 @@ var Layers = function() {
         'layers': {
             'sec': '',
             'lra': '',
-            'ret': '',
-			'idp': ''
+            'idp': '',
+            'ret': ''
         }
     },
     {
@@ -119,8 +119,8 @@ var Layers = function() {
         'layers': {
             'sec': '',
             'lra': '',
-            'idp': '',
-            'ret': ''
+            'idp': 'djohnson.idp-jan-11',
+            'ret': 'djohnson.ret-jan-11'
         }
     },
     {
@@ -128,8 +128,8 @@ var Layers = function() {
         'layers': {
             'sec': '',
             'lra': '',
-            'idp': '',
-            'ret': ''
+            'idp': 'djohnson.idp-jan-11',
+            'ret': 'djohnson.ret-jan-11'
         }
     },
     {
@@ -137,80 +137,80 @@ var Layers = function() {
         'layers': {
             'sec': '',
             'lra': '',
-            'idp': '',
-            'ret': ''
+            'idp': 'djohnson.idp-jan-11',
+			'ret': 'djohnson.ret-jan-11'
         }
     },
     {
         'month': 'Apr 2011',
         'layers': {
             'sec': '',
-            'lra': '',
-            'idp': '',
-            'ret': ''
+    	    'lra': '',
+            'idp': 'djohnson.idp-apr-11',
+			'ret': 'djohnson.ret-apr-11'
         }
     },
     {
         'month': 'May 2011',
         'layers': {
-            'idp': '',
-			'ret': '',
-			'sec': 'djohnson.sec-may-11',
-	        'lra': 'djohnson.lra-may-11'
+            'sec': 'djohnson.sec-may-11',
+    	    'lra': 'djohnson.lra-may-11',
+            'idp': 'djohnson.idp-apr-11',
+			'ret': 'djohnson.ret-apr-11'
         }
     },
     {
 		'month': 'Jun 2011',
         'layers': {
-            'idp': '',
-			'ret': '',
-			'sec': 'djohnson.sec-jun-11',
-	        'lra': 'djohnson.lra-jun-11'
+        	'sec': 'djohnson.sec-jun-11',
+    	    'lra': 'djohnson.lra-jun-11',
+            'idp': 'djohnson.idp-apr-11',
+			'ret': 'djohnson.ret-apr-11'
         }
     },
     {
         'month': 'Jul 2011',
         'layers': {
-            'idp': '',
-			'ret': '',
-			'sec': 'djohnson.sec-jul-11',
-	        'lra': 'djohnson.lra-jul-11'
+            'sec': 'djohnson.sec-jul-11',
+	        'lra': 'djohnson.lra-jul-11',
+            'idp': 'djohnson.idp-jul-11',
+			'ret': 'djohnson.ret-jul-11'
         }
     },
     {
         'month': 'Aug 2011',
         'layers': {
-            'idp': '',
-			'ret': '',
-			'sec': 'djohnson.sec-aug-11',
-	        'lra': 'djohnson.lra-aug-11'
+            'sec': 'djohnson.sec-aug-11',
+    	    'lra': 'djohnson.lra-aug-11',
+            'idp': 'djohnson.idp-jul-11',
+			'ret': 'djohnson.ret-jul-11'
         }
     },
     {
         'month': 'Sep 2011',
         'layers': {
-            'idp': '',
-			'ret': '',
-			'sec': 'djohnson.sec-sep-11',
-	        'lra': 'djohnson.lra-sep-11'
+            'sec': 'djohnson.sec-sep-11',
+	        'lra': 'djohnson.lra-sep-11',
+            'idp': 'djohnson.idp-jul-11',
+			'ret': 'djohnson.ret-jul-11'
         }
     },
     {
         'month': 'Oct 2011',
         'layers': {
-            'idp': '',
-			'ret': '',
-			'sec': 'djohnson.sec-oct-11',
-	        'lra': 'djohnson.lra-oct-11'
+            'sec': 'djohnson.sec-oct-11',
+	        'lra': 'djohnson.lra-oct-11',
+            'idp': 'djohnson.idp-jul-11',
+			'ret': 'djohnson.ret-jul-11'
         }
     },
     {
         'month': 'Nov 2011',
         'layers': {
-			'idp': '',
-			'ret': '',
-			'sec': 'djohnson.sec-nov-11',
-	        'lra': 'djohnson.lra-nov-11'
+            'sec': 'djohnson.sec-nov-11',
+            'lra': 'djohnson.lra-nov-11',
+            'idp': 'djohnson.idp-jul-11',
+            'ret': 'djohnson.ret-jul-11'
         }
     }
     ];
