@@ -43,11 +43,41 @@ a {
   color: #18b;
   text-decoration: none;
   }
-
+a.close,
 .icon {
   background: transparent url(images/sprite.png) no-repeat 0 0;
   display: block;
   text-indent: -999em;
+  }
+
+/* Table styling */
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-bottom: 18px;
+  }
+table th,
+table td {
+  padding: 4px 5px;
+  line-height: 18px;
+  text-align: left;
+  border-top: 1px solid #D4D4D0;
+  }
+table th {
+  font-weight: bold;
+  vertical-align: bottom;
+  }
+table td {
+  vertical-align: top;
+  }
+table thead:first-child tr th,
+table thead:first-child tr td {
+  border-top: 0;
+  }
+table tbody + tbody {
+  border-top: 2px solid #D4D4D0;
   }
 
 /* --------------------------------------
@@ -197,12 +227,19 @@ a {
   -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  width: 218px;
+  width: 338px;
   padding: 10px;
-  z-index: 2000;
+  z-index: 5000;
   top: 10px;
   right: 10px;
   }
+  .wax-tooltip h2 {
+    font-size: 16px;
+    margin: 10px 0 0;
+    }
+  .wax-tooltip h3 {
+    margin: 0 0 10px;
+    }
 
 /*-----------------------------------
   Share.
@@ -329,8 +366,8 @@ ul.layers {
         height: 20px;
         margin: 5px 10px 0 0;
         }
-        ul.layers li a#ret span { background-position: -220px -75px; }
-        ul.layers li a#idp span { background-position: -220px -100px; }
+        ul.layers li a#idp span { background-position: -220px -75px; }
+        ul.layers li a#ret span { background-position: -220px -100px; }
         ul.layers li a#lra span { background-position: -220px -150px; }
         ul.layers li a#sec span { background-position: -220px -125px; }
 
