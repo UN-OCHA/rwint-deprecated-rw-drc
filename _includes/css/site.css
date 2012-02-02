@@ -228,10 +228,14 @@ table tbody + tbody {
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   width: 338px;
+  height: 510px;
+  height: auto!important;
+  max-height: 510px;
   padding: 10px;
   z-index: 5000;
   top: 10px;
   right: 10px;
+  overflow: auto;
   }
   .wax-tooltip h2 {
     font-size: 16px;
