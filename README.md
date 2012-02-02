@@ -1,6 +1,10 @@
 ## Mapping Conflict in the DRC
 
-The following documentation covers how to clone this project, site architecture, make changes and map design/hosting.
+The following documentation covers installation, how to fork this project, site architecture, make changes and map design/hosting.
+
+### Installing Jekyll
+
+- `gem install jekyll`
 
 ### Forking the project
 To use this project as a starting point, [fork the repository](http://help.github.com/fork-a-repo). This will create a new copy of the project on github. Make changes by setting up a local repo, and then commit/push changes to github.
