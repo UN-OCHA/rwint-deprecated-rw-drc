@@ -1,441 +1,441 @@
-"month","province","district","territory","locality","num_attacks","ppl_killed","adults_kidnapped","infants_kidnapped","description"
-"10-Jun","Orientale","Haut-Uele","Dungu","Kalawa",1,0,0,0,
-"10-Jun","Orientale","Haut-Uele","Dungu","Tolo",1,0,,3,
-"10-Jun","Orientale","Haut-Uele","Dungu","Li-nakofu",1,0,0,0,
-"10-Jun","Orientale","Haut-Uele","Dungu","Makusa",1,0,0,0,
-"10-Jun","Orientale","Haut-Uele","Dungu","Kiliwa",1,0,0,1,
-"10-Jun","Orientale","Haut-Uele","Dungu","Nangume",1,0,0,0,
-"10-Jun","Orientale","Haut-Uele","Dungu","Nakale",1,0,0,0,
-"10-Jun","Orientale","Haut-Uele","Dungu","Limay/Kiliwa",1,0,0,0,
-"10-Jun","Orientale","Haut-Uele","Dungu","Pasy (ouest de Panagbala vers la RCA)",1,0,0,0,
-"10-Jun","Orientale","Haut-Uele","Dungu","Nakwakanza",1,0,0,0,
-"10-Jun","Orientale","Haut-Uele","Dungu","Bangadi",1,0,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Nangbende (5 km NO de Bamokandi)",1,0,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Suka (35 km S de Bangadi)",1,3,13,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Kakalika (3 km N de l�a_ro MONUC)",1,0,2,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Route 4 (100 km E de Dungu)",1,0,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Nagilidangwa (37 km S de Bangadi)",1,4,2,3,
-"10-Jan","Orientale","Haut-Uele","Dungu","Nambiongo (20 km N de Dungu)",1,1,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Bayote (25 km E de Ngilima)",1,2,0,1,
-"10-Jan","Orientale","Haut-Uele","Dungu","Mangba (7 km E de Naango)",1,0,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Kiliwa (45 km N de Dungu)",1,0,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Kitili (5 km NO de Ngilima)",1,0,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Diagbe (35 NO de Bangadi)",1,1,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Napusi (2 km N de Bamokandi)",1,5,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Kakalika (3 km N de l�a_ro MONUC)",1,2,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Nakpudu (7 km NE de l�a_ro MONUC)",1,1,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Buye (55 km NE de Banda)",1,4,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Nagonyo (5 km NO de Bamokandi)",1,2,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Naguga (11 km N de Bamokandi)",1,0,1,1,
-"10-Jan","Orientale","Haut-Uele","Dungu","Nanvii (5 km N de Bamokandi)",1,0,1,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Kilikili (3 km N de Bamokandi)",1,0,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Pudupudu (27 km NO de Dungu)",1,2,0,1,
-"10-Jan","Orientale","Haut-Uele","Dungu","Lanzi (5 km N de Dungu)",1,0,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Nasala (109 km E de Dungu)",1,0,0,0,
-"10-Jan","Orientale","Haut-Uele","Dungu","Limayi (25 km N de Dungu)",1,2,0,0,
-"10-Jan","Orientale","Haut-Uele","Niangara","Quartier Zande (3 km N de la ville de Niangara)",1,2,0,0,
-"10-Jan","Orientale","Bas-Uele","Poko","Mburu (24 km E d�Amadi)",1,0,4,0,
-"10-Feb","Orientale","Haut-Uele","Dungu","Nabiapay (135 km N de Dungu)",1,0,2,0,
-"10-Feb","Orientale","Haut-Uele","Dungu","Limay (25 km N de Dungu)",1,1,0,0,
-"10-Feb","Orientale","Haut-Uele","Dungu","Sambia (140 km E de Dungu)",1,0,0,1,
-"10-Feb","Orientale","Haut-Uele","Dungu","Kpaika (75 km N de Dungu)",1,0,0,2,
-"10-Feb","Orientale","Haut-Uele","Niangara","Munuku (35 km O Nambia et 10 km E Kpanga)",1,24,0,0,
-"10-Feb","Orientale","Haut-Uele","Niangara","Kpanga (45 km O Nambia)",1,7,0,0,
-"10-Feb","Orientale","Haut-Uele","Niangara","Mapi (5 km O Kpanga)",1,16,0,0,
-"10-Feb","Orientale","Haut-Uele","Niangara","Kpuru (7 km from Suronga, 18 km NO Mabanga Yatalo, 8 km from Mapi, on SE side of Mbwele river and NE side of Uele river)",1,7,5,25,
-"10-Feb","Orientale","Haut-Uele","Niangara","Entre Kpuru et Mapi",1,2,10,0,
-"10-Feb","Orientale","Haut-Uele","Niangara","Source Tende (5 km from Kpuru on the Mbwele River)",1,4,,0,
-"10-Feb","Orientale","Haut-Uele","Niangara","NE de Mapi le long de la riviﾏre Mbwele",1,5,20,0,
-"10-Feb","Orientale","Haut-Uele","Niangara","NE de Mapi le long de la riviﾏre Mbwele",1,4,0,0,
-"10-Feb","Orientale","Haut-Uele","Niangara","NE de Mapi le long de la riviﾏre Mbwele",1,2,0,0,
-"10-Feb","Orientale","Haut-Uele","Niangara","NE de Mapi le long de la riviﾏre Mbwele",1,1,0,0,
-"10-Feb","Orientale","Haut-Uele","Niangara","NE de Mapi le long de la riviﾏre Mbwele",1,2,0,0,
-"10-Feb","Orientale","Bas-Uele","Ango","Dakwa (85 km E d�Ango)",1,,4,0,
-"10-Feb","Orientale","Bas-Uele","Ango","Dakwa (85 km E d�Ango)",1,2,0,0,
-"10-Feb","Orientale","Bas-Uele","Ango","Le long de la Rivi�re Mbomu � la fronti�re RDC - RCA",1,2,2,0,
-"10-Mar","Orientale","Haut-Uele","Dungu","Yabua ( 8 km O de Bangadi)",1,1,,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Badolo (9 km NO de Bangadi",1,2,,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Yabua ( 8 km O de Bangadi",1,2,,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Nangwa (18 km NO de Bangadi)",1,1,,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Yabua ( 8 km O de Bangadi",1,1,,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Bilisi (13 km E de Bangadi)",1,1,,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Malingbundu (8 km E de Bangadi)",1,2,,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Makusara (25 km SO de Ngilima)",1,3,,19,
-"10-Mar","Orientale","Haut-Uele","Dungu","Yamba (15 km S de Bangadi)",1,1,,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Ndorenzi (18 km N de Duru)",1,5,1,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Kpanangbala (60 km NO de Doruma)",,,,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Lindimbia (25 km NO de Bangadi)",1,2,,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Madudu (12 km E de Bangadi)",1,3,,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Nambia (5 km S de Duru)",,3,2,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Badolo (9 km NO de Bangadi)",1,3,1,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Limay (25 km N de Dungu)",1,,,1,
-"10-Mar","Orientale","Haut-Uele","Dungu","Makusa (28 km N de Bangadi)",1,3,1,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Gangu (102 km E de Dungu _ Route Fardaje)",1,1,,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Makusa (28 km N de Bangadi)",1,1,,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Mapusa (24 km NO de Doruma)",1,3,2,,
-"10-Mar","Orientale","Haut-Uele","Dungu","Linakofo (500 m N de l�a_ro MONUC)",1,1,2,2,
-"10-Apr","Orientale","Haut-Uele","Dungu","Kpaika (65 km N de Dungu)",1,,,,
-"10-Apr","Orientale","Haut-Uele","Dungu","Nakpudu (7 km S de Bangadi)",1,1,,,
-"10-Apr","Orientale","Haut-Uele","Dungu","Sambia (140 km E de Dungu)",1,1,,12,
-"10-Apr","Orientale","Haut-Uele","Dungu","Kpaika (65 km N de Dungu)",1,,,2,
-"10-Apr","Orientale","Haut-Uele","Dungu","Ariwara Moke (110 km SE de Dungu)",1,,,,
-"10-Apr","Orientale","Haut-Uele","Dungu","Tongo (10 km NO de Limay)",1,1,3,2,
-"10-Apr","Orientale","Haut-Uele","Dungu","Nawangu (5 km S de Doruma)",1,,1,,
-"10-Apr","Orientale","Haut-Uele","Dungu","Naﾥsa (7 km S de Doruma)",1,,1,,
-"10-Apr","Orientale","Haut-Uele","Dungu","Milagbe (12 km S de Doruma)",1,,1,,
-"10-Apr","Orientale","Haut-Uele","Dungu","Kpaika (65 km N de Dungu)",1,,,2,
-"10-Apr","Orientale","Haut-Uele","Dungu","Nakpudu (7 km S de Bangadi)",1,,2,,
-"10-Apr","Orientale","Haut-Uele","Dungu","Lidunde (45 km NO de Bangadi",1,2,,,
-"10-Apr","Orientale","Haut-Uele","Dungu","Yabua (8 km O de Bangadi)",1,1,,,
-"10-Apr","Orientale","Haut-Uele","Niangara","Nambia (15 km N de Niangara)",1,2,,1,
-"10-Apr","Orientale","Haut-Uele","Niangara","Quatier Zande (2 km N de Niangara)",1,,,1,
-"10-Apr","Orientale","Haut-Uele","Niangara","Bamunga (8 km N de Niangara)",1,1,,,
-"10-May","Orientale","Haut-Uele","Dungu","Nandike (15 km NO Bangadi)",1,,1,,
-"10-May","Orientale","Haut-Uele","Dungu","Dika (40 km NO Bangadi)",1,2,,,
-"10-May","Orientale","Haut-Uele","Dungu","Kiliwa (45 km N Dungu)",1,2,,,
-"10-May","Orientale","Haut-Uele","Dungu","Kiliwa (45 km N Dungu)",1,,,,
-"10-May","Orientale","Haut-Uele","Dungu","Nabagu (10 km O de Kapili)",1,,,,
-"10-May","Orientale","Haut-Uele","Dungu","Nambili (10 km SE de Kapili)",1,,,,
-"10-May","Orientale","Haut-Uele","Dungu","Naguga (18 km N de Dungu)",1,2,,,
-"10-May","Orientale","Haut-Uele","Dungu","Babile (10 km S de Duru)",1,4,1,,
-"10-May","Orientale","Haut-Uele","Dungu","Nandike (15 km NO de Bangadi)",1,1,,,
-"10-May","Orientale","Haut-Uele","Dungu","Yamba (15 km S Bangadi)",1,3,,,
-"10-May","Orientale","Haut-Uele","Dungu","Bangadi (125 km NO de Dungu)",1,,,,
-"10-May","Orientale","Haut-Uele","Dungu","Naango (40 km NO de Dungu)",1,,,,
-"10-May","Orientale","Bas-Uele","Ango","Bayule (55 km SO Ango)",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Bagugu (15 km N de Doruma)",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Milagbe (12 km SE de Doruma)",1,1,11,3,
-"10-Jul","Orientale","Haut-Uele","Dungu","Mogoloko (20 km N de Duru)",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Nangondi (80 km E Dungu route Faradje)",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Akalingo (2 km SE de Ngilima)",1,3,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Yamba (10 km S de Bangadi)",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Taduru (20 km NO Li-Mayi)",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Naango ",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Babile (20 km S de Duru",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Yabinzo (35 km NE de Bangadi)",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Bitima (25 N de Duru)",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","PK 16 NE de Bangadi",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Napopo (25 km NE de Bangadi)",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Kapili (75 km NO de Dungu)",1,,4,2,
-"10-Jul","Orientale","Haut-Uele","Dungu","Naweneangwa (30 km N de Ngilima)",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Bitima (25 N de Duru)",1,,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","Nadogolo (25 km NO Dungu)",1,2,,,
-"10-Jul","Orientale","Haut-Uele","Dungu","1 km SO de Ngilima",1,,,,
-"10-Jul","Orientale","Haut-Uele","Faradje","Gbere (55 km N de Faradje",1,,,3,
-"10-Jul","Orientale","Haut-Uele","Faradje","Lalibe (7 km N de Faradje)",1,,1,1,
-"10-Jul","Orientale","Haut-Uele","Faradje","Mala (5 km S de Faradje)",1,1,,,
-"10-Jul","Orientale","Haut-Uele","Faradje","Bava (27 km S de Faradje)",1,,,,
-"10-Jul","Orientale","Haut-Uele","Faradje","Mandramandra (28 km S de Tadu)",1,1,,,
-"10-Jul","Orientale","Haut-Uele","Niangara","Nangele (30 km N de Niangara)",1,1,,,
-"10-Jul","Orientale","Haut-Uele","Niangara","Bamunga (8 km N de Naingara)",1,1,,,
-"10-Jul","Orientale","Haut-Uele","Niangara","Nambia (15 km N de Niangara)",1,1,,,
-"10-Jul","Orientale","Haut-Uele","Niangara","Tuku (30 km NO de Niangara)",1,2,,,
-"10-Aug","Orientale","Haut-Uele","Dungu","Taduru (20 km NO Li-Mayi)",1,3,,,
-"10-Aug","Orientale","Haut-Uele","Dungu","Kana (25 km SE de Bangadi)",1,4,,,
-"10-Aug","Orientale","Haut-Uele","Dungu","Milagbe (12 km S de Doruma)",1,,1,,
-"10-Aug","Orientale","Haut-Uele","Dungu","Ngilima (45 km NO de Dungu)",1,1,,,
-"10-Aug","Orientale","Haut-Uele","Dungu","ITAB (7 km E de Bangadi)",1,,2,,
-"10-Aug","Orientale","Haut-Uele","Dungu","CCB (5 km SE de Bangadi)",1,2,,3,
-"10-Aug","Orientale","Haut-Uele","Dungu","Diagbe (35 km NO de Bangadi)",1,,2,,
-"10-Aug","Orientale","Haut-Uele","Dungu","Kumbari (4 km de Bangadi)",1,1,1,,
-"10-Aug","Orientale","Haut-Uele","Dungu","Mbiangu (7 km NO de Kapili)",1,,4,,
-"10-Aug","Orientale","Haut-Uele","Dungu","30 km NE de Bangadi",1,,1,,
-"10-Aug","Orientale","Haut-Uele","Dungu","Kana (25 km SE de Bangadi)",1,,8,,
-"10-Aug","Orientale","Haut-Uele","Dungu","Nangondi (80 km E de Dungu)",1,,1,,
-"10-Aug","Orientale","Haut-Uele","Dungu","3 km SE de Duru",1,3,4,,
-"10-Aug","Orientale","Haut-Uele","Dungu","7 km SE de Duru",1,1,,,
-"10-Aug","Orientale","Haut-Uele","Dungu","8 km O de Mala (7 km S de Faradje)",1,1,,,
-"10-Aug","Orientale","Bas-Uele","Ango","12 km O de Banda",1,12,,,
-"10-Sep","Orientale","Haut-Uele","Dungu","Nagbaka (3 km O de Duru)",1,3,3,,
-"10-Sep","Orientale","Haut-Uele","Dungu","Nangume (100 km E de Dungu)",1,1,,,
-"10-Sep","Orientale","Haut-Uele","Dungu","Naango (40 km NO de Dungu)",1,4,4,,
-"10-Sep","Orientale","Haut-Uele","Dungu","Taduru (20 km NO de Limay)",1,2,,,
-"10-Sep","Orientale","Haut-Uele","Dungu","Liakanga (15 km SO de Ngilima)",1,1,,,
-"10-Sep","Orientale","Haut-Uele","Dungu","Taduru (20 km NO de Limay)",1,2,,1,
-"10-Sep","Orientale","Haut-Uele","Dungu","Nduga � 40 Km de Kiliwa, ",1,,,,
-"10-Sep","Orientale","Haut-Uele","Dungu","Naango (40 km NO de Dungu)",1,1,,1,
-"10-Sep","Orientale","Haut-Uele","Dungu","Zangaime (4  km N de Bangadi)",1,,1,1,
-"10-Sep","Orientale","Haut-Uele","Dungu","Gongolo (18 km NO de Ngilima)",1,,5,,
-"10-Sep","Orientale","Haut-Uele","Dungu","Route 4 (110 km E de Dungu)",1,,3,,
-"10-Sep","Orientale","Haut-Uele","Dungu","Kpegba (7km de Ngilima Nord-Est)",1,,12,,
-"10-Sep","Orientale","Haut-Uele","Dungu","Talu (3Km, Est de Ngilima). Une femme a _t_ enlev_e.",1,,1,,
-"10-Sep","Orientale","Haut-Uele","Dungu",,1,2,1,1,
-"10-Sep","Orientale","Haut-Uele","Dungu","Kpaika (65 km N de Dungu)",1,,,1,
-"10-Sep","Orientale","Haut-Uele","Dungu","Nambia (5 km S de Duru)",1,1,3,,
-"10-Sep","Orientale","Haut-Uele","Dungu","Zikilingi (30 km NO de Bangadi)",1,1,,,
-"10-Sep","Orientale","Haut-Uele","Dungu","Diagbe (35 km NO de Bangadi)",1,1,,2,
-"10-Sep","Orientale","Haut-Uele","Dungu","2 km S de Ngilima",1,1,1,,
-"10-Sep","Orientale","Haut-Uele","Faradje","PR7S DE Kurukwata (45 km E de Faradje)",1,,,,
-"10-Sep","Orientale","Haut-Uele","Faradje","Sidabo (19 km  NO de Faradje)",1,,,2,
-"10-Sep","Orientale","Haut-Uele","Niangara","Nambia (15 km N de Niangara)",1,,2,2,
-"10-Sep","Orientale","Haut-Uele","Niangara","Wawe (3 km N de Niangara)",1,,1,,
-"10-Sep","Orientale","Bas-Uele","Poko","Mamili (30 km N Amadi)",1,,,,
-"10-Sep","Orientale","Bas-Uele","Poko","Epi (55 km N Amadi)",1,,,,
-"10-Oct","Orientale","Haut-Uele","Dungu","Manzagala (12 km N de Doruma",1,,,,
-"10-Oct","Orientale","Haut-Uele","Dungu","Nambili (22 km NO de Ngilima)",1,1,,,
-"10-Oct","Orientale","Haut-Uele","Dungu","Lidunde (35 km SE de Doruma)",1,,,,
-"10-Oct","Orientale","Haut-Uele","Dungu","Kana (25 km SE de Bangadi)",1,,,1,
-"10-Oct","Orientale","Haut-Uele","Dungu","Napopo (25 km NE de Bangadi)",1,,,,
-"10-Oct","Orientale","Haut-Uele","Dungu","Namama (20 km NE de Bangadi)",1,1,,,
-"10-Oct","Orientale","Haut-Uele","Dungu","Manzagala (10 km SE de Bangadi)",1,1,,,
-"10-Oct","Orientale","Haut-Uele","Dungu","Li-Ika (30 km NO de Dungu)",1,,,,
-"10-Oct","Orientale","Haut-Uele","Dungu","Duru (1,5 km N de Duru)",1,1,,,
-"10-Oct","Orientale","Haut-Uele","Dungu","Kpegba (7 km N de Ngilima",1,,,,
-"10-Oct","Orientale","Haut-Uele","Dungu","Diagbe",1,,,,
-"10-Oct","Orientale","Haut-Uele","Dungu","Nangbalama (13 km NE de Bangadi)",1,1,,,
-"10-Oct","Orientale","Haut-Uele","Niangara","Nambia (15 km N de Niangara)",1,3,,,
-"10-Oct","Orientale","Haut-Uele","Niangara","Kasia (3 km S de Nambia)",1,,,,
-"10-Oct","Orientale","Haut-Uele","Niangara","35 km NE de Nambia",1,1,,,
-"10-Nov","Orientale","Haut-Uele","Dungu","13 km SE de Bangadi",1,1,,,
-"10-Nov","Orientale","Haut-Uele","Dungu","13 km SE de Bangadi",1,,,,
-"10-Nov","Orientale","Haut-Uele","Dungu","Kumbari (4 km SE de Bangadi)",1,,,3,
-"10-Nov","Orientale","Haut-Uele","Dungu","Ngilima",1,,,1,
-"10-Nov","Orientale","Haut-Uele","Dungu","Nambia (5 km S de Duru",1,,,,
-"10-Nov","Orientale","Haut-Uele","Dungu","2 km O de Nagero",1,,,,
-"10-Nov","Orientale","Haut-Uele","Dungu","Route 4 (110 km E de Dungu)",1,1,,,
-"10-Nov","Orientale","Haut-Uele","Dungu","Sambia (140 km E de Dungu)",1,1,2,,
-"10-Nov","Orientale","Haut-Uele","Dungu","Ngilima (45 km NO de Dungu)",1,,1,,
-"10-Nov","Orientale","Haut-Uele","Dungu","Solo (12 km NO de Duru)",1,,,,
-"10-Nov","Orientale","Haut-Uele","Dungu","Sambia (140 km E de Dungu)",1,,,,
-"10-Nov","Orientale","Haut-Uele","Dungu","200 m au N de la Paroisse de Duru",1,,,,
-"10-Nov","Orientale","Haut-Uele","Faradje","Lema prﾏs de Djabir",1,,,,
-"10-Nov","Orientale","Haut-Uele","Niangara","Nambia (15 km N de Niangara)",1,,,,
-"10-Nov","Orientale","Haut-Uele","Niangara","Nambia (15 km N de Niangara)",1,,,,
-"10-Nov","Orientale","Bas-Uele","Ango","Dikuma (30 km E de dakwa",1,,,5,
-"10-Dec","Orientale","Haut-Uele","Dungu","Dungu-Mayi (5 km N de Dungu)",1,,,1,
-"10-Dec","Orientale","Haut-Uele","Dungu","Nabiapay (32 Km NO de Duru)",1,,2,,
-"10-Dec","Orientale","Haut-Uele","Dungu","Linakofo (10 km N de Dungu)",1,,,2,
-"10-Dec","Orientale","Haut-Uele","Dungu","Limay (25 km N de Dungu)",1,,1,2,
-"10-Dec","Orientale","Haut-Uele","Dungu","Tingulu (40 km SE de Doruma, entre Diebio et Diagbe)",1,4,,,
-"10-Dec","Orientale","Haut-Uele","Dungu","Kpanangbala (60 km NO de Doruma)",1,,18,,
-"10-Dec","Orientale","Haut-Uele","Dungu","Anduala (15 km NE de Ngilima)",1,,1,,
-"10-Dec","Orientale","Haut-Uele","Dungu","Anduala (15 km E de Ngilima)",1,1,,,
-"10-Dec","Orientale","Haut-Uele","Dungu","3 km SE de Ngilima",1,,,,
-"10-Dec","Orientale","Haut-Uele","Dungu","Ngilima",1,1,,,
-"10-Dec","Orientale","Haut-Uele","Faradje","Kpodo (12 km S de Faradje )",1,,2,,
-"10-Dec","Orientale","Haut-Uele","Faradje","Ima (9km d�Aba)",1,,1,,
-"10-Dec","Orientale","Bas-Uele","Ango","3 km au N de Banda",1,,3,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Anduala (15 km NE de Ngilima)",1,1,1,,
-"11-Jan","Orientale","Haut-Uele","Dungu","A 50 km au NO de Kpanangbala (60 km NO de Doruma)",1,,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Gangu (90 km E de Dungu)",1,1,1,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Nangbalama (10 km N de Doruma)",1,,,2,
-"11-Jan","Orientale","Haut-Uele","Dungu","Nangume (100 km E de Dungu)",1,,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Anduala (15 km NE de Ngilima)",1,1,1,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Milagbe (12 km SE de Doruma)",1,,2,5,
-"11-Jan","Orientale","Haut-Uele","Dungu","Nangbalama (10 km N de Doruma)",1,,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Gangu (90 km E de Dungu)",1,,1,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Ndorenzi (18 km NO de Duru)",1,,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Nabiapay (32 km NO de Duru)",1,,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Mbiangu (35 km SE de Bangadi)",1,1,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Nangbalama (10 km N de Doruma)",1,,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Naparka (60 km O de Doruma)",1,,,2,
-"11-Jan","Orientale","Haut-Uele","Dungu","A 50 km au NO de Kpanangbala (60 km NO de Doruma)",1,,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Milagbe (12 km SE de Doruma)",1,3,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Gongolo (12 km NO de Ngilima)",1,,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Ngilima",1,,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Milagbe (12 km SE de Doruma)",1,,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Nangume (100 km E de Dungu)",1,1,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Nambili (22 km NO Ngilima)",1,3,1,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Gangala (85 Km, Est Dungu)",1,2,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Gangala (85 Km, Est Dungu)",1,,,,
-"11-Jan","Orientale","Haut-Uele","Dungu","Kaka1�(15 km NO Dungu),",1,,,,
-"11-Jan","Orientale","Haut-Uele","Faradje","Udu (32 km O d�Aba)",1,2,,5,
-"11-Jan","Orientale","Haut-Uele","Faradje","Birichai (20 km O d�Aba)",1,,,4,
-"11-Jan","Orientale","Haut-Uele","Faradje","Ozowa (20 km O d�Aba)",1,,,,
-"11-Jan","Orientale","Haut-Uele","Faradje","Akampane (10 km SE de Faradje) ",1,,,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Doruma (210 Km N Dungu),",1,,,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Limai (25 Km N Dungu",1,,1,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Nakale (12Km N de Duru)",1,,,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Udu (20 km E de Faradje)",1,,1,1,
-"11-Feb","Orientale","Haut-Uele","Dungu","Yabinzo (35 Km NE de Bangadi). ",1,,,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Nangume 108 Km E Dungu, route Faradje. ",1,,,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Pont Nangume (100 Km de Dungu), ",1,,6,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Bayote (25 Km O Bitima, Nord de Dungu) ",1,3,,1,
-"11-Feb","Orientale","Haut-Uele","Dungu","Bamokandji (6 Km Dungu, route Ngilima)",1,,1,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Nakubu (3 km E de Limay)",1,,,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Sambia (140 km E de Dungu)",1,2,,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Sambia (140 km E de Dungu)",1,,1,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Nasala (120 km E de Dungu)",1,,,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Bayot_ (45 Km au nord de Ngilima)",1,3,,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Aaru (6 km N de Limay)",1,,,,
-"11-Feb","Orientale","Haut-Uele","Dungu","Ngilima (4 km au Nord)",1,,,,
-"11-Feb","Orientale","Haut-Uele","Niangara","Gbaga (45 km � l�est de Niangara)",1,1,1,,
-"11-Feb","Orientale","Haut-Uele","Faradje","Motoba (5 km SE Faradje)",1,,,5,
-"11-Feb","Orientale","Haut-Uele","Faradje","2 Km du centre de Faradje",1,1,,13,
-"11-Feb","Orientale","Haut-Uele","Faradje","Kpodo (10 Km S Faradje",1,1,,,
-"11-Feb","Orientale","Haut-Uele","Faradje","Djabir (10 km E de Faradje",1,1,,3,
-"11-Feb","Orientale","Haut-Uele","Faradje","Djabir (10 km E de Faradje",1,,,,
-"11-Feb","Orientale","Bas-Uele","Ango","Ngalu (10 km au Nord d�Ango sur la route de Digba)",1,,14,,
-"11-Feb","Orientale","Bas-Uele","Ango","Manguriti (5 km S de Bambangana)",1,,,,
-"11-Feb","Orientale","Bas-Uele","Ango","Bambangana (25 km SE de Banda)",1,2,,,
-"11-Feb","Orientale","Bas-Uele","Ango","Banda",1,,,2,
-"11-Feb","Orientale","Bas-Uele","Ango","Dakwa (85 km E d�Ango)",1,,,3,
-"11-Jan","Orientale","Haut-Uele","Faradje","Sidabo",1,,,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Ndorenzi (20 Km N Duru)",1,,,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Quartier Bamokandi",1,,,,
-"11-Mar","Orientale","Haut-Uele","Dungu","6 km E Duru",1,1,,,
-"11-Mar","Orientale","Haut-Uele","Dungu","9 km s-o de Duru",1,2,,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Nasala (125 km E de Dungu)",1,,,,
-"11-Mar","Orientale","Haut-Uele","Dungu","115 km E de Dungu 5 km de Nagero",1,,,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Lindimbia 25 km NO de Bangadi",1,1,1,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Nasala ( 125 km E de Dungu)",1,,,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Nakale (12 km NE de Duru)",1,,1,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Nangume (100 km E de Dungu)",1,,1,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Ndorenzi (20 NO de Duru)",1,,2,1,
-"11-Mar","Orientale","Haut-Uele","Dungu","Nakale (12 km NE de Duru)",1,,,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Nawango (15 km E de Nagero)",1,,2,1,
-"11-Mar","Orientale","Haut-Uele","Dungu","Madungula (12 km O de Ngilima)",1,,4,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Kapili (75 km NO de Dungu)",1,,5,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Nakorda (45 km O de Diagbe)",1,,10,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Gongolo (12 km NO de Ngilima)",1,,1,1,
-"11-Mar","Orientale","Haut-Uele","Dungu","Gangura (3 km N de Nabiapay)",1,,,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Anduala (15 km E de Ngilima)",1,,1,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Nabiapay (32 km NO de Duru)",1,,,,
-"11-Mar","Orientale","Haut-Uele","Dungu","Mapusa (15 km E de Bangadi)",1,,2,1,
-"11-Mar","Orientale","Haut-Uele","Faradje","Morda (8km N Faradje)",1,,,,
-"11-Mar","Orientale","Haut-Uele","Faradje","Gagobe( 7 km au NO de Faradje)",1,,3,,
-"11-Mar","Orientale","Bas-Uele","Ango","Bandueli (45 km N Dingila)",1,,8,,
-"11-Mar","Orientale","Bas-Uele","Ango","Tronﾍon Banda-Bambangana",1,,,,
-"11-Mar","Orientale","Bas-Uele","Ango","Banda, 75 km de Ango",1,8,,,
-"11-Apr","Orientale","Haut-Uele","Dungu","Ndorenzi(20 km au NO de Duru)",1,1,,,
-"11-Apr","Orientale","Haut-Uele","Dungu","Axe Bangadi-Napopo (+ de 125 km  N Dungu),",1,,2,,
-"11-Apr","Orientale","Haut-Uele","Dungu","Au nord de Bangadi",1,1,,,
-"11-Apr","Orientale","Haut-Uele","Dungu","Naparka � environ 260 km au N-O de Dungu",1,2,,,
-"11-Apr","Orientale","Haut-Uele","Dungu","Gongolo (18 km NO de Ngilima",1,1,,,
-"11-Apr","Orientale","Haut-Uele","Dungu","Doruma (210 km NO de Dungu)",1,1,,,
-"11-Apr","Orientale","Haut-Uele","Dungu","Doruma (210 km NO de Dungu)",1,,2,,
-"11-Apr","Orientale","Haut-Uele","Dungu","Nambia (5 km S de Duru)",1,,,,
-"11-Apr","Orientale","Haut-Uele","Dungu","Doruma (210 km NO de Dungu)",1,,2,,
-"11-Apr","Orientale","Haut-Uele","Dungu","Doruma (210 km NO de Dungu)",1,,1,,
-"11-Apr","Orientale","Haut-Uele","Niangara","Tapili, Mongolia et Esse",1,7,5,3,
-"11-Apr","Orientale","Bas-Uele","Ango","18 km SO de Banda en allant vers Ango",1,,,,
-"11-Apr","Orientale","Bas-Uele","Ango","A environ 19 km N de Banda vers Doruma",1,,,,
-"11-May","Orientale","Haut-Uele","Dungu","Nangume, 100 km � l�est de Dungu sur route Faradje",1,,1,,"5 commer�ants embusqu_s et pill_s par des pr_sum_s LRA"
-"11-May","Orientale","Haut-Uele","Dungu","Parc de Garamba",1,,1,1,"Accrochage entre gardes-parc et LRA "
-"11-May","Orientale","Haut-Uele","Dungu","Tronﾍon Gangala na Bodio-Nagero",1,,1,,"7 commerﾍants embusqu_s et pill_s par les LRA"
-"11-May","Orientale","Haut-Uele","Dungu","Localit_ Bayete, prﾏs de Duru",1,,,,"Echange des tirs entre FARDC et LRA"
-"11-May","Orientale","Haut-Uele","Dungu","TULA et ITABE, respectivement � 2 et 3 km au S-E de Bangadi",1,,,,"Attaques des m_nages par les LRA"
-"11-May","Orientale","Haut-Uele","Dungu","ITAB (3 km SE de Bangadi",1,,,,"4 rebelles LRA attaquent et pillent un m_nage"
-"11-May","Orientale","Haut-Uele","Dungu","60 km � l�est de Dungu, vers Faradje",1,,,,"Attaque de la localit_ par les LRA"
-"11-May","Orientale","Haut-Uele","Dungu","Bitima (25 km N de Duru)",1,,1,,"Un groupe de 5 rebelles LRA enlﾏve un villageois"
-"11-May","Orientale","Haut-Uele","Dungu","Gangala na Bodio (75 km E de Dungu)",1,1,1,,"Un groupe des rebelles a attaqu_ un m_nage"
-"11-May","Orientale","Haut-Uele","Niangara","Mbwele, 40 km E de Nambia",1,2,,,"7 LRA attaquent un groupe de Pﾐcheurs"
-"11-May","Orientale","Haut-Uele","Niangara","Nambia (15 km N de Niangara)",1,,,,"Un groupe de 6 rebelles arm_s dont 3 ougandais et 3 congolais lance une attaque au Sud de Nambia. 3 groupes sont signal_s autour de Nambia par un rescap_e de 15 ans. Un des groupes d_tiendrait 20 kidnapp_s"
-"11-May","Orientale","Haut-Uele","Faradje","15 km O d�Aba, vers Kurukwata",1,,,12,"Attaque LRA et enl�vement d�enfant suivi d�accrochage FARDC et LRA. 12 enfants d�Aba r_cup_r_s"
-"11-May","Orientale","Haut-Uele","Faradje","Kurukwata � 46 E de Faradje",1,,,2,"Incursion des hommes arm_s "
-"11-May","Orientale","Haut-Uele","Faradje","Village Bayiti, 6 km au nord  d�Aba",1,2,,,"Attaque LRA suivi d�accrochage FARDC et LRA"
-"11-May","Orientale","Haut-Uele","Faradje","Nawango, 5 km de Faradje, route Dungu",1,,,1,"Attaque de la localit_ par des pr_sum_s LRA. 3 enfants enlev_s dont 2 _chapp_s"
-"11-May","Orientale","Bas-Uele","Ango","Dikuma, 30 km au N de Banda",1,1,,,"10 LRA attaquent la localit_"
-"11-May","Orientale","Bas-Uele","Ango","Tron�on Bamudanga-Mulundu(de 22� 7 km de Ango)",1,,,,"Attaques des populations civiles par les pr_sum_s LRA dans plusieurs villages sur une distance de 15 km"
-"11-May","Orientale","Bas-Uele","Bambesa","NGANGA et TUBU, une dizaine de Km au N de Dingila",1,,,,"Attaque des  LRA"
-"11-Jun","Orientale","Haut-Uele","Dungu","Nabiapay (32 km NO de Duru)",1,,1,,"6 hommes arm_ pr_sum_s LRA capture un femme qui raffinait de l�huile"
-"11-Jun","Orientale","Haut-Uele","Dungu","Bitima (25 km NO de Duru)",1,,,,"Un jeune qui se rendait � Bitima a _t_ attaqu_ par 10 hommes presumes LRA dont 6 _taient  arm_s. Le jeune homme s�est _chapp_ gr�ce � l�approche des FARDC"
-"11-Jun","Orientale","Haut-Uele","Dungu","Bayote (10 km O de Bitima",1,,,1,"Une fillette de 6 ans a _t_ enlev_e"
-"11-Jun","Orientale","Haut-Uele","Dungu","Taduru (20 km NO de Limay)",1,,1,,"Attaque, pillage et enl�vement d�un homme de 40 ans"
-"11-Jun","Orientale","Haut-Uele","Dungu","Diabakpa (65 km O de Doruma)",1,,,,"Un homme de 37 ans attaqu_ et griﾏvement bless_ par 19 rebelles pr_sum_s LRA"
-"11-Jun","Orientale","Haut-Uele","Dungu","Axe Limay _ Taduru",1,,,1,"Un gar�on �g_ de 13 ans se fait enlev_ par des pr_sum_s LRA"
-"11-Jun","Orientale","Haut-Uele","Dungu","Nambili (11 km N de kiliwa)",1,,,,"5 hommes arm_s pr_sum_s LRA attaquent et pillent 5 voyageurs"
-"11-Jun","Orientale","Haut-Uele","Dungu","Nduga (40 km N de Dungu, 5 km S Kiliwa)",1,,,,"Un homme tombe dans une embuscade des rebelles LRA et est griﾏvement bless_"
-"11-Jun","Orientale","Haut-Uele","Dungu","Diagbe (35 km NO de Bangadi)",1,,,,"19 hommes arm_s pr_sum_s LRA tente des pill_s des voyageurs"
-"11-Jun","Orientale","Haut-Uele","Dungu","Nambili (11 km N de kiliwa)",1,,,1,"Une fille de moins de 15 ans se fait enlev_e pr�s d�une source "
-"11-Jun","Orientale","Haut-Uele","Dungu","Gangala na bodio",1,1,,,"Un homme retrouv_ mort. Il a _t_ abattu � coup de machette et gourdin"
-"11-Jun","Orientale","Haut-Uele","Dungu","Axe Bangadi _ Napopo 12 km NE de Bangadi",1,,,,"Un groupe des pr_sum_s LRA enlﾏvent 2 femmes et les gardent en brousse pendant 5 heures. A leur sortie, les femmes refusent commenter leur enlﾏvement"
-"11-Jun","Orientale","Haut-Uele","Dungu","Axe Bangadi _ Napopo 12 km NE de Bangadi",1,,,1,"Un groupe de trois rebelles a enlev_ une fille"
-"11-Jun","Orientale","Haut-Uele","Dungu","Kiliwa (45 km N de Dungu)",1,1,,,"Un groupe des rebelles LRA lance une attaque contre Kiliwa et tue une femme + _change des tirs de 20.30 � 2.30� du matin"
-"11-Jun","Orientale","Haut-Uele","Dungu","Bagulupa (55 km E de Dungu)",1,,,,"10 m_nages attaqu_s et pill_s par une trentaine d�hommes arm_s pr_sum_s LRA"
-"11-Jun","Orientale","Haut-Uele","Dungu","4 km O de Bangadi",1,2,1,,"Une femme a _t_  enlev_e dans un champ et deux autres personnes tu_es"
-"11-Jun","Orientale","Haut-Uele","Dungu","Nzungunza (8 km 0 de Bangadi)",1,,,,"Un groupe des pr_sum_s LRA font incursion dans la localit_ et viole une femme"
-"11-Jun","Orientale","Haut-Uele","Dungu","Bagulupa (55 km E de Dungu)",1,,,,"Une deuxiﾏme attaque contre la localit_ suivie de pillage syst_matique"
-"11-Jun","Orientale","Haut-Uele","Dungu","Nakpudu (7 km SE de Bangadi)",1,,,,"Deux hommes sont retouv_s morts pr�s d�une sources abattus � coup des machettes et gourdins."
-"11-Jun","Orientale","Haut-Uele","Dungu","Route ITAB 2 km NE de Bangadi",1,,1,,"Une personne enlev_e par des pr_sum_s LRA"
-"11-Jun","Orientale","Haut-Uele","Dungu","Pudupudu (7 km SE de Ngilima)",1,1,,,"2 chasseurs se font attaqu_s par des pr_sum_s LRA et l�un est tu_"
-"11-Jun","Orientale","Haut-Uele","Dungu","Naango (5 km SE de Ngilima)",1,5,,,"5 personnes ont _t_ tu_es par des pr_sum_s LRA"
-"11-Jun","Orientale","Haut-Uele","Dungu","Rivi�re Nambia (15 km O de Ngilima)",1,3,,,"Un groupe de 4 _l_ments pr_sum_s LRA (dont 3 arm_s) attaque 5 personnes parties � la p�che et en tue trois"
-"11-Jun","Orientale","Haut-Uele","Dungu","Mabeleni (80 km E de Dungu, Axe Dungu Faradje)",1,1,2,,"3 commer�ants qui rentraient d�Ariwara en moto sont attaqu_s, 1 est tu_, 2 enlev_s et leurs biens pill_s. On a retrouv_ seulement leurs motos."
-"11-Jun","Orientale","Haut-Uele","Dungu","Makusa (15 km N de Bangadi)",1,2,,,"Un groupe de 2 _l_ments pr_sum_s LRA  attaque 3 personnes parties � la p�che et en tue deux"
-"11-Jun","Orientale","Haut-Uele","Dungu","Nasala (120 km E de Dungu, Axe Dungu Faradje)",1,,,,"2 motards tombent dans une embuscade et se font pill_s par des pr_sum_s LRA"
-"11-Jun","Orientale","Haut-Uele","Dungu","Ngilima",1,3,,,"3 personnes tu_es par des _l_ments pr_sum_s LRA"
-"11-Jun","Orientale","Haut-Uele","Dungu","Route Keka (4 km S du centre Bangadi)",1,3,,,"3 personnes tu_es par des pr_sum_s LRA et +/- 12 LRA roderaient autour de Bangadi"
-"11-Jun","Orientale","Haut-Uele","Dungu","Nasala (120 km E de Dungu, Axe Dungu Faradje)",1,,,,"1 motard se fait attaquer par 7 hommes arm_s pr_sum_s LRA et se fait piller"
-"11-Jun","Orientale","Haut-Uele","Dungu","Sortie NO de (direction Kapili) Ngilima",1,,,,"Deux femmes enlev_es par les LRA sur le points d͐tre ex_cut_es ont _t_ sauv_es par la FARDC"
-"11-Jun","Orientale","Haut-Uele","Dungu","Bagulupa (55 km E de Dungu)",1,,,,"Attaque des LRA dirig_e vers un camp FARDC"
-"11-Jun","Orientale","Haut-Uele","Dungu","Pudupudu (7 km S de Ngilima)",1,,2,,"2 motards enlev_s par des pr_sum_s LRA"
-"11-Jun","Orientale","Haut-Uele","Dungu","7 km O de Naparka",1,,1,1,"Une attaque contre des p_cheurs suivi d�un affrontement FARDC _ LRA"
-"11-Jun","Orientale","Haut-Uele","Dungu","Diabakpa (65 km O de Doruma)",1,,,1,"4 _l_ment pr_sum_s LRA lancent une attaque suivi d�une riposte FARDC"
-"11-Jun","Orientale","Haut-Uele","Dungu","2 km NE de Bangadi",1,,,,"5 _l_ments LRA dont 3 arm_s avec des fusil et 2 avec des machettes et baton attaquent et pillent plusieurs m_nages"
-"11-Jun","Orientale","Haut-Uele","Dungu","1 km N de Limay (25 km N de Dungu)",1,,,,"Un homme est attqu_, pill_ et d_shabill_ par les pr_sum_s LRA"
-"11-Jun","Orientale","Haut-Uele","Dungu","Bayote (10 Km O de Bitima)",1,,,,"Pillage de manioc dans un champ"
-"11-Jun","Orientale","Haut-Uele","Niangara","1 km sud de Nambia",1,,,1,"3 _l_ments LRA pillent des vivres dans un champ et enlﾏvent une fille"
-"11-Jun","Orientale","Haut-Uele","Niangara","Nambia (15 km N de Niangara)",1,,,,"Une femme est enlev_e par les rebelles LRA et rel�ch_e le lendemain. Elle n�a pas _t_ viol_e"
-"11-Jun","Orientale","Haut-Uele","Faradje","5 km NO de Djabir",1,,,,"Echange de feu entre FARDC et rebelles LRA"
-"11-Jul","Orientale","Haut-Uele","Dungu","1 km de la route 4(100km E de Dungu, sur route Faradje)",1,1,,,"Un groupe de 7 motards tomb_ dans une embuscade des pr_sum_s _l_ments LRA"
-"11-Jul","Orientale","Haut-Uele","Dungu","Nambasa, 3 km � l�O de Doruma",1,,1,,"Attaque d�un civil de 20 ans par 5 _l_ments LRA"
-"11-Jul","Orientale","Haut-Uele","Dungu","Nambasa, 3km � l�O de Doruma",1,,2,,"Incursion LRA dans un foyer avec enl�vement du couple"
-"11-Jul","Orientale","Haut-Uele","Dungu","Nambasa, 3km � l�O de Doruma, sur le chemin de fuite",1,,1,,"Enl�vement d�une femme de 46 ans"
-"11-Jul","Orientale","Haut-Uele","Dungu","Makpelenga, 35 km NO de Naparka",1,,1,,"Irruption dans un foyer d�un groupe de 12 personnes portant anciennes uniformes des FARDC"
-"11-Jul","Orientale","Haut-Uele","Dungu","Zangaimi, 4km NO de Bangadi",1,,,,"Incursion d�un groupe de 5 personnes pr_sum_es LRA  dans la maison d�une femme"
-"11-Jul","Orientale","Haut-Uele","Dungu","Bangadi, 125 km au N-O de Dungu",1,,,1,"Incursion nocturne de 3 _l_ments pr_sum_s LRA dans une famille. "
-"11-Jul","Orientale","Haut-Uele","Dungu","Naparka, 270 km au N-O de Dungu",1,,,,"Incursion LRA dans la localit_  "
-"11-Jul","Orientale","Haut-Uele","Dungu","Naparka",1,,,,"Attaque LRA sur 5 chasseurs"
-"11-Jul","Orientale","Haut-Uele","Dungu","Naparka",1,,,,"Visite nocturne d�un _l_ment LRA chez un particulier"
-"11-Jul","Orientale","Haut-Uele","Dungu","Naparka",1,,,,"Affrontement UPDF et LRA en brousse au S-O de Naparka"
-"11-Jul","Orientale","Haut-Uele","Dungu","10 km au NO de Bangadi",1,,,,"Affrontement entre l�_quipe mixte FARDC/UPDF et LRA"
-"11-Jul","Orientale","Haut-Uele","Dungu","10 km au NO de Bangadi",1,,,,"Affrontement entre l�_quipe mixte FARDC/UPDF et LRA"
-"11-Jul","Orientale","Haut-Uele","Dungu","Kiliwa, 45 km au nord de dungu",1,2,,,"Affrontement entre FARDCet LRA"
-"11-Jul","Orientale","Haut-Uele","Dungu","A 3 km SE de Nango(40 km au NO de Dungu)",1,,,,"Affrontement entre l�_quipe mixte FARDC/UPDF et LRA"
-"11-Jul","Orientale","Haut-Uele","Faradje","Nagbaka, 6 km O de Faradje",1,,,1,"Incursion des hommes arm_s"
-"11-Jul","Orientale","Haut-Uele","Faradje","1 km de Faradje centre",1,,,1,"Incursion des hommes arm_s"
-"11-Jul","Orientale","Haut-Uele","Faradje","Doya, 22 km � l�E de Faradje",1,,,2,"Incursion des _l_ments LRA"
-"11-Jul","Orientale","Bas-Uele","Ango","75 km d�Ango sur route Dakwa",1,,,,"Attaque des hommes arm_s sur une _quipe de CICR"
-"11-Jul","Orientale","Bas-Uele","Ango","Bandu, au N de Digba",1,,,,"Incursion de 12 LRA � Bandu et Lumu"
-"11-Jun","Orientale","Haut-Uele","Faradje","Kibhinzi (4 km O de Faradje)",1,,,,"Des hommes arm_s chassent les villageois d�un champ et pillent du manioc"
-"11-Jun","Orientale","Haut-Uele","Faradje","Djabir (10 km E de Faradje)",1,,,,"Des hommes arm_s chassent les villageois d�un champ et pillent du manioc"
-"11-Jun","Orientale","Haut-Uele","Faradje","Takiani (7 km E de Faradje)",1,,2,1,"Une femme bless_e par deux coups de balles des pr_sum_s LRA et pillage des poules, chﾏvres et farine de maﾥs"
-"11-Jun","Orientale","Haut-Uele","Faradje","Tadu (37 km S de Faradje)",1,1,,1,"Une femme sourde-muette a _t_ attaqu_ et tu_e par des pr_sum_s LRA et sa fillette de 3 ans enlev_e"
-"11-Jun","Orientale","Haut-Uele","Faradje","Draduwa (22 km E de Faradje)",1,,,,"Des hommes arm_s non autrement identifi_s font incursion et pillent 4 chﾏvres et des bidons des milels"
-"11-Jun","Orientale","Haut-Uele","Faradje","3 km O de Faradje",1,,,,"Une femme a _t_ surprise dans son champ par deux hommes arm_s pr_sum_s LRA"
-"11-Jun","Orientale","Haut-Uele","Faradje","Djabir (10 km E de Faradje)",1,,,,"8 hommes enlev_s par 5 LRA pendant qu�ils se rendaient au champs et rel�ch_s le lendemain"
-"11-Jun","Orientale","Haut-Uele","Faradje","Entre Lenvo et udukwa (15 � 20 km E de Faradje)",1,,,,"6 _l_ments pr_sum_s LRA ont attaqu_ un village et pill_ des vivres"
-"11-Jun","Orientale","Haut-Uele","Faradje","Djabir (10 km E de Faradje)",1,,,1,"Incursion des _l_ments pr_sum_s LRA et enl�vement d�un gar�on de 15 ans"
-"11-Jun","Orientale","Haut-Uele","Faradje","Doya (18 km E de Faradje)",1,,,,"Des villageois se font pill_s des vivres par des pr_sum_s LRA"
-"11-Jun","Orientale","Haut-Uele","Faradje","Kpodo (11 km S de Faradje)",1,,2,,"Des _l_ments LRA ont fait irruption � 4.00� et ont pill_s des vivres et enlev_ deux personnes"
-"11-Jun","Orientale","Haut-Uele","Faradje","Kpodo (11 km S de Faradje)",1,1,,,"Des LRA tuent un jeune homme de 20 ans"
-"11-Aug","Orientale","Haut-Uele","Dungu","Route 4 (localit_ situ_e � environ 115 Km de Dungu en allant vers Faradje)",1,,1,,"Des commer�ants en provenance d�Ariwara (localit_ � environ 110 Km SE de Dungu) ont _t_ attaqu_s par des hommes arm_s"
-"11-Aug","Orientale","Haut-Uele","Dungu","Entre Nagero et route 4 (axe Dungu- Faradje)",1,1,1,,"Des passants (� pieds et � v_lo) ont _t_ attaqu_s par des hommes arm_s"
-"11-Aug","Orientale","Haut-Uele","Dungu","A 1 km de Nagero centre (125 Km NE Dungu)",1,,1,,"1 homme et 1 femme (sur la route 4) ont _t_ surpris par 2 hommes en uniforme militaire."
-"11-Aug","Orientale","Haut-Uele","Dungu","Nagero ",1,,1,,"A 800 m de la station une femme a _t_ enlev_e par des hommes arm_s et en uniforme trellis"
-"11-Aug","Orientale","Haut-Uele","Dungu","Bangadi",1,2,,,"A Nakofo (non loin de Bangadi), affrontement entre les UPDF et la LRA"
-"11-Aug","Orientale","Haut-Uele","Dungu","Entre Bitima (25 km NO de Duru) et Bayote (15 km O de Bitima),",1,,,,"2 cycliste qui revenaient du Sud Soudan sont tomb_s dans une embuscade LRA et se sont fait pill_s."
-"11-Aug","Orientale","Haut-Uele","Dungu","Mbiangu (35 km SE de Bangadi)",1,,,,"trois cyclistes en provenance de Bangadi ont _t_ attaqu_s par 4 _l_ments pr_sum_s LRA, arm_s. Ces cyclistes ont _t_ pill_s"
-"11-Sep","Orientale","Haut-Uele","Dungu","Nambia (5 km S de Duru)",1,,,,"3 hommes arm_s pr_sum_s LRA lancent une attaque non loin d�une position FARDC et blessent un civil � l�_paule"
-"11-Sep","Orientale","Haut-Uele","Dungu","Kumbolongo (localit_ situ_e � 10 km au Sud de Nambia)",1,,,1,"10 personnes qui se rendaient au march_ de Nabiapay (7 km N Bitima) sont tomb_s dans une embuscade  de pr_sum_s LRA. Les 9 personnes ont pu s�_chapper en laissant un gar�on de 15 ans port_ disparu."
-"11-Sep","Orientale","Haut-Uele","Dungu","Dikpoto (15 km N de Ngilima)",1,,,,"3 _lﾏves de retour de Yambio se sont fait attaqu_s et pill_s par 5 _l_mments pr_sum_s LRA"
-"11-Sep","Orientale","Haut-Uele","Dungu","Dikpoto (15 km N de Ngilima)",1,,,,"Des villageois se font piller � Dikpoto par le m�me groupe de 5 _l_ments pr_sum_s LRA"
-"11-Sep","Orientale","Haut-Uele","Faradje","Lalibe (7 km N de Faradje)",1,,,,"Une vingtaine d�hommes arm_s ont pill_ 8 champs de ma�s et cass_ des greniers des villageois"
-"11-Sep","Orientale","Haut-Uele","Faradje","Ngaduma-Ogambi (8 km N de Djabir)",1,,,,"Un groupe de plusieurs hommes arm_s ont pill_ un champ de maﾥs"
-"11-Sep","Orientale","Haut-Uele","Faradje","Ngaduma-Ogambi (8 km N de Djabir)",1,,,,"Un groupe de plusieurs hommes arm_s ont pill_ un autre champ de maﾥs"
-"11-Aug","Orientale","Haut-Uele","Dungu","Zangaime (4 km N de Bangadi)",1,,3,,"Trois personnes, 2 hommes et une femme ont disparue"
-"11-Aug","Orientale","Haut-Uele","Niangara","Nyalanya (axe Aba-Faradje)",1,,1,,"Environ 5 _lements pr_sum_s LRA ont enlev_ 2 femmes dont l�une enceinte et l�autre avec un b_b_"
-"11-Oct","Orientale","Haut-Uele","Dungu","3 km au nord de Napopo",1,,,,"Des _l_ments pr_sum_s LAR ont attaqu_, pill_ et incendi_ quelques cases dans  un petit village situ_ � 3 km au nord de Napopo"
-"11-Oct","Orientale","Haut-Uele","Dungu","Zangaime (5 km  N de Bangadi)",1,,,,"Trois m_nages des villageois attaqu_s et pill_s par des _l_ments pr_sum_s LRA "
-"11-Oct","Orientale","Haut-Uele","Dungu","Nango (5 km SE de Ngilima) ",1,,,,"2 motards sont tomb_s dans une embuscade tendue par des _l_ments pr_sum_s LRA et ont _t_ pill_s"
-"11-Oct","Orientale","Haut-Uele","Dungu","Nakpudu (7 km S de Bangadi)",1,,,,"2 adolescents surpris par 4 _l_ments LRA qui les ont oblig_s � leur montr_ un chemin. Les _l_ments LRA les ont gard_s pendant trois heures"
-"11-Oct","Orientale","Haut-Uele","Dungu","Nabanda (8 km au SO de Napopo)",1,,,,"Accrochage entre FARDC et les pr_sum_s LRA "
-"11-Oct","Orientale","Haut-Uele","Dungu","Badolo (7 km NO de Bangadi)",1,,,,"Un groupe d�_l_ments pr_sum_s LRA ont attaqu_ et pill_ le village de Badolo, provoquant un mouvement des populations vers Bangadi "
-"11-Oct","Orientale","Haut-Uele","Dungu","Gongolo (14 km No de Ngilima)",1,,,,"Un homme de 32 ans s�est sauv_ de justesse d�une attaque des presumes LRA � mi chemin entre Kapili et Ngilima)"
-"11-Oct","Orientale","Haut-Uele","Dungu","Malingbundu (5 km NE de Bangadi)",1,,,,"Un groupe de 3 _l_ments pr_sum_s LRA ont attaqu_ les villageois dans une palmeraie et en ont bless_ deux "
-"11-Oct","Orientale","Haut-Uele","Dungu","Napopo (25 km E de Bangadi)",1,,,,"Un groupe d�_l_ments pr_sum_s LRA ont attaqu_ les villageois � 1 km de Napopo et en ont bless_ un"
-"11-Oct","Orientale","Haut-Uele","Niangara","Nambia, 15 km de Niangara",1,,,,"Attaque du village"
-"11-Nov","Orientale","Haut-Uele","Dungu","Napopo (25 km E de Bangadi)",1,,,,"Des hommes arm_s tendent une embuscade � un chasseur et le pourchassent sur 6 km"
-"11-Nov","Orientale","Haut-Uele","Dungu","Malingbundu  (5 km NE de Bangadi)",1,,,,"8 personnes ont _t_ surprises dans leur champ et ont r_ussi � s�_chapper"
-"11-Nov","Orientale","Haut-Uele","Dungu","5 km SO Bangadi",1,,,,"Deux hommes arm_s tentent d�enlever une femme qui travaillait seule dans son champ et elle s�est _chapp_e"
-"11-Nov","Orientale","Haut-Uele","Dungu","Nabiapay (7 km NO de Bitima)",1,,,,"Des _l_ments pr_sum_s LRA provenant du Sud Soudan ont fait incursion et perp_tr_ des pillages � Nabiapay"
-"11-Nov","Orientale","Haut-Uele","Dungu","Nangume (6 km O de Bitima)",1,,,,"Des _l_ments pr_sum_s LRA provenant du Sud Soudan ont fait incursion et perp_tr_ des pillages � Nangume (pr�s de Bitima)"
-"11-Nov","Orientale","Haut-Uele","Dungu","Zangaime (5 km N de Bangadi)",1,,,,"Affrontement entre FARDC et pr_sum_s LRA"
-"11-Nov","Orientale","Haut-Uele","Dungu","Dikpoto (20 Km Nord Ngilima)",1,,,,"2 cyclistes revenant du march_ frontalier se font attaqu_s et pill_s par les pr_sum_s LRA"
-"11-Nov","Orientale","Haut-Uele","Dungu","15 km N Ngilima (Anduala�?)",1,,,,"Des commer�ants tombent dans une embuscade tendue par des _l_ments pr_sum_s LRA et sont pill_s"
-"11-Nov","Orientale","Haut-Uele","Dungu","Bambangana (65 km NO Doruma)",1,,,,"Un groupe des pr_sum_s LRA ont tent_ d�attaquer des villageois"
-"11-Nov","Orientale","Haut-Uele","Faradje","Takiani (6 km E de Faradje) ",1,2,1,2,"Une vingtaine d�_l_ments pr_sum_s LRA ont lanc_ une attaque contre la localit_ de Takiani et ont pill_ du riz apr�s avoir tu_ deux villageois"
-"11-Jun","Orientale","Bas-Uele","Ango","Gurba (45 km SE de Banda",1,2,,,"Clash entre les LRA et FARDC, 2 enfants tu_s"
-"11-Jan","Orientale","Bas-Uele","Ango","Digba (45 km N d�Ango)",1,,,,
-"11-Jan","Orientale","Bas-Uele","Ango","Sukadi",1,2,,,
+month,province,district,territory,num_attacks,ppl_killed,adults_kidnapped,infants_kidnapped,description
+10-Jun,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jun,Orientale,Haut-Uele,Dungu,1,0,,3,
+10-Jun,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jun,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jun,Orientale,Haut-Uele,Dungu,1,0,0,1,
+10-Jun,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jun,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jun,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jun,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jun,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jun,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,3,13,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,0,2,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,4,2,3,
+10-Jan,Orientale,Haut-Uele,Dungu,1,1,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,2,0,1,
+10-Jan,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,1,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,5,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,2,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,1,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,4,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,2,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,0,1,1,
+10-Jan,Orientale,Haut-Uele,Dungu,1,0,1,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,2,0,1,
+10-Jan,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,0,0,0,
+10-Jan,Orientale,Haut-Uele,Dungu,1,2,0,0,
+10-Jan,Orientale,Haut-Uele,Niangara,1,2,0,0,
+10-Jan,Orientale,Bas-Uele,Poko,1,0,4,0,
+10-Feb,Orientale,Haut-Uele,Dungu,1,0,2,0,
+10-Feb,Orientale,Haut-Uele,Dungu,1,1,0,0,
+10-Feb,Orientale,Haut-Uele,Dungu,1,0,0,1,
+10-Feb,Orientale,Haut-Uele,Dungu,1,0,0,2,
+10-Feb,Orientale,Haut-Uele,Niangara,1,24,0,0,
+10-Feb,Orientale,Haut-Uele,Niangara,1,7,0,0,
+10-Feb,Orientale,Haut-Uele,Niangara,1,16,0,0,
+10-Feb,Orientale,Haut-Uele,Niangara,1,7,5,25,
+10-Feb,Orientale,Haut-Uele,Niangara,1,2,10,0,
+10-Feb,Orientale,Haut-Uele,Niangara,1,4,,0,
+10-Feb,Orientale,Haut-Uele,Niangara,1,5,20,0,
+10-Feb,Orientale,Haut-Uele,Niangara,1,4,0,0,
+10-Feb,Orientale,Haut-Uele,Niangara,1,2,0,0,
+10-Feb,Orientale,Haut-Uele,Niangara,1,1,0,0,
+10-Feb,Orientale,Haut-Uele,Niangara,1,2,0,0,
+10-Feb,Orientale,Bas-Uele,Ango,1,,4,0,
+10-Feb,Orientale,Bas-Uele,Ango,1,2,0,0,
+10-Feb,Orientale,Bas-Uele,Ango,1,2,2,0,
+10-Mar,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,2,,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,2,,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,2,,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,3,,19,
+10-Mar,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,5,1,,
+10-Mar,Orientale,Haut-Uele,Dungu,,,,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,2,,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,3,,,
+10-Mar,Orientale,Haut-Uele,Dungu,,3,2,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,3,1,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,,,1,
+10-Mar,Orientale,Haut-Uele,Dungu,1,3,1,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,3,2,,
+10-Mar,Orientale,Haut-Uele,Dungu,1,1,2,2,
+10-Apr,Orientale,Haut-Uele,Dungu,1,,,,
+10-Apr,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Apr,Orientale,Haut-Uele,Dungu,1,1,,12,
+10-Apr,Orientale,Haut-Uele,Dungu,1,,,2,
+10-Apr,Orientale,Haut-Uele,Dungu,1,,,,
+10-Apr,Orientale,Haut-Uele,Dungu,1,1,3,2,
+10-Apr,Orientale,Haut-Uele,Dungu,1,,1,,
+10-Apr,Orientale,Haut-Uele,Dungu,1,,1,,
+10-Apr,Orientale,Haut-Uele,Dungu,1,,1,,
+10-Apr,Orientale,Haut-Uele,Dungu,1,,,2,
+10-Apr,Orientale,Haut-Uele,Dungu,1,,2,,
+10-Apr,Orientale,Haut-Uele,Dungu,1,2,,,
+10-Apr,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Apr,Orientale,Haut-Uele,Niangara,1,2,,1,
+10-Apr,Orientale,Haut-Uele,Niangara,1,,,1,
+10-Apr,Orientale,Haut-Uele,Niangara,1,1,,,
+10-May,Orientale,Haut-Uele,Dungu,1,,1,,
+10-May,Orientale,Haut-Uele,Dungu,1,2,,,
+10-May,Orientale,Haut-Uele,Dungu,1,2,,,
+10-May,Orientale,Haut-Uele,Dungu,1,,,,
+10-May,Orientale,Haut-Uele,Dungu,1,,,,
+10-May,Orientale,Haut-Uele,Dungu,1,,,,
+10-May,Orientale,Haut-Uele,Dungu,1,2,,,
+10-May,Orientale,Haut-Uele,Dungu,1,4,1,,
+10-May,Orientale,Haut-Uele,Dungu,1,1,,,
+10-May,Orientale,Haut-Uele,Dungu,1,3,,,
+10-May,Orientale,Haut-Uele,Dungu,1,,,,
+10-May,Orientale,Haut-Uele,Dungu,1,,,,
+10-May,Orientale,Bas-Uele,Ango,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,1,11,3,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,3,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,4,2,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,2,,,
+10-Jul,Orientale,Haut-Uele,Dungu,1,,,,
+10-Jul,Orientale,Haut-Uele,Faradje,1,,,3,
+10-Jul,Orientale,Haut-Uele,Faradje,1,,1,1,
+10-Jul,Orientale,Haut-Uele,Faradje,1,1,,,
+10-Jul,Orientale,Haut-Uele,Faradje,1,,,,
+10-Jul,Orientale,Haut-Uele,Faradje,1,1,,,
+10-Jul,Orientale,Haut-Uele,Niangara,1,1,,,
+10-Jul,Orientale,Haut-Uele,Niangara,1,1,,,
+10-Jul,Orientale,Haut-Uele,Niangara,1,1,,,
+10-Jul,Orientale,Haut-Uele,Niangara,1,2,,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,3,,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,4,,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,,1,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,,2,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,2,,3,
+10-Aug,Orientale,Haut-Uele,Dungu,1,,2,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,1,1,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,,4,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,,1,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,,8,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,,1,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,3,4,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Aug,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Aug,Orientale,Bas-Uele,Ango,1,12,,,
+10-Sep,Orientale,Haut-Uele,Dungu,1,3,3,,
+10-Sep,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Sep,Orientale,Haut-Uele,Dungu,1,4,4,,
+10-Sep,Orientale,Haut-Uele,Dungu,1,2,,,
+10-Sep,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Sep,Orientale,Haut-Uele,Dungu,1,2,,1,
+10-Sep,Orientale,Haut-Uele,Dungu,1,,,,
+10-Sep,Orientale,Haut-Uele,Dungu,1,1,,1,
+10-Sep,Orientale,Haut-Uele,Dungu,1,,1,1,
+10-Sep,Orientale,Haut-Uele,Dungu,1,,5,,
+10-Sep,Orientale,Haut-Uele,Dungu,1,,3,,
+10-Sep,Orientale,Haut-Uele,Dungu,1,,12,,
+10-Sep,Orientale,Haut-Uele,Dungu,1,,1,,
+10-Sep,Orientale,Haut-Uele,Dungu,1,2,1,1,
+10-Sep,Orientale,Haut-Uele,Dungu,1,,,1,
+10-Sep,Orientale,Haut-Uele,Dungu,1,1,3,,
+10-Sep,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Sep,Orientale,Haut-Uele,Dungu,1,1,,2,
+10-Sep,Orientale,Haut-Uele,Dungu,1,1,1,,
+10-Sep,Orientale,Haut-Uele,Faradje,1,,,,
+10-Sep,Orientale,Haut-Uele,Faradje,1,,,2,
+10-Sep,Orientale,Haut-Uele,Niangara,1,,2,2,
+10-Sep,Orientale,Haut-Uele,Niangara,1,,1,,
+10-Sep,Orientale,Bas-Uele,Poko,1,,,,
+10-Sep,Orientale,Bas-Uele,Poko,1,,,,
+10-Oct,Orientale,Haut-Uele,Dungu,1,,,,
+10-Oct,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Oct,Orientale,Haut-Uele,Dungu,1,,,,
+10-Oct,Orientale,Haut-Uele,Dungu,1,,,1,
+10-Oct,Orientale,Haut-Uele,Dungu,1,,,,
+10-Oct,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Oct,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Oct,Orientale,Haut-Uele,Dungu,1,,,,
+10-Oct,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Oct,Orientale,Haut-Uele,Dungu,1,,,,
+10-Oct,Orientale,Haut-Uele,Dungu,1,,,,
+10-Oct,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Oct,Orientale,Haut-Uele,Niangara,1,3,,,
+10-Oct,Orientale,Haut-Uele,Niangara,1,,,,
+10-Oct,Orientale,Haut-Uele,Niangara,1,1,,,
+10-Nov,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Nov,Orientale,Haut-Uele,Dungu,1,,,,
+10-Nov,Orientale,Haut-Uele,Dungu,1,,,3,
+10-Nov,Orientale,Haut-Uele,Dungu,1,,,1,
+10-Nov,Orientale,Haut-Uele,Dungu,1,,,,
+10-Nov,Orientale,Haut-Uele,Dungu,1,,,,
+10-Nov,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Nov,Orientale,Haut-Uele,Dungu,1,1,2,,
+10-Nov,Orientale,Haut-Uele,Dungu,1,,1,,
+10-Nov,Orientale,Haut-Uele,Dungu,1,,,,
+10-Nov,Orientale,Haut-Uele,Dungu,1,,,,
+10-Nov,Orientale,Haut-Uele,Dungu,1,,,,
+10-Nov,Orientale,Haut-Uele,Faradje,1,,,,
+10-Nov,Orientale,Haut-Uele,Niangara,1,,,,
+10-Nov,Orientale,Haut-Uele,Niangara,1,,,,
+10-Nov,Orientale,Bas-Uele,Ango,1,,,5,
+10-Dec,Orientale,Haut-Uele,Dungu,1,,,1,
+10-Dec,Orientale,Haut-Uele,Dungu,1,,2,,
+10-Dec,Orientale,Haut-Uele,Dungu,1,,,2,
+10-Dec,Orientale,Haut-Uele,Dungu,1,,1,2,
+10-Dec,Orientale,Haut-Uele,Dungu,1,4,,,
+10-Dec,Orientale,Haut-Uele,Dungu,1,,18,,
+10-Dec,Orientale,Haut-Uele,Dungu,1,,1,,
+10-Dec,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Dec,Orientale,Haut-Uele,Dungu,1,,,,
+10-Dec,Orientale,Haut-Uele,Dungu,1,1,,,
+10-Dec,Orientale,Haut-Uele,Faradje,1,,2,,
+10-Dec,Orientale,Haut-Uele,Faradje,1,,1,,
+10-Dec,Orientale,Bas-Uele,Ango,1,,3,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,1,1,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,1,1,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,2,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,1,1,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,2,5,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,1,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,1,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,2,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,3,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,1,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,3,1,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,2,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,,
+11-Jan,Orientale,Haut-Uele,Dungu,1,,,,
+11-Jan,Orientale,Haut-Uele,Faradje,1,2,,5,
+11-Jan,Orientale,Haut-Uele,Faradje,1,,,4,
+11-Jan,Orientale,Haut-Uele,Faradje,1,,,,
+11-Jan,Orientale,Haut-Uele,Faradje,1,,,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,,,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,,1,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,,,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,,1,1,
+11-Feb,Orientale,Haut-Uele,Dungu,1,,,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,,,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,,6,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,3,,1,
+11-Feb,Orientale,Haut-Uele,Dungu,1,,1,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,,,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,2,,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,,1,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,,,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,3,,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,,,,
+11-Feb,Orientale,Haut-Uele,Dungu,1,,,,
+11-Feb,Orientale,Haut-Uele,Niangara,1,1,1,,
+11-Feb,Orientale,Haut-Uele,Faradje,1,,,5,
+11-Feb,Orientale,Haut-Uele,Faradje,1,1,,13,
+11-Feb,Orientale,Haut-Uele,Faradje,1,1,,,
+11-Feb,Orientale,Haut-Uele,Faradje,1,1,,3,
+11-Feb,Orientale,Haut-Uele,Faradje,1,,,,
+11-Feb,Orientale,Bas-Uele,Ango,1,,14,,
+11-Feb,Orientale,Bas-Uele,Ango,1,,,,
+11-Feb,Orientale,Bas-Uele,Ango,1,2,,,
+11-Feb,Orientale,Bas-Uele,Ango,1,,,2,
+11-Feb,Orientale,Bas-Uele,Ango,1,,,3,
+11-Jan,Orientale,Haut-Uele,Faradje,1,,,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,1,,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,2,,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,1,1,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,1,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,1,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,2,1,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,2,1,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,4,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,5,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,10,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,1,1,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,1,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,,,
+11-Mar,Orientale,Haut-Uele,Dungu,1,,2,1,
+11-Mar,Orientale,Haut-Uele,Faradje,1,,,,
+11-Mar,Orientale,Haut-Uele,Faradje,1,,3,,
+11-Mar,Orientale,Bas-Uele,Ango,1,,8,,
+11-Mar,Orientale,Bas-Uele,Ango,1,,,,
+11-Mar,Orientale,Bas-Uele,Ango,1,8,,,
+11-Apr,Orientale,Haut-Uele,Dungu,1,1,,,
+11-Apr,Orientale,Haut-Uele,Dungu,1,,2,,
+11-Apr,Orientale,Haut-Uele,Dungu,1,1,,,
+11-Apr,Orientale,Haut-Uele,Dungu,1,2,,,
+11-Apr,Orientale,Haut-Uele,Dungu,1,1,,,
+11-Apr,Orientale,Haut-Uele,Dungu,1,1,,,
+11-Apr,Orientale,Haut-Uele,Dungu,1,,2,,
+11-Apr,Orientale,Haut-Uele,Dungu,1,,,,
+11-Apr,Orientale,Haut-Uele,Dungu,1,,2,,
+11-Apr,Orientale,Haut-Uele,Dungu,1,,1,,
+11-Apr,Orientale,Haut-Uele,Niangara,1,7,5,3,
+11-Apr,Orientale,Bas-Uele,Ango,1,,,,
+11-Apr,Orientale,Bas-Uele,Ango,1,,,,
+11-May,Orientale,Haut-Uele,Dungu,1,,1,,5 commer�ants embusqu_s et pill_s par des pr_sum_s LRA
+11-May,Orientale,Haut-Uele,Dungu,1,,1,1,Accrochage entre gardes-parc et LRA 
+11-May,Orientale,Haut-Uele,Dungu,1,,1,,7 commerﾍants embusqu_s et pill_s par les LRA
+11-May,Orientale,Haut-Uele,Dungu,1,,,,Echange des tirs entre FARDC et LRA
+11-May,Orientale,Haut-Uele,Dungu,1,,,,Attaques des m_nages par les LRA
+11-May,Orientale,Haut-Uele,Dungu,1,,,,4 rebelles LRA attaquent et pillent un m_nage
+11-May,Orientale,Haut-Uele,Dungu,1,,,,Attaque de la localit_ par les LRA
+11-May,Orientale,Haut-Uele,Dungu,1,,1,,Un groupe de 5 rebelles LRA enlﾏve un villageois
+11-May,Orientale,Haut-Uele,Dungu,1,1,1,,Un groupe des rebelles a attaqu_ un m_nage
+11-May,Orientale,Haut-Uele,Niangara,1,2,,,7 LRA attaquent un groupe de Pﾐcheurs
+11-May,Orientale,Haut-Uele,Niangara,1,,,,Un groupe de 6 rebelles arm_s dont 3 ougandais et 3 congolais lance une attaque au Sud de Nambia. 3 groupes sont signal_s autour de Nambia par un rescap_e de 15 ans. Un des groupes d_tiendrait 20 kidnapp_s
+11-May,Orientale,Haut-Uele,Faradje,1,,,12,Attaque LRA et enl�vement d�enfant suivi d�accrochage FARDC et LRA. 12 enfants d�Aba r_cup_r_s
+11-May,Orientale,Haut-Uele,Faradje,1,,,2,Incursion des hommes arm_s 
+11-May,Orientale,Haut-Uele,Faradje,1,2,,,Attaque LRA suivi d�accrochage FARDC et LRA
+11-May,Orientale,Haut-Uele,Faradje,1,,,1,Attaque de la localit_ par des pr_sum_s LRA. 3 enfants enlev_s dont 2 _chapp_s
+11-May,Orientale,Bas-Uele,Ango,1,1,,,10 LRA attaquent la localit_
+11-May,Orientale,Bas-Uele,Ango,1,,,,Attaques des populations civiles par les pr_sum_s LRA dans plusieurs villages sur une distance de 15 km
+11-May,Orientale,Bas-Uele,Bambesa,1,,,,Attaque des  LRA
+11-Jun,Orientale,Haut-Uele,Dungu,1,,1,,6 hommes arm_ pr_sum_s LRA capture un femme qui raffinait de l�huile
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,Un jeune qui se rendait � Bitima a _t_ attaqu_ par 10 hommes presumes LRA dont 6 _taient  arm_s. Le jeune homme s�est _chapp_ gr�ce � l�approche des FARDC
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,1,Une fillette de 6 ans a _t_ enlev_e
+11-Jun,Orientale,Haut-Uele,Dungu,1,,1,,Attaque, pillage et enl�vement d�un homme de 40 ans
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,Un homme de 37 ans attaqu_ et griﾏvement bless_ par 19 rebelles pr_sum_s LRA
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,1,Un gar�on �g_ de 13 ans se fait enlev_ par des pr_sum_s LRA
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,5 hommes arm_s pr_sum_s LRA attaquent et pillent 5 voyageurs
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,Un homme tombe dans une embuscade des rebelles LRA et est griﾏvement bless_
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,19 hommes arm_s pr_sum_s LRA tente des pill_s des voyageurs
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,1,Une fille de moins de 15 ans se fait enlev_e pr�s d�une source 
+11-Jun,Orientale,Haut-Uele,Dungu,1,1,,,Un homme retrouv_ mort. Il a _t_ abattu � coup de machette et gourdin
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,Un groupe des pr_sum_s LRA enlﾏvent 2 femmes et les gardent en brousse pendant 5 heures. A leur sortie, les femmes refusent commenter leur enlﾏvement
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,1,Un groupe de trois rebelles a enlev_ une fille
+11-Jun,Orientale,Haut-Uele,Dungu,1,1,,,Un groupe des rebelles LRA lance une attaque contre Kiliwa et tue une femme + _change des tirs de 20.30 � 2.30� du matin
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,10 m_nages attaqu_s et pill_s par une trentaine d�hommes arm_s pr_sum_s LRA
+11-Jun,Orientale,Haut-Uele,Dungu,1,2,1,,Une femme a _t_  enlev_e dans un champ et deux autres personnes tu_es
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,Un groupe des pr_sum_s LRA font incursion dans la localit_ et viole une femme
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,Une deuxiﾏme attaque contre la localit_ suivie de pillage syst_matique
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,Deux hommes sont retouv_s morts pr�s d�une sources abattus � coup des machettes et gourdins.
+11-Jun,Orientale,Haut-Uele,Dungu,1,,1,,Une personne enlev_e par des pr_sum_s LRA
+11-Jun,Orientale,Haut-Uele,Dungu,1,1,,,2 chasseurs se font attaqu_s par des pr_sum_s LRA et l�un est tu_
+11-Jun,Orientale,Haut-Uele,Dungu,1,5,,,5 personnes ont _t_ tu_es par des pr_sum_s LRA
+11-Jun,Orientale,Haut-Uele,Dungu,1,3,,,Un groupe de 4 _l_ments pr_sum_s LRA (dont 3 arm_s) attaque 5 personnes parties � la p�che et en tue trois
+11-Jun,Orientale,Haut-Uele,Dungu,1,1,2,,3 commer�ants qui rentraient d�Ariwara en moto sont attaqu_s, 1 est tu_, 2 enlev_s et leurs biens pill_s. On a retrouv_ seulement leurs motos.
+11-Jun,Orientale,Haut-Uele,Dungu,1,2,,,Un groupe de 2 _l_ments pr_sum_s LRA  attaque 3 personnes parties � la p�che et en tue deux
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,2 motards tombent dans une embuscade et se font pill_s par des pr_sum_s LRA
+11-Jun,Orientale,Haut-Uele,Dungu,1,3,,,3 personnes tu_es par des _l_ments pr_sum_s LRA
+11-Jun,Orientale,Haut-Uele,Dungu,1,3,,,3 personnes tu_es par des pr_sum_s LRA et +/- 12 LRA roderaient autour de Bangadi
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,1 motard se fait attaquer par 7 hommes arm_s pr_sum_s LRA et se fait piller
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,Deux femmes enlev_es par les LRA sur le points d͐tre ex_cut_es ont _t_ sauv_es par la FARDC
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,Attaque des LRA dirig_e vers un camp FARDC
+11-Jun,Orientale,Haut-Uele,Dungu,1,,2,,2 motards enlev_s par des pr_sum_s LRA
+11-Jun,Orientale,Haut-Uele,Dungu,1,,1,1,Une attaque contre des p_cheurs suivi d�un affrontement FARDC _ LRA
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,1,4 _l_ment pr_sum_s LRA lancent une attaque suivi d�une riposte FARDC
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,5 _l_ments LRA dont 3 arm_s avec des fusil et 2 avec des machettes et baton attaquent et pillent plusieurs m_nages
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,Un homme est attqu_, pill_ et d_shabill_ par les pr_sum_s LRA
+11-Jun,Orientale,Haut-Uele,Dungu,1,,,,Pillage de manioc dans un champ
+11-Jun,Orientale,Haut-Uele,Niangara,1,,,1,3 _l_ments LRA pillent des vivres dans un champ et enlﾏvent une fille
+11-Jun,Orientale,Haut-Uele,Niangara,1,,,,Une femme est enlev_e par les rebelles LRA et rel�ch_e le lendemain. Elle n�a pas _t_ viol_e
+11-Jun,Orientale,Haut-Uele,Faradje,1,,,,Echange de feu entre FARDC et rebelles LRA
+11-Jul,Orientale,Haut-Uele,Dungu,1,1,,,Un groupe de 7 motards tomb_ dans une embuscade des pr_sum_s _l_ments LRA
+11-Jul,Orientale,Haut-Uele,Dungu,1,,1,,Attaque d�un civil de 20 ans par 5 _l_ments LRA
+11-Jul,Orientale,Haut-Uele,Dungu,1,,2,,Incursion LRA dans un foyer avec enl�vement du couple
+11-Jul,Orientale,Haut-Uele,Dungu,1,,1,,Enl�vement d�une femme de 46 ans
+11-Jul,Orientale,Haut-Uele,Dungu,1,,1,,Irruption dans un foyer d�un groupe de 12 personnes portant anciennes uniformes des FARDC
+11-Jul,Orientale,Haut-Uele,Dungu,1,,,,Incursion d�un groupe de 5 personnes pr_sum_es LRA  dans la maison d�une femme
+11-Jul,Orientale,Haut-Uele,Dungu,1,,,1,Incursion nocturne de 3 _l_ments pr_sum_s LRA dans une famille. 
+11-Jul,Orientale,Haut-Uele,Dungu,1,,,,Incursion LRA dans la localit_  
+11-Jul,Orientale,Haut-Uele,Dungu,1,,,,Attaque LRA sur 5 chasseurs
+11-Jul,Orientale,Haut-Uele,Dungu,1,,,,Visite nocturne d�un _l_ment LRA chez un particulier
+11-Jul,Orientale,Haut-Uele,Dungu,1,,,,Affrontement UPDF et LRA en brousse au S-O de Naparka
+11-Jul,Orientale,Haut-Uele,Dungu,1,,,,Affrontement entre l�_quipe mixte FARDC/UPDF et LRA
+11-Jul,Orientale,Haut-Uele,Dungu,1,,,,Affrontement entre l�_quipe mixte FARDC/UPDF et LRA
+11-Jul,Orientale,Haut-Uele,Dungu,1,2,,,Affrontement entre FARDCet LRA
+11-Jul,Orientale,Haut-Uele,Dungu,1,,,,Affrontement entre l�_quipe mixte FARDC/UPDF et LRA
+11-Jul,Orientale,Haut-Uele,Faradje,1,,,1,Incursion des hommes arm_s
+11-Jul,Orientale,Haut-Uele,Faradje,1,,,1,Incursion des hommes arm_s
+11-Jul,Orientale,Haut-Uele,Faradje,1,,,2,Incursion des _l_ments LRA
+11-Jul,Orientale,Bas-Uele,Ango,1,,,,Attaque des hommes arm_s sur une _quipe de CICR
+11-Jul,Orientale,Bas-Uele,Ango,1,,,,Incursion de 12 LRA � Bandu et Lumu
+11-Jun,Orientale,Haut-Uele,Faradje,1,,,,Des hommes arm_s chassent les villageois d�un champ et pillent du manioc
+11-Jun,Orientale,Haut-Uele,Faradje,1,,,,Des hommes arm_s chassent les villageois d�un champ et pillent du manioc
+11-Jun,Orientale,Haut-Uele,Faradje,1,,2,1,Une femme bless_e par deux coups de balles des pr_sum_s LRA et pillage des poules, chﾏvres et farine de maﾥs
+11-Jun,Orientale,Haut-Uele,Faradje,1,1,,1,Une femme sourde-muette a _t_ attaqu_ et tu_e par des pr_sum_s LRA et sa fillette de 3 ans enlev_e
+11-Jun,Orientale,Haut-Uele,Faradje,1,,,,Des hommes arm_s non autrement identifi_s font incursion et pillent 4 chﾏvres et des bidons des milels
+11-Jun,Orientale,Haut-Uele,Faradje,1,,,,Une femme a _t_ surprise dans son champ par deux hommes arm_s pr_sum_s LRA
+11-Jun,Orientale,Haut-Uele,Faradje,1,,,,8 hommes enlev_s par 5 LRA pendant qu�ils se rendaient au champs et rel�ch_s le lendemain
+11-Jun,Orientale,Haut-Uele,Faradje,1,,,,6 _l_ments pr_sum_s LRA ont attaqu_ un village et pill_ des vivres
+11-Jun,Orientale,Haut-Uele,Faradje,1,,,1,Incursion des _l_ments pr_sum_s LRA et enl�vement d�un gar�on de 15 ans
+11-Jun,Orientale,Haut-Uele,Faradje,1,,,,Des villageois se font pill_s des vivres par des pr_sum_s LRA
+11-Jun,Orientale,Haut-Uele,Faradje,1,,2,,Des _l_ments LRA ont fait irruption � 4.00� et ont pill_s des vivres et enlev_ deux personnes
+11-Jun,Orientale,Haut-Uele,Faradje,1,1,,,Des LRA tuent un jeune homme de 20 ans
+11-Aug,Orientale,Haut-Uele,Dungu,1,,1,,Des commer�ants en provenance d�Ariwara (localit_ � environ 110 Km SE de Dungu) ont _t_ attaqu_s par des hommes arm_s
+11-Aug,Orientale,Haut-Uele,Dungu,1,1,1,,Des passants (� pieds et � v_lo) ont _t_ attaqu_s par des hommes arm_s
+11-Aug,Orientale,Haut-Uele,Dungu,1,,1,,1 homme et 1 femme (sur la route 4) ont _t_ surpris par 2 hommes en uniforme militaire.
+11-Aug,Orientale,Haut-Uele,Dungu,1,,1,,A 800 m de la station une femme a _t_ enlev_e par des hommes arm_s et en uniforme trellis
+11-Aug,Orientale,Haut-Uele,Dungu,1,2,,,A Nakofo (non loin de Bangadi), affrontement entre les UPDF et la LRA
+11-Aug,Orientale,Haut-Uele,Dungu,1,,,,2 cycliste qui revenaient du Sud Soudan sont tomb_s dans une embuscade LRA et se sont fait pill_s.
+11-Aug,Orientale,Haut-Uele,Dungu,1,,,,trois cyclistes en provenance de Bangadi ont _t_ attaqu_s par 4 _l_ments pr_sum_s LRA, arm_s. Ces cyclistes ont _t_ pill_s
+11-Sep,Orientale,Haut-Uele,Dungu,1,,,,3 hommes arm_s pr_sum_s LRA lancent une attaque non loin d�une position FARDC et blessent un civil � l�_paule
+11-Sep,Orientale,Haut-Uele,Dungu,1,,,1,10 personnes qui se rendaient au march_ de Nabiapay (7 km N Bitima) sont tomb_s dans une embuscade  de pr_sum_s LRA. Les 9 personnes ont pu s�_chapper en laissant un gar�on de 15 ans port_ disparu.
+11-Sep,Orientale,Haut-Uele,Dungu,1,,,,3 _lﾏves de retour de Yambio se sont fait attaqu_s et pill_s par 5 _l_mments pr_sum_s LRA
+11-Sep,Orientale,Haut-Uele,Dungu,1,,,,Des villageois se font piller � Dikpoto par le m�me groupe de 5 _l_ments pr_sum_s LRA
+11-Sep,Orientale,Haut-Uele,Faradje,1,,,,Une vingtaine d�hommes arm_s ont pill_ 8 champs de ma�s et cass_ des greniers des villageois
+11-Sep,Orientale,Haut-Uele,Faradje,1,,,,Un groupe de plusieurs hommes arm_s ont pill_ un champ de maﾥs
+11-Sep,Orientale,Haut-Uele,Faradje,1,,,,Un groupe de plusieurs hommes arm_s ont pill_ un autre champ de maﾥs
+11-Aug,Orientale,Haut-Uele,Dungu,1,,3,,Trois personnes, 2 hommes et une femme ont disparue
+11-Aug,Orientale,Haut-Uele,Niangara,1,,1,,Environ 5 _lements pr_sum_s LRA ont enlev_ 2 femmes dont l�une enceinte et l�autre avec un b_b_
+11-Oct,Orientale,Haut-Uele,Dungu,1,,,,Des _l_ments pr_sum_s LAR ont attaqu_, pill_ et incendi_ quelques cases dans  un petit village situ_ � 3 km au nord de Napopo
+11-Oct,Orientale,Haut-Uele,Dungu,1,,,,Trois m_nages des villageois attaqu_s et pill_s par des _l_ments pr_sum_s LRA 
+11-Oct,Orientale,Haut-Uele,Dungu,1,,,,2 motards sont tomb_s dans une embuscade tendue par des _l_ments pr_sum_s LRA et ont _t_ pill_s
+11-Oct,Orientale,Haut-Uele,Dungu,1,,,,2 adolescents surpris par 4 _l_ments LRA qui les ont oblig_s � leur montr_ un chemin. Les _l_ments LRA les ont gard_s pendant trois heures
+11-Oct,Orientale,Haut-Uele,Dungu,1,,,,Accrochage entre FARDC et les pr_sum_s LRA 
+11-Oct,Orientale,Haut-Uele,Dungu,1,,,,Un groupe d�_l_ments pr_sum_s LRA ont attaqu_ et pill_ le village de Badolo, provoquant un mouvement des populations vers Bangadi 
+11-Oct,Orientale,Haut-Uele,Dungu,1,,,,Un homme de 32 ans s�est sauv_ de justesse d�une attaque des presumes LRA � mi chemin entre Kapili et Ngilima)
+11-Oct,Orientale,Haut-Uele,Dungu,1,,,,Un groupe de 3 _l_ments pr_sum_s LRA ont attaqu_ les villageois dans une palmeraie et en ont bless_ deux 
+11-Oct,Orientale,Haut-Uele,Dungu,1,,,,Un groupe d�_l_ments pr_sum_s LRA ont attaqu_ les villageois � 1 km de Napopo et en ont bless_ un
+11-Oct,Orientale,Haut-Uele,Niangara,1,,,,Attaque du village
+11-Nov,Orientale,Haut-Uele,Dungu,1,,,,Des hommes arm_s tendent une embuscade � un chasseur et le pourchassent sur 6 km
+11-Nov,Orientale,Haut-Uele,Dungu,1,,,,8 personnes ont _t_ surprises dans leur champ et ont r_ussi � s�_chapper
+11-Nov,Orientale,Haut-Uele,Dungu,1,,,,Deux hommes arm_s tentent d�enlever une femme qui travaillait seule dans son champ et elle s�est _chapp_e
+11-Nov,Orientale,Haut-Uele,Dungu,1,,,,Des _l_ments pr_sum_s LRA provenant du Sud Soudan ont fait incursion et perp_tr_ des pillages � Nabiapay
+11-Nov,Orientale,Haut-Uele,Dungu,1,,,,Des _l_ments pr_sum_s LRA provenant du Sud Soudan ont fait incursion et perp_tr_ des pillages � Nangume (pr�s de Bitima)
+11-Nov,Orientale,Haut-Uele,Dungu,1,,,,Affrontement entre FARDC et pr_sum_s LRA
+11-Nov,Orientale,Haut-Uele,Dungu,1,,,,2 cyclistes revenant du march_ frontalier se font attaqu_s et pill_s par les pr_sum_s LRA
+11-Nov,Orientale,Haut-Uele,Dungu,1,,,,Des commer�ants tombent dans une embuscade tendue par des _l_ments pr_sum_s LRA et sont pill_s
+11-Nov,Orientale,Haut-Uele,Dungu,1,,,,Un groupe des pr_sum_s LRA ont tent_ d�attaquer des villageois
+11-Nov,Orientale,Haut-Uele,Faradje,1,2,1,2,Une vingtaine d�_l_ments pr_sum_s LRA ont lanc_ une attaque contre la localit_ de Takiani et ont pill_ du riz apr�s avoir tu_ deux villageois
+11-Jun,Orientale,Bas-Uele,Ango,1,2,,,Clash entre les LRA et FARDC, 2 enfants tu_s
+11-Jan,Orientale,Bas-Uele,Ango,1,,,,
+11-Jan,Orientale,Bas-Uele,Ango,1,2,,,
