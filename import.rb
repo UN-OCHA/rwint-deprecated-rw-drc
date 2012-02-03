@@ -49,10 +49,10 @@ end
 # Calculate the total of the column `num_attacks`
 lra = {}
 csv('data/lra_attacks.csv').each do |record|
-  lra[record['province']] = {}
-  lra[record['province']]['month'] = record['month']
-  lra[record['province']]['district'] = record['district']
-  lra[record['province']]['num_attacks'] = record['num_attacks']
+  lra[record['unique_id']] = {}
+  lra[record['unique_id']]['month'] = record['month']
+  lra[record['unique_id']]['province'] = record['province']
+  lra[record['unique_id']]['num_attacks'] = record['num_attacks']
 end
 
 write('data/json/lra.json', lra)
@@ -61,8 +61,9 @@ write('data/json/lra.json', lra)
 # Calculate the total of times a province shows up in security incidences 
 sec = {}
 csv('data/security_events.csv').each do |record|
-  sec[record['province']] = {}
-  sec[record['province']]['month'] = record['month']
+  sec[record['unique_id']] = {}
+  sec[record['unique_id']]['month'] = record['month']
+  sec[record['unique_id']]['province'] = record['province']
 end
 
 write('data/json/sec.json', sec)

@@ -1,4 +1,10 @@
 var Layers = function() {
+    this.active = [
+        'lra': true,
+        'sec': true,
+        'idp': true,
+        'ret': true
+    ],
     this.layerCtrl = [
     {
         'month': 'Jan 2010',
@@ -113,8 +119,8 @@ var Layers = function() {
         'layers': {
             'sec': '',
             'lra': '',
-            'idp': 'djohnson.idp-jan-11',
-            'ret': 'djohnson.ret-jan-11'
+            'idp': 'idp-jan-11',
+            'ret': 'ret-jan-11'
         }
     },
     {
@@ -122,8 +128,8 @@ var Layers = function() {
         'layers': {
             'sec': '',
             'lra': '',
-            'idp': 'djohnson.idp-jan-11',
-            'ret': 'djohnson.ret-jan-11'
+            'idp': 'idp-jan-11',
+            'ret': 'ret-jan-11'
         }
     },
     {
@@ -131,8 +137,8 @@ var Layers = function() {
         'layers': {
             'sec': '',
             'lra': '',
-            'idp': 'djohnson.idp-jan-11',
-			'ret': 'djohnson.ret-jan-11'
+            'idp': 'idp-jan-11',
+			'ret': 'ret-jan-11'
         }
     },
     {
@@ -140,71 +146,71 @@ var Layers = function() {
         'layers': {
             'sec': '',
     	    'lra': '',
-            'idp': 'djohnson.idp-apr-11',
-			'ret': 'djohnson.ret-apr-11'
+            'idp': 'idp-apr-11',
+			'ret': 'ret-apr-11'
         }
     },
     {
         'month': 'May 2011',
         'layers': {
-            'sec': 'djohnson.sec-may-11',
-    	    'lra': 'djohnson.lra-may-11',
-            'idp': 'djohnson.idp-apr-11',
-			'ret': 'djohnson.ret-apr-11'
+            'sec': 'sec-may-11',
+    	    'lra': 'lra-may-11',
+            'idp': 'idp-apr-11',
+			'ret': 'ret-apr-11'
         }
     },
     {
 		'month': 'Jun 2011',
         'layers': {
-        	'sec': 'djohnson.sec-jun-11',
-    	    'lra': 'djohnson.lra-jun-11',
-            'idp': 'djohnson.idp-apr-11',
-			'ret': 'djohnson.ret-apr-11'
+        	'sec': 'sec-jun-11',
+    	    'lra': 'lra-jun-11',
+            'idp': 'idp-apr-11',
+			'ret': 'ret-apr-11'
         }
     },
     {
         'month': 'Jul 2011',
         'layers': {
-            'sec': 'djohnson.sec-jul-11',
-	        'lra': 'djohnson.lra-jul-11',
-            'idp': 'djohnson.idp-jul-11',
-			'ret': 'djohnson.ret-jul-11'
+            'sec': 'sec-jul-11',
+	        'lra': 'lra-jul-11',
+            'idp': 'idp-jul-11',
+			'ret': 'ret-jul-11'
         }
     },
     {
         'month': 'Aug 2011',
         'layers': {
-            'sec': 'djohnson.sec-aug-11',
-    	    'lra': 'djohnson.lra-aug-11',
-            'idp': 'djohnson.idp-jul-11',
-			'ret': 'djohnson.ret-jul-11'
+            'sec': 'sec-aug-11',
+    	    'lra': 'lra-aug-11',
+            'idp': 'idp-jul-11',
+			'ret': 'ret-jul-11'
         }
     },
     {
         'month': 'Sep 2011',
         'layers': {
-            'sec': 'djohnson.sec-sep-11',
-	        'lra': 'djohnson.lra-sep-11',
-            'idp': 'djohnson.idp-jul-11',
-			'ret': 'djohnson.ret-jul-11'
+            'sec': 'sec-sep-11',
+	        'lra': 'lra-sep-11',
+            'idp': 'idp-jul-11',
+			'ret': 'ret-jul-11'
         }
     },
     {
         'month': 'Oct 2011',
         'layers': {
-            'sec': 'djohnson.sec-oct-11',
-	        'lra': 'djohnson.lra-oct-11',
-            'idp': 'djohnson.idp-jul-11',
-			'ret': 'djohnson.ret-jul-11'
+            'sec': 'sec-oct-11',
+	        'lra': 'lra-oct-11',
+            'idp': 'idp-jul-11',
+			'ret': 'ret-jul-11'
         }
     },
     {
         'month': 'Nov 2011',
         'layers': {
-            'sec': 'djohnson.sec-nov-11',
-            'lra': 'djohnson.lra-nov-11',
-            'idp': 'djohnson.idp-jul-11',
-            'ret': 'djohnson.ret-jul-11'
+            'sec': 'sec-nov-11',
+            'lra': 'lra-nov-11',
+            'idp': 'idp-jul-11',
+            'ret': 'ret-jul-11'
         }
     }
     ];
@@ -213,7 +219,16 @@ var Layers = function() {
 
 Layers.prototype.current = function() {
     if (!this.layerCtrl[this.pos]) return;
-    return this.filter(this.layerCtrl[this.pos].layers).join(',');
+    else if (this.filter(this.layerCtrl[this.pos].layers).length === 0) return;
+    return this.filter(this.layerCtrl[this.pos].layers).join(',djohnson.');
+};
+
+Layers.prototype.activeLayers = function() {
+    return this.filter(this.layerCtrl[this.pos].layers);
+};
+
+Layers.prototype.filter = function(layers) {
+    return _.compact(layers);
 };
 
 Layers.prototype.month = function() {
