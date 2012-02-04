@@ -4,10 +4,6 @@ require 'rubygems'
 require 'json'
 require 'csv'
 
-# add array math functions
-class Array; def sum; inject( nil ) { |sum,x| sum ? sum+x : x }; end; end
-class Array; def mean(den); (sum.to_f / (size * den) * den); end; end
-
 $st = Time.now
 puts $st.strftime("Starting on %m/%d/%Y at %I:%M:%S%p")
 
@@ -46,16 +42,24 @@ def csv(filename)
 end
 
 # Import LRA Attack Data
-# Calculate the total of the column `num_attacks`
 lra = {}
 csv('data/lra_attacks.csv').each do |record|
-  lra[record['unique_id']] = {}
-  lra[record['unique_id']]['month'] = record['month']
-  lra[record['unique_id']]['province'] = record['province']
-  lra[record['unique_id']]['num_attacks'] = record['num_attacks']
-end
 
-write('data/json/lra.json', lra)
+  #id = record['month'] + record['province']
+  id = record['month']
+
+  if lra.has_key?(id)
+    lra[id]['num_attacks'] = lra[id]['num_attacks'] + record['num_attacks']
+  else
+    lra[id] = {}
+    lra[id]['month'] = record['month']
+    lra[id]['province'] = record['province']
+    lra[id]['num_attacks'] = record['num_attacks']
+  end
+
+  fn = "data/json/lra-#{record['month']}.json"
+  write(fn, lra)
+end
 
 # Import Security Event Data
 # Calculate the total of times a province shows up in security incidences 
@@ -66,7 +70,7 @@ csv('data/security_events.csv').each do |record|
   sec[record['unique_id']]['province'] = record['province']
 end
 
-write('data/json/sec.json', sec)
+#write('data/json/sec.json', sec)
 
 # Import Displaced and Returnee Data
 idp = {}
@@ -84,19 +88,8 @@ csv('data/idp_ret_synthesis_2011.csv').each do |record|
   ret[record['province']]['ret_q3_text'] = record['ret_q3_text']
 end
 
-write('data/json/idp.json', idp)
-write('data/json/ret.json', ret)
-
-#Import counties.
-#$lradata = csv('data/lra_attacks.csv')
-
-#$lradata.each do |record|
-  #data = {'type' => 'county'}
-  #data['data'] = record || {}
-  #data['adjacent'] = adjacent(record['adjacent_fips']) || {}
-  #fn = "js/data/#{record['fips']}.json"
-  #write(fn, data)
-#end
+#write('data/json/idp.json', idp)
+#write('data/json/ret.json', ret)
 
 $et = Time.now
 puts $et.strftime("Ending on %m/%d/%Y at %I:%M:%S%p")

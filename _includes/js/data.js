@@ -1,10 +1,10 @@
 var Layers = function() {
-    this.active = [
-        'lra': true,
-        'sec': true,
-        'idp': true,
-        'ret': true
-    ],
+    this.active = {
+        sec: true,
+        lra: true,
+        ret: true,
+		idp: true
+    };
     this.layerCtrl = [
     {
         'month': 'Jan 2010',

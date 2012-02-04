@@ -78,15 +78,14 @@
             $('.layers li.active').length > 0 ? $('.dragdealer').fadeIn('fast') : $('.dragdealer').fadeOut('fast');
             // Refresh the table with new data
             // TODO Check to see that the table DOM structure is there first.
-            var list = "<% _.each(people, function(name) { %> <li><%= name %></li> <% }); %>";
-            var output = _.template(list, {people : ['moe', 'curly', 'larry']});
-
-console.log(layers.activeLayers());
+            var provinceTemplate = "<tr><% _.each(provinces, function(name) { %> <td><%= name %></td> <% }); %></tr>";
+            var provinceNamesOutput = _.template(provinceTemplate, {provinces : ['Sud Kivu', 'Orientale', 'Katanga', 'Equateur', 'Maniema', 'Nord Kivu']});
+            $('table#drc-monthly-data tbody').append(provinceNamesOutput);
 
             _.each(layers.activeLayers(), function(layer) {
-                $.getJSON('data/json/idp.json', function(data) {
+                // $.getJSON('data/json/idp.json', function(data) {
 
-                });
+                //});
             });
 
             drawMap();
