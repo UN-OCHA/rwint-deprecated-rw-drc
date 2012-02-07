@@ -56,7 +56,7 @@
                     m.addCallback('panned', function(m, coords) { om.panBy(coords[0], coords[1]); });
                     m.addCallback('zoomed', function(m, offset) { om.zoomBy(offset); });
                 } else {
-                    m.setCenterZoom(new mm.Location(-1.642,29.582), 6);
+                    m.setCenterZoom(new mm.Location(-4,22), 5);
                 }
 
                 wax.mm.legend(m, tilejson).appendTo(m.parent);
