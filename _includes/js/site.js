@@ -37,7 +37,6 @@
                 $('#map-bg').remove();
                 $('#map').attr('id','map-bg').after('<div id="map"></div>');
             }
-
             wax.tilejson(baseUrl + baseLayers.join(',') + (',djohnson.') + layers.current() + '.jsonp',
             function(tilejson) {
                 tilejson.minzoom = 4;
@@ -76,16 +75,15 @@
         // load sliders
         var refreshAll = _.debounce(function() {
             $('.layers li.active').length > 0 ? $('.dragdealer').fadeIn('fast') : $('.dragdealer').fadeOut('fast');
-            // Refresh the table with new data
-            // TODO Check to see that the table DOM structure is there first.
-            var provinceTemplate = "<tr><% _.each(provinces, function(name) { %> <td><%= name %></td> <% }); %></tr>";
-            var provinceNamesOutput = _.template(provinceTemplate, {provinces : ['Sud Kivu', 'Orientale', 'Katanga', 'Equateur', 'Maniema', 'Nord Kivu']});
-            $('table#drc-monthly-data tbody').append(provinceNamesOutput);
 
             _.each(layers.activeLayers(), function(layer) {
-                // $.getJSON('data/json/idp.json', function(data) {
-
-                //});
+                $.getJSON('data/json/' + layer + '.json', function(data) {
+                    _.each(data, function(v, k) {
+                        data[k] = data[k] || {};
+                        data[k][layer] = v.text;
+                        console.log(data);
+                    });
+                });
             });
 
             drawMap();

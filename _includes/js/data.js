@@ -218,9 +218,10 @@ var Layers = function() {
 };
 
 Layers.prototype.current = function() {
+    var filtered = _.compact(this.filter(this.layerCtrl[this.pos].layers));
     if (!this.layerCtrl[this.pos]) return;
-    else if (this.filter(this.layerCtrl[this.pos].layers).length === 0) return;
-    return this.filter(this.layerCtrl[this.pos].layers).join(',djohnson.');
+    else if (filtered.length === 0) return;
+    return filtered.join(',djohnson.');
 };
 
 Layers.prototype.activeLayers = function() {
@@ -228,7 +229,10 @@ Layers.prototype.activeLayers = function() {
 };
 
 Layers.prototype.filter = function(layers) {
-    return _.compact(layers);
+    var active = this.active;
+    return _.filter(layers, function(v, k) {
+        return active[k];
+    });
 };
 
 Layers.prototype.month = function() {

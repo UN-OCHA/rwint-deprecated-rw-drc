@@ -42,54 +42,97 @@ def csv(filename)
 end
 
 # Import LRA Attack Data
+# Calculate the total of times a month shows up to give us our num_attacks count
 lra = {}
-csv('data/lra_attacks.csv').each do |record|
-
-  #id = record['month'] + record['province']
-  id = record['month']
-
-  if lra.has_key?(id)
-    lra[id]['num_attacks'] = lra[id]['num_attacks'] + record['num_attacks']
-  else
-    lra[id] = {}
-    lra[id]['month'] = record['month']
-    lra[id]['province'] = record['province']
-    lra[id]['num_attacks'] = record['num_attacks']
+csv('data/lra.csv').each do |record|
+  month = record['month'].downcase
+  if !lra[month]
+    lra[month] = {}
   end
 
-  fn = "data/json/lra-#{record['month']}.json"
-  write(fn, lra)
+  id = record['province']
+  if lra[month].has_key?(id)
+    lra[month][id]['num_attacks'] = lra[month][id]['num_attacks'] + 1
+  else
+    lra[month][id] = {}
+    lra[month][id]['month'] = record['month']
+    lra[month][id]['num_attacks'] = 1
+  end
+end
+
+lra.each do |k, v|
+  write("data/json/lra-#{k}.json", v)
 end
 
 # Import Security Event Data
 # Calculate the total of times a province shows up in security incidences 
 sec = {}
-csv('data/security_events.csv').each do |record|
-  sec[record['unique_id']] = {}
-  sec[record['unique_id']]['month'] = record['month']
-  sec[record['unique_id']]['province'] = record['province']
+csv('data/sec.csv').each do |record|
+  month = record['month'].downcase
+  if !sec[month]
+    sec[month] = {}
+  end
+
+  id = record['province']
+  if sec.has_key?(id)
+    sec[month][id]['security_events'] = sec[month][id]['security_events'] + 1
+    sec[month][id]['month'] = record['month']
+  else
+    sec[month][id] = {}
+    sec[month][id]['month'] = record['month']
+    sec[month][id]['security_events'] = 1
+  end
 end
 
-#write('data/json/sec.json', sec)
+sec.each do |k, v|
+  write("data/json/sec-#{k}.json", v)
+end
 
-# Import Displaced and Returnee Data
-idp = {}
+# Import Returnee Data
 ret = {}
+csv('data/ret.csv').each do |record|
+  month = record['key'].downcase
+  if !ret[month]
+    ret[month] = {}
+  end
 
-csv('data/idp_ret_synthesis_2011.csv').each do |record|
-  idp[record['province']] = {}
-  idp[record['province']]['displaced_q1_text'] = record['displaced_q1_text']
-  idp[record['province']]['displaced_q2_text'] = record['displaced_q2_text ']
-  idp[record['province']]['displaced_q3_text'] = record['displaced_q3_text']
-
-  ret[record['province']] = {}
-  ret[record['province']]['ret_q1_text'] = record['ret_q1_text']
-  ret[record['province']]['ret_q2_text'] = record['ret_q2_text']
-  ret[record['province']]['ret_q3_text'] = record['ret_q3_text']
+  id = record['province']
+  if !record['text'].nil?
+    if ret.has_key?(id)
+      ret[month][id]['text'] = record['text']
+    else
+      ret[month][id] = {}
+      ret[month][id]['text'] = record['text']
+    end
+  end
 end
 
-#write('data/json/idp.json', idp)
-#write('data/json/ret.json', ret)
+ret.each do |k, v|
+  write("data/json/#{k}.json", v)
+end
+
+# Import Displaced Data
+idp = {}
+csv('data/idp.csv').each do |record|
+  month = record['key'].downcase
+  if !idp[month]
+    idp[month] = {}
+  end
+
+  id = record['province']
+  if !record['text'].nil?
+    if idp.has_key?(id)
+      idp[month][id]['text'] = record['text']
+    else
+      idp[month][id] = {}
+      idp[month][id]['text'] = record['text']
+    end
+  end
+end
+
+idp.each do |k, v|
+  write("data/json/#{k}.json", v)
+end
 
 $et = Time.now
 puts $et.strftime("Ending on %m/%d/%Y at %I:%M:%S%p")
