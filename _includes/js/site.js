@@ -24,7 +24,7 @@
 
         var m, mm = com.modestmaps;
         var baseLayers = [
-            'mapbox.world-blank-bright',
+            'mapbox.africa_baselayer',
             'djohnson.africa_borders'
         ];
         var baseUrl = 'http://api.tiles.mapbox.com/v3/';
