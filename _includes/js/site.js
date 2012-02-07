@@ -40,7 +40,7 @@
             wax.tilejson(baseUrl + baseLayers.join(',') + (',djohnson.') + layers.current() + '.jsonp',
             function(tilejson) {
                 tilejson.minzoom = 4;
-                tilejson.maxzoom = 7;
+                tilejson.maxzoom = 8;
                 m = new mm.Map('map',
                     new wax.mm.connector(tilejson), null, [
                         new mm.MouseHandler(),
