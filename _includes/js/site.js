@@ -16,7 +16,6 @@
 //      </script>
 //
 //  See the root `_includes/map-interactive.html` page as example.
-
 (function(context) {
     var RW = RW || {};
 
@@ -34,11 +33,12 @@
             var om;
 
             if (RW._map) {
+                // Clone map backgrounds for soft layer transitions.
                 $('#map-bg').remove();
                 $('#map').attr('id','map-bg').after('<div id="map"></div>');
             }
-            wax.tilejson(baseUrl + baseLayers.join(',') + (',djohnson.') + layers.current() + '.jsonp',
-            function(tilejson) {
+            var jObject = baseUrl + baseLayers.join(',') + (',djohnson.') + layers.current() + '.jsonp'
+            wax.tilejson(jObject, function(tilejson) {
                 tilejson.minzoom = 4;
                 tilejson.maxzoom = 8;
                 m = new mm.Map('map',
@@ -74,15 +74,37 @@
 
         // load sliders
         var refreshAll = _.debounce(function() {
-            $('.layers li.active').length > 0 ? $('.dragdealer').fadeIn('fast') : $('.dragdealer').fadeOut('fast');
-
+            $('.layers li.active').length > 0
+                ? $('.dragdealer').animate({'opacity': 1}, 'fast')
+                : $('.dragdealer').animate({'opacity': 0}, 'fast');
+            var tableData = {};
+            var loaded = 0;
+            var buildTable = function(data, layer) {
+                _.each(data, function(v, province) {
+                    tableData[province] = tableData[province] || {};
+                    tableData[province][layer.substring(0,3)] = v.text;
+                });
+                loaded++;
+                if (loaded >= _.size(layers.activeLayers())) {
+                    var tableTemplate = '<% _.each(tableData, function(values, province) { %>'
+                            + '<tr>'
+                            + '<td><%= province %></td>'
+                            + '<td><%= values.idp %></td>'
+                            + '<td><%= values.ret %></td>'
+                            + '<td><%= values.lra %></td>'
+                            + '<td><%= values.sec %></td>'
+                            + '</tr>'
+                        + '<% }); %>';
+                    var table = _.template(tableTemplate, {tableData: tableData});
+                    $('table#drc-monthly-data').find('tbody').fadeOut('fast', function(){
+                        $(this).find('tr').remove();
+                        $(this).append(table).fadeIn('fast');
+                    });
+                }
+            };
             _.each(layers.activeLayers(), function(layer) {
                 $.getJSON('data/json/' + layer + '.json', function(data) {
-                    _.each(data, function(v, k) {
-                        data[k] = data[k] || {};
-                        data[k][layer] = v.text;
-                        console.log(data);
-                    });
+                    buildTable(data, layer);
                 });
             });
 
@@ -98,7 +120,7 @@
                 if (pos < 0 || pos >= layers.length()) return;
                 layers.pos = pos;
                 $('#slide-bar').html(layers.month());
-                 _.once(refreshAll());
+                _.once(refreshAll()); // Register on the first animationCallback as it's triggered automatically.
             },
             callback: function(x) {
                 refreshAll();
@@ -106,7 +128,6 @@
         })).setValue(1);
 
         $('.layers li a').click(function(e) {
-            $(window).resize();
             e.preventDefault();
 
             var el = $(e.currentTarget).parent();
@@ -115,8 +136,7 @@
             if (el.hasClass('active')) {
                 el.removeClass('active');
                 more.slideUp(0);
-            }
-            else {
+            } else {
                 el.addClass('active');
                 more.slideDown(0);
             }
@@ -152,11 +172,8 @@
             document.getElementById('facebook').href = facebook;
 
             var center = m.pointLocation(new mm.Point(m.dimensions.x/2,m.dimensions.y/2));
-            var embedUrl = 'http://api.tiles.mapbox.com/v2/' + baseLayers.join(',') + (',') + layers.current() + '/mm/zoompan,tooltips,legend,bwdetect.html#' + m.coordinate.zoom +
-                            '/' + center.lat + '/' + center.lon;
-            $('#embed-code-field textarea').attr('value', '<iframe src="' + embedUrl +
-                '" frameborder="0" width="650" height="500"></iframe>');
-
+            var embedUrl = 'http://api.tiles.mapbox.com/v2/' + baseLayers.join(',') + (',') + layers.current() + '/mm/zoompan,tooltips,legend,bwdetect.html#' + m.coordinate.zoom + '/' + center.lat + '/' + center.lon;
+            $('#embed-code-field textarea').attr('value', '<iframe src="' + embedUrl + '" frameborder="0" width="650" height="500"></iframe>');
             $('#embed-code')[0].tabindex = 0;
             $('#embed-code')[0].select();
         });

@@ -23,7 +23,7 @@ h6 { font-size: 11px; margin: 0; }
 
 #header h1 {
   position: absolute;
-  top: 5px;
+  top: 8px;
   left: 60px;
   }
 h2.title {
@@ -97,18 +97,28 @@ table tbody + tbody {
   #header a {
     float: left;
     }
+  #header a.rw {
+    background: transparent url(images/sprite.png) no-repeat 0 0;
+    width: 110px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    text-indent: -999em;
+    top: 15px;
+    right: 10px;
+    }
 
 #interactive {
 	position: relative;
   height: 590px;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #D4D4D0;
   }
 #map-container {
   background: #fff url(images/bg.png) repeat 0 0;
   position: absolute;
   left: 0;
   top: 0;
-  width: 60%;
+  width: 65%;
   height: 100%;
   }
 #map-bg,
@@ -125,10 +135,11 @@ table tbody + tbody {
   right: 0;
   bottom: 0;
   z-index: 100;
-  width: 40%;
+  width: 35%;
   height: 100%;
   background: #fff;
-  border-left: 1px solid #999;
+  border-left: 1px solid #D4D4D0;
+  border-right: 1px solid #D4D4D0;
   -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
@@ -329,7 +340,7 @@ table tbody + tbody {
     }
 a.close {
   background-color: #333;
-  background-position: -220px -50px;
+  background-position: -220px 0;
   width: 20px;
   height: 20px;
   position: absolute;
@@ -349,34 +360,49 @@ ul.layers {
     }
   ul.layers li a{
     color: #666;
-    background: transparent url(images/sprite.png) no-repeat -215px 5px;
     border-top: 1px solid #D4D4D0;
     display: block;
     height: 30px;
-    padding-left: 25px;
+    padding-left: 10px;
     line-height: 30px;
     font-size: 11px;
     overflow: hidden;
     font-weight: bold;
+    text-shadow: 0 1px 0 #fff;
     }
     ul.layers li.last a { border-bottom: 1px solid #d4d4d0; }
-    ul.layers li.active.last a { border-bottom: none; }
-    ul.layers li.active a{
-      background-position: -215px -20px;
+    ul.layers li.active {
+      background: none;
       }
+    ul.layers li.active a{
+      background: #e1e1dd url(images/sprite.png) no-repeat 0 -210px;
+      border-bottom: 1px solid #d4d4d4;
+      color: #333;
+      }
+      ul.layers li.active a:after {
+        position: absolute;
+        content: '';
+        left: -15px;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-right: 15px solid #d1d1cb;
+        border-bottom: 15px solid transparent;
+        }
       ul.layers li a span {
         float: right;
-        width: 20px;
-        height: 20px;
-        margin: 5px 10px 0 0;
+        width: 30px;
+        height: 30px;
+        margin-top: -1px;
+        margin-right: 1px;
         }
-        ul.layers li a#idp span { background-position: -220px -75px; }
-        ul.layers li a#ret span { background-position: -220px -100px; }
-        ul.layers li a#lra span { background-position: -220px -150px; }
-        ul.layers li a#sec span { background-position: -220px -125px; }
+        ul.layers li a#idp span { background-position: -210px -55px; }
+        ul.layers li a#ret span { background-position: -210px -20px; }
+        ul.layers li a#lra span { background-position: -210px -125px; }
+        ul.layers li a#sec span { background-position: -210px -90px; }
 
 .more {
-  padding: 10px 25px;
+  padding: 10px;
   }
 .disclaimer {
   position: absolute;
@@ -385,6 +411,7 @@ ul.layers {
   }
   .disclaimer-inner {
     background: #fff8e0;
+    border-top: 1px solid #E7DFCA;
     color: #666;
     padding: 10px;
     height: 60px;
