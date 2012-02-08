@@ -164,7 +164,7 @@
 
             var shareContent = $('.share-content');
             var twitter = 'http://twitter.com/intent/tweet?status=' +
-            'Mapping Conflict in the DRC' + encodeURIComponent(window.location);
+            'Mapping Conflict in the DRC: ' + encodeURIComponent(window.location);
             var facebook = 'https://www.facebook.com/sharer.php?t=Relief%20Web%20|%20Mapping%20Conflict%20in%20the%20DRC&u=' +
             encodeURIComponent(window.location);
 

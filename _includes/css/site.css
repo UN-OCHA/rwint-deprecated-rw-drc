@@ -22,9 +22,10 @@ h5 { font-size: 13px; margin: 10px 0; }
 h6 { font-size: 11px; margin: 0; }
 
 #header h1 {
-  position: absolute;
-  top: 8px;
-  left: 60px;
+  float: left;
+  margin-left: 130px;
+  font-size: 14px;
+  line-height: 18px;
   }
 h2.title {
   margin: 20px 0 10px;
@@ -80,11 +81,41 @@ table tbody + tbody {
   border-top: 2px solid #D4D4D0;
   }
 
+/*Main Table Styling*/
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 18px;
+  text-align: left;
+  border-top: 1px solid #ddd;
+  }
+.table td {
+  vertical-align: top;
+  }
+.table-bordered {
+  border: 1px solid #ddd;
+  border-collapse: separate;
+  *border-collapse: collapsed;
+  }
+.table-bordered th + th,
+.table-bordered td + td,
+.table-bordered th + td,
+.table-bordered td + th {
+  border-left: 1px solid #ddd;
+  }
+.table thead:first-child tr th,
+.table thead:first-child tr td,
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+  }
+
 /* --------------------------------------
   Page Layout and basic styling
 ----------------------------------------- */
 #header {
-  background: white;
+  background: #fff;
   height: 40px;
   border-bottom: 1px solid #999;
   -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
@@ -105,20 +136,19 @@ table tbody + tbody {
     position: absolute;
     text-indent: -999em;
     top: 15px;
-    right: 10px;
+    left: 15px;
     }
 
 #interactive {
 	position: relative;
-  height: 590px;
-  border-bottom: 1px solid #D4D4D0;
+  height: 560px;
   }
 #map-container {
   background: #fff url(images/bg.png) repeat 0 0;
   position: absolute;
   left: 0;
   top: 0;
-  width: 65%;
+  width: 70%;
   height: 100%;
   }
 #map-bg,
@@ -135,7 +165,7 @@ table tbody + tbody {
   right: 0;
   bottom: 0;
   z-index: 100;
-  width: 35%;
+  width: 30%;
   height: 100%;
   background: #fff;
   border-left: 1px solid #D4D4D0;
@@ -353,7 +383,7 @@ a.close {
   Sidebar
 ----------------------------------------- */
 ul.layers {
-  margin: 20px 0;
+  margin: 40px 0 20px;
   }
   ul.layers li {
     background: transparent url(images/sprite.png) repeat-x -215px -170px;
@@ -362,7 +392,7 @@ ul.layers {
     color: #666;
     border-top: 1px solid #D4D4D0;
     display: block;
-    height: 30px;
+    height: 29px;
     padding-left: 10px;
     line-height: 30px;
     font-size: 11px;
@@ -374,20 +404,22 @@ ul.layers {
     ul.layers li.active {
       background: none;
       }
+    ul.layers li a:hover {
+      color: #333;
+      }
     ul.layers li.active a{
-      background: #e1e1dd url(images/sprite.png) no-repeat 0 -210px;
-      border-bottom: 1px solid #d4d4d4;
+      background: #e8e8e4;
+      border-color: #aeaeab;
       color: #333;
       }
       ul.layers li.active a:after {
+        background: transparent url(images/arrow-left.png) no-repeat 0 0;
         position: absolute;
         content: '';
-        left: -15px;
-        width: 0;
-        height: 0;
-        border-top: 15px solid transparent;
-        border-right: 15px solid #d1d1cb;
-        border-bottom: 15px solid transparent;
+        margin-top: -1px;
+        left: -20px;
+        width: 20px;
+        height: 30px;
         }
       ul.layers li a span {
         float: right;
