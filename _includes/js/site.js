@@ -111,7 +111,7 @@
             drawMap();
         }, 100);
 
-        (new Dragdealer('slider', {
+        var drag = new Dragdealer('slider', {
             x: 0,
             speed: 10,
             steps: layers.length(),
@@ -125,7 +125,13 @@
             callback: function(x) {
                 refreshAll();
             }
-        })).setValue(1);
+        });
+        drag.setValue(1);
+
+        // On window resize, trigger the calculation of the space dragdealer occupies.
+        $(window).resize(function(e) {
+            drag.documentResizeHandler(e);
+        });
 
         $('.layers li a').click(function(e) {
             e.preventDefault();
