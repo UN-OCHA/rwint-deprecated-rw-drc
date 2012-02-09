@@ -130,7 +130,7 @@
 
         // On window resize, trigger the calculation of the space dragdealer occupies.
         $(window).resize(function(e) {
-            drag.documentResizeHandler(e);
+           drag.documentResizeHandler(e);
         });
 
         $('.layers li a').click(function(e) {

@@ -1,5 +1,5 @@
 body {
-  background: #fff, repeat 0 0;
+  background: #fff;
   font: 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #333;
   }
@@ -81,13 +81,16 @@ table tbody + tbody {
   border-top: 2px solid #D4D4D0;
   }
 
-/*Main Table Styling*/
+.table {
+  background: #fff;
+  }
 .table th,
 .table td {
   padding: 8px;
   line-height: 18px;
   text-align: left;
   border-top: 1px solid #ddd;
+  width: 20%;
   }
 .table td {
   vertical-align: top;
@@ -115,7 +118,7 @@ table tbody + tbody {
   Page Layout and basic styling
 ----------------------------------------- */
 #header {
-  background: #fff;
+  background: #333;
   height: 40px;
   border-bottom: 1px solid #999;
   -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
@@ -200,7 +203,7 @@ table tbody + tbody {
 #controls {
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
   background: white;
   border: 1px solid #999;
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
@@ -269,13 +272,13 @@ table tbody + tbody {
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   width: 338px;
-  height: 510px;
+  height: 460px;
   height: auto!important;
-  max-height: 510px;
+  max-height: 460px;
   padding: 10px;
   z-index: 5000;
   top: 10px;
-  right: 10px;
+  left: 10px;
   overflow: auto;
   }
   .wax-tooltip h2 {
@@ -404,17 +407,16 @@ ul.layers {
       color: #999;
       }
     ul.layers li.active a{
-      background: #e8e8e4;
-      border-color: #aeaeab;
+      background: #fafaf8;
+      border-color: #a0a0a0;
       color: #333;
-      text-shadow: 0 1px 0 rgba(255,255,255,0.80);
       }
       ul.layers li.active a:after {
         background: transparent url(images/arrow-left.png) no-repeat 0 0;
         position: absolute;
         content: '';
         margin-top: -1px;
-        left: -20px;
+        left: -19px;
         width: 20px;
         height: 30px;
         }
@@ -473,6 +475,26 @@ ul.layers {
     text-align: center;
     height: 55px;
     }
+
+/* --------------------------------------
+  Footer
+----------------------------------------- */
+#footer {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  }
+  #footer ul {
+    margin-left: 10px;
+    }
+    #footer ul li {
+      float: left;
+      }
+      #footer ul li a {
+        font-weight: 500;
+        color: #999;
+        margin-right: 10px;
+        }
 
 /*-----------------------------------
   Misc.
