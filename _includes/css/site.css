@@ -83,6 +83,7 @@ table tbody + tbody {
 
 .table {
   background: #fff;
+  height: 265px;
   }
 .table th,
 .table td {
@@ -407,7 +408,7 @@ ul.layers {
       color: #999;
       }
     ul.layers li.active a{
-      background: #fafaf8;
+      background: fafaf8;
       border-color: #a0a0a0;
       color: #333;
       }
