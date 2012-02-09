@@ -82,7 +82,7 @@
             var buildTable = function(data, layer) {
                 _.each(data, function(v, province) {
                     tableData[province] = tableData[province] || {};
-                    tableData[province][layer.substring(0,3)] = v.text;
+                    tableData[province][layer.substring(0,3)] = v.value;
                 });
                 loaded++;
                 if (loaded >= _.size(layers.activeLayers())) {
