@@ -170,9 +170,9 @@ table tbody + tbody {
   background: #fff;
   border-left: 1px solid #D4D4D0;
   border-right: 1px solid #D4D4D0;
-  -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 -8px 8px rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 0 -8px 8px rgba(0, 0, 0, .3);
+  box-shadow: 0 -8px 8px rgba(0, 0, 0, .3);
   }
   #sidebar-inner {
     padding-bottom: 110px;
@@ -385,11 +385,8 @@ a.close {
 ul.layers {
   margin: 40px 0 20px;
   }
-  ul.layers li {
-    background: transparent url(images/sprite.png) repeat-x -215px -170px;
-    }
   ul.layers li a{
-    color: #666;
+    color: #a4a4a4;
     border-top: 1px solid #D4D4D0;
     display: block;
     height: 29px;
@@ -398,19 +395,19 @@ ul.layers {
     font-size: 11px;
     overflow: hidden;
     font-weight: bold;
-    text-shadow: 0 1px 0 #fff;
     }
     ul.layers li.last a { border-bottom: 1px solid #d4d4d0; }
     ul.layers li.active {
       background: none;
       }
     ul.layers li a:hover {
-      color: #333;
+      color: #999;
       }
     ul.layers li.active a{
       background: #e8e8e4;
       border-color: #aeaeab;
       color: #333;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.80);
       }
       ul.layers li.active a:after {
         background: transparent url(images/arrow-left.png) no-repeat 0 0;
