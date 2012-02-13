@@ -28,6 +28,7 @@
         ];
         var baseUrl = 'http://api.tiles.mapbox.com/v3/';
         var layers = window.layers = new Layers();
+        var initialized = false;
 
         var drawMap = function() {
             var om;
@@ -72,8 +73,15 @@
             });
         }
 
+        var refreshOnce = _.debounce(function() {
+            if (!initialized) {
+                refreshAll();
+            }
+            initialized = true;
+        }, 100);
+
         // load sliders
-        var refreshAll = _.debounce(function() {
+        var refreshAll = function() {
             $('.layers li.active').length > 0
                 ? $('.dragdealer').animate({'opacity': 1}, 'fast')
                 : $('.dragdealer').animate({'opacity': 0}, 'fast');
@@ -109,18 +117,18 @@
             });
 
             drawMap();
-        }, 100);
+        };
 
         var drag = new Dragdealer('slider', {
             x: 0,
             speed: 10,
             steps: layers.length(),
             animationCallback: function(x) {
-                var pos = Math.round(x * (layers.length() - 1));
+                pos = Math.round(x * (layers.length() - 1));
                 if (pos < 0 || pos >= layers.length()) return;
                 layers.pos = pos;
                 $('#slide-bar').html(layers.month());
-                _.once(refreshAll()); // Register on the first animationCallback as it's triggered automatically.
+                refreshOnce();
             },
             callback: function(x) {
                 refreshAll();

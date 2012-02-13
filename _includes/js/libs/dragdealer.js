@@ -25,7 +25,7 @@ var Cursor = {
 		if (!e) {
 			e = window.event;
 		}
-		if (e.type == 'mousemove') {
+		if (e.type === 'mousemove') {
 			this.set(e);
 		}
 		else if (e.touches) {
@@ -62,14 +62,14 @@ var Position = {
 
 /* Dragdealer */
 var Dragdealer = function(wrapper, options) {
-	if (typeof(wrapper) == 'string') {
+	if (typeof(wrapper) === 'string') {
 		wrapper = document.getElementById(wrapper);
 	}
 	if (!wrapper) {
 		return;
 	}
 	var handle = wrapper.getElementsByTagName('div')[0];
-	if (!handle || handle.className.search(/(^|\s)handle(\s|$)/) == -1) {
+	if (!handle || handle.className.search(/(^|\s)handle(\s|$)/) === -1) {
 		return;
 	}
 	this.init(wrapper, handle, options || {});
@@ -121,7 +121,7 @@ Dragdealer.prototype = {
 		this.tapping = false;
 	},
 	getOption: function(name, defaultValue) {
-		return this.options[name] !== undefined ? this.options[name] : defaultValue;
+		return this.options[name] != undefined ? this.options[name] : defaultValue;
 	},
 	setup: function() {
 		this.setWrapperOffset();
@@ -299,14 +299,14 @@ Dragdealer.prototype = {
 			value = this.getClosestSteps(value);
 		}
 		if (!this.groupCompare(value, this.value.prev)) {
-			if (typeof(this.animationCallback) == 'function') {
+			if (typeof(this.animationCallback) === 'function') {
 				this.animationCallback(value[0], value[1]);
 			}
 			this.groupCopy(this.value.prev, value);
 		}
 	},
 	result: function() {
-		if (typeof(this.callback) == 'function') {
+		if (typeof(this.callback) === 'function') {
 			this.callback(this.value.target[0], this.value.target[1]);
 		}
 	},
@@ -446,7 +446,7 @@ Dragdealer.prototype = {
 		return this.stepRatios[k];
 	},
 	groupCompare: function(a, b) {
-		return a[0] == b[0] && a[1] == b[1];
+		return a[0] === b[0] && a[1] === b[1];
 	},
 	groupCopy: function(a, b) {
 		a[0] = b[0];
