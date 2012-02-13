@@ -137,14 +137,11 @@
             e.preventDefault();
 
             var el = $(e.currentTarget).parent();
-            var more = $('.more', el);
 
             if (el.hasClass('active')) {
                 el.removeClass('active');
-                more.slideUp(0);
             } else {
                 el.addClass('active');
-                more.slideDown(0);
             }
 
             $('.layers li').each(function(i, el) {
