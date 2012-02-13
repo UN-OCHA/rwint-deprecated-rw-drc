@@ -82,7 +82,7 @@
             var buildTable = function(data, layer) {
                 _.each(data, function(v, province) {
                     tableData[province] = tableData[province] || {};
-                    tableData[province][layer.substring(0,3)] = v.text;
+                    tableData[province][layer.substring(0,3)] = v.value;
                 });
                 loaded++;
                 if (loaded >= _.size(layers.activeLayers())) {
@@ -111,7 +111,7 @@
             drawMap();
         }, 100);
 
-        (new Dragdealer('slider', {
+        var drag = new Dragdealer('slider', {
             x: 0,
             speed: 10,
             steps: layers.length(),
@@ -125,20 +125,23 @@
             callback: function(x) {
                 refreshAll();
             }
-        })).setValue(1);
+        });
+        drag.setValue(1);
+
+        // On window resize, trigger the calculation of the space dragdealer occupies.
+        $(window).resize(function(e) {
+           drag.documentResizeHandler(e);
+        });
 
         $('.layers li a').click(function(e) {
             e.preventDefault();
 
             var el = $(e.currentTarget).parent();
-            var more = $('.more', el);
 
             if (el.hasClass('active')) {
                 el.removeClass('active');
-                more.slideUp(0);
             } else {
                 el.addClass('active');
-                more.slideDown(0);
             }
 
             $('.layers li').each(function(i, el) {
@@ -164,7 +167,7 @@
 
             var shareContent = $('.share-content');
             var twitter = 'http://twitter.com/intent/tweet?status=' +
-            'Mapping Conflict in the DRC' + encodeURIComponent(window.location);
+            'Mapping Conflict in the DRC: ' + encodeURIComponent(window.location);
             var facebook = 'https://www.facebook.com/sharer.php?t=Relief%20Web%20|%20Mapping%20Conflict%20in%20the%20DRC&u=' +
             encodeURIComponent(window.location);
 

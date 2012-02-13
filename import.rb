@@ -52,11 +52,11 @@ csv('data/lra.csv').each do |record|
 
   id = record['province']
   if lra[month].has_key?(id)
-    lra[month][id]['num_attacks'] = lra[month][id]['num_attacks'] + 1
+    lra[month][id]['value'] = lra[month][id]['value'] + 1
   else
     lra[month][id] = {}
     lra[month][id]['month'] = record['month']
-    lra[month][id]['num_attacks'] = 1
+    lra[month][id]['value'] = 1
   end
 end
 
@@ -75,12 +75,12 @@ csv('data/sec.csv').each do |record|
 
   id = record['province']
   if sec.has_key?(id)
-    sec[month][id]['security_events'] = sec[month][id]['security_events'] + 1
+    sec[month][id]['value'] = sec[month][id]['value'] + 1
     sec[month][id]['month'] = record['month']
   else
     sec[month][id] = {}
     sec[month][id]['month'] = record['month']
-    sec[month][id]['security_events'] = 1
+    sec[month][id]['value'] = 1
   end
 end
 
@@ -99,10 +99,10 @@ csv('data/ret.csv').each do |record|
   id = record['province']
   if !record['text'].nil?
     if ret.has_key?(id)
-      ret[month][id]['text'] = record['text']
+      ret[month][id]['value'] = record['text']
     else
       ret[month][id] = {}
-      ret[month][id]['text'] = record['text']
+      ret[month][id]['value'] = record['text']
     end
   end
 end
@@ -122,10 +122,10 @@ csv('data/idp.csv').each do |record|
   id = record['province']
   if !record['text'].nil?
     if idp.has_key?(id)
-      idp[month][id]['text'] = record['text']
+      idp[month][id]['value'] = record['text']
     else
       idp[month][id] = {}
-      idp[month][id]['text'] = record['text']
+      idp[month][id]['value'] = record['text']
     end
   end
 end
