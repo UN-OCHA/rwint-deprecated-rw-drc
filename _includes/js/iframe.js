@@ -30,32 +30,6 @@
         var layers = window.layers = new Layers();
         var initialized = false;
         var lat = -4, lng = 22, z = 5;
-
-        var h = document.location.hash.replace('#', '').split('&') || '';
-
-        // Grab the coordinates
-        if (h[0]) {
-            var c = h[0].split(',');
-            lat = parseFloat(c[0]);
-            lng = parseFloat(c[1]);
-            z   = parseFloat(c[2]);
-        }
-        // Grab any layers
-        if (h[1]) {
-            var l = h[1].replace('layers=', '').split(',');
-            if (l !== '') {
-                // Since layers are around in the url, drop the active classes
-                $('ul.layers li').removeClass('active');
-                _.each(l, function(v, k) {
-                    var activeLink = 'a#' + v;
-                    $(activeLink).parent().addClass('active');
-                });
-            }
-            $('ul.layers li').each(function(i, el) {
-                layers.active[$(el).find('a').attr('id')] = $(el).hasClass('active');
-            });
-        }
-
         var drawMap = function() {
             var om;
 
@@ -88,24 +62,6 @@
 
                 wax.mm.legend(m, tilejson).appendTo(m.parent);
                 wax.mm.interaction(m, tilejson);
-
-                var currentActiveLayers = function() {
-                    var list = [];
-                    $('li.active a').each(function () {
-                        list.push($(this).attr('id'));
-                    });
-                    return list.join(',');
-                }
-
-                m.addCallback('drawn', function(modestmap, e) {
-                    var hash = '#'
-                        + m.getCenter()['lat']
-                        + ',' +  m.getCenter()['lon']
-                        + ',' + m.getZoom()
-                        + '&layers=' + currentActiveLayers();
-
-                    document.location.hash = hash;
-                });
 
                 $('.zoomer').remove();
                 wax.mm.zoomer(m, tilejson).appendTo($('#controls')[0]);
@@ -236,3 +192,4 @@
 
 window.RW = RW;
 })(window);
+
