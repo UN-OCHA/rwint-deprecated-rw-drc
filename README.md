@@ -1,10 +1,15 @@
 ## Mapping Conflict in the DRC
 
-The following documentation covers installation, how to fork this project, site architecture, make changes and map design/hosting.
 
-### Installing Jekyll
+This documentation is divded into two parts. The first section covers how to set up github and fork the project, and explains the site architecture with file descriptions. The second section backs up to data processing and map design by providing links to tools to download, and docs for working with Sqlite and Tilemill. 
 
-- `gem install jekyll`
+##Github and Site Architecture
+
+###Setting up Github
+ - [Create an account](https://github.com/signup/free)
+ - [Set up Git](http://help.github.com/mac-set-up-git/)
+ - [Forking a repository](http://help.github.com/fork-a-repo/)
+
 
 ### Forking the project
 To use this project as a starting point, [fork the repository](http://help.github.com/fork-a-repo). This will create a new copy of the project on github. Make changes by setting up a local repo, and then commit/push changes to github.
@@ -31,8 +36,16 @@ To use this project as a starting point, [fork the repository](http://help.githu
     site.js        Aggregated site scripts.
 
 
-### Jekyll
-The site uses Jekyll, a simple, logic aware, static site generator. In a nutshell you build a site with all the logic and source files you need and Jekyll creates a static copy of the website in a '_site/' directory. Note that you do not touch the contents of this directory. You make any additions or changes to the files outside of this. After you [install jekyll](https://github.com/mojombo/jekyll/wiki/install), and have downloaded the project, from terminal, change into the directory the project is in and type 'jekyll'. Locally, the site can be viewed at `http://0.0.0.0:4000/index.html` after it has been generated for the first time.
+###Jekyll
+The site uses Jekyll, a simple, logic aware, static site generator. In a nutshell you build a site with all the logic and source files you need and Jekyll creates a static copy of the website in a '_site/' directory. Note that you do not touch the contents of this directory. You make any additions or changes to the files outside of this.
+
+Make sure you have [Xcode](https://developer.apple.com/technologies/tools/) installed before installing Jekyll. This is available for free in the Apple App store.  Once this is complete you should be able to run: 
+
+- `gem install jekyll`
+
+If this doesn't work, read documentation [available here](https://github.com/mojombo/jekyll/wiki/install) about updating your ruby packages.
+
+Once jekyll is installed, and you have downloaded the project, from terminal, navigate into the directory the project is in and type 'jekyll'. Locally, the site can be viewed at `http://0.0.0.0:4000/index.html` in any browser after it has been generated for the first time. This allows you to make local changes that are automatically reflected in your local version of the site, as long as jekyll is running in your terminal. To stop jekyll, type 'command c'.
 
 ####Site Configuration
 `_config.yml` sets up the default configuration for jekyll when reading all files. As seen below, it allows you to format the url, and allows for the exclusion of unnecessary files that jekyll doesn't need to generate.
