@@ -1,7 +1,7 @@
 ## Mapping Conflict in the DRC
 
 
-This documentation is divded into two parts. The first section covers how to set up github and fork the project, and explains the site architecture with file descriptions. The second section backs up to data processing and map design by providing links to tools to download, and docs for working with Sqlite and Tilemill. 
+This documentation is divded into two parts. The first section covers how to set up github and fork the project, and explains the site architecture with file descriptions. The second section backs up to data processing and map design by providing links to tools to download, and docs for working with SQLite and Tilemill. 
 
 ##Github and Site Architecture
 
@@ -82,4 +82,35 @@ Jekyll has a default chronological pagination system. Posts are ordered such tha
 Where something requires explanation there are inline notes in the code. See line [1-16 in site.js](https://github.com/developmentseed/internews-media/blob/gh-pages/_includes/js/site.js#L1-16)
 
 
-This is practice 
+##Data Processing
+[This tutorial](http://mapbox.com/tilemill/docs/tutorials/SQLite-work/) walks through turning data sources into SQLite files. This requires downloading [Quantum GIS](www.qgis.org), and [Tilemill](www.tilemill.com).
+
+Qgis is a powerful tool for working with geographic files, but for right now we just want it to convert data formats like csvs and shapefiles into SQLite databases. 
+
+SQLite databases are the best tool for sorting data in Tilemill. SQLite lets you change the query on the data whenever you like, to find a different angle on your data. It is also an easy way to join databases with geographic information to those without geographic information, in the `attach db` field of the `add SQLite layer` in Tilemill. This process is outlined in the same [tutorial](http://mapbox.com/tilemill/docs/tutorials/SQLite-work/) as above.
+
+For example, with the LRA attacks and security incidents against humanitarian workers, I saved the original files as csvs, then imported them into QGIS. Then I saved the layers as SQLite databases. 
+
+Since I want to aggregate my LRA incidents by the district level, I need points that correspond to each district. So I looked at the admin2 shapefile from the `cod_boundaries`, which has district information.  In QGIS I add a vector layer and open up this `admin2.shp` file. This opens up polygons, but I don't want to join my LRA or security incidents to polygons, since I was display them as events by location. 
+
+To turn the polygons into centroids, I went to `vector, geometry tools, polygons to centroids.' Then I right-clicked on the shapefile and saved the layer as a SQLite database, and set the CRS (map projection) to google mercator, since this is what Tilemill by default uses. 
+
+Now you should have two SQLite databases, one for LRA attacks, and one for admin2 centroids. In Tilemill you will go to `add a layer`, choose `SQLite` and open up the admin2 centroids file. Then in the `attach DB` field, you will navigate to your LRA attacks file. The join between these two databases happens in the query field, and looks similar to this: 
+
+            (select *,
+	
+			count(unique_id) as num_attacks, 
+			sum(ppl_killed) as ppl_killed, 
+			sum(infants_kidnapped) as infants_kidnapped,  
+			sum(adults_kidnapped) as adults_kidnapped
+
+			  from  `admin3_centroids` a join `lra_attack` b
+			  on b.territory=a.nom
+			  group by month, territory
+			)
+			
+The asterisk means select all, and the following rows are counting or adding data so that as we aggregate by district, we won't lose individual information about each attack. This yield a table with a row for each territory of each month in the data with aggregated attacks, people killed, and people kidnapped. 
+
+##Map Design 
+
+This comes much easier, as it follows a css-type like language called carto. All of the basics and more advanced options of styling your data can be found in the [mapbox.com/help](http://mapbox.com/help), starting with [styling data](http://mapbox.com/tilemill/docs/crashcourse/styling/) section. 
