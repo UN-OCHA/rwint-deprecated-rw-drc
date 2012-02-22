@@ -27,20 +27,25 @@
             'djohnson.africa_borders'
         ];
         var baseUrl = 'http://api.tiles.mapbox.com/v3/';
+        // initializes the Layers object in `data.js`
         var layers = window.layers = new Layers();
         var initialized = false;
+        // Default coordinates.
         var lat = -4, lng = 22, z = 5;
-
+        // Parse the url hash if one exists.
         var h = document.location.hash.replace('#', '').split('&') || '';
 
-        // Grab the coordinates
+        // Grab the coordinates if any exist in the hash on page load.
+        // Pass these values into m.setCenterZoom method.
         if (h[0]) {
             var c = h[0].split(',');
             lat = parseFloat(c[0]);
             lng = parseFloat(c[1]);
             z   = parseFloat(c[2]);
         }
-        // Grab any layers
+        // Before anything else grab any layers that show up in the
+        // hash and build out the site based on what's there. If none
+        // are to be found continue as normal.
         if (h[1]) {
             var l = h[1].replace('layers=', '').split(',');
             if (l !== '') {
@@ -56,6 +61,10 @@
             });
         }
 
+        // This function builds out our map. It gets requested when
+        // a layer link has been triggered on our off or a timeline
+        // slider has been moved around. See the wax docs for further
+        // explanation: mapbox.com/wax
         var drawMap = function() {
             var om;
 
@@ -89,6 +98,7 @@
                 wax.mm.legend(m, tilejson).appendTo(m.parent);
                 wax.mm.interaction(m, tilejson);
 
+                // Used to capture the layer name to pass into the hash.
                 var currentActiveLayers = function() {
                     var list = [];
                     $('li.active a').each(function () {
@@ -97,6 +107,8 @@
                     return list.join(',');
                 }
 
+                // After the map has been drawn alter the hash in the
+                // url with our new center/lat/long and layers active.
                 m.addCallback('drawn', function(modestmap, e) {
                     var hash = '#'
                         + m.getCenter()['lat']
@@ -107,16 +119,26 @@
                     document.location.hash = hash;
                 });
 
+                // Because we are cloning the map for a soft transition,
+                // remove the .zoomer code from the dom and
+                // re-implement it.
                 $('.zoomer').remove();
                 wax.mm.zoomer(m, tilejson).appendTo($('#controls')[0]);
+                // Wax method to determine whether lower resolution
+                // tiles should be served based on the request speed of
+                // the users current connection.
                 wax.mm.bwdetect(m, {
                     auto: true,
                     png: '.png64?'
                 });
+                // For cloning, assign this new RW._map as our map
+                // object `m`
                 RW._map = m;
             });
         }
 
+        // This function gets called once on page load after
+        // drag.animationCallback has stopped.
         var refreshOnce = _.debounce(function() {
             if (!initialized) {
                 refreshAll();
@@ -124,19 +146,29 @@
             initialized = true;
         }, 100);
 
-        // load sliders
+        // This function builds out our table on the site and when
+        // complete hands things off to the drawMap function.
         var refreshAll = function() {
+            // If there are no active layers, we don't need to show the
+            // slider so fade it out.
             $('ul.layers li.active').length > 0
                 ? $('.dragdealer').animate({'opacity': 1}, 'fast')
                 : $('.dragdealer').animate({'opacity': 0}, 'fast');
             var tableData = {};
             var loaded = 0;
+            // Based on the json request, construct the table based on
+            // the data that is returned. This new object is called
+            // tableData.
             var buildTable = function(data, layer) {
                 _.each(data, function(v, province) {
                     tableData[province] = tableData[province] || {};
                     tableData[province][layer.substring(0,3)] = v.value;
                 });
                 loaded++;
+                // Based on the tableData object, build out our table
+                // template this uses the js utility _.template
+                // See http://documentcloud.github.com/underscore/#template
+                // for more details.
                 if (loaded >= _.size(layers.activeLayers())) {
                     var tableTemplate = '<% _.each(tableData, function(values, province) { %>'
                             + '<tr>'
@@ -163,6 +195,17 @@
             drawMap();
         };
 
+        // This is the code for the slider on the page.
+        // There are two callbacks acted on: animationCallback which
+        // continually runs while the user is dragging, calculates
+        // the new position and passes a new layers.length value based
+        // on this calculation. callback is fired when the slider has
+        // stopped moving and fires our refreshAll function. One
+        // important function to note is the refreshOnce function.
+        // Because we are setting the slider to drift to the last
+        // position on load, we need to fire the refresh function once
+        // this sets the initialized variable to true and is only fired
+        // once on animationCallback.
         var drag = new Dragdealer('slider', {
             x: 0,
             speed: 10,
@@ -178,28 +221,25 @@
                 refreshAll();
             }
         });
-        drag.setValue(1);
+        drag.setValue(1); // On page load, drift the slider to the last position.
 
         // On window resize, trigger the calculation of the space dragdealer occupies.
         $(window).resize(function(e) {
            drag.documentResizeHandler(e);
         });
 
+        // ul.layers li are the layer selection links located in the
+        // right-hand sidebar. if an active layer is not set, set it.
+        // grab the link id and pass it to layers.active if the
+        // elements parent has the class of active. Finally run the
+        // refreshAll() function.
         $('ul.layers li a').click(function(e) {
             e.preventDefault();
-
             var el = $(e.currentTarget).parent();
-
-            if (el.hasClass('active')) {
-                el.removeClass('active');
-            } else {
-                el.addClass('active');
-            }
-
+            el.hasClass('active') ? el.removeClass('active') : el.addClass('active');
             $('ul.layers li').each(function(i, el) {
                 layers.active[$(el).find('a').attr('id')] = $(el).hasClass('active');
             });
-
             refreshAll();
         });
 
@@ -213,6 +253,10 @@
             if (e.keyCode === 27) { $('a.close').trigger('click'); }
         });
 
+        // The share code that is derived upon clicking Share below the
+        // map controls. Based on the users current zoom and pan the
+        // embed code generates a custom embed url to share exactly what
+        // the user is looking at.
         $('a.share').click(function(e){
             e.preventDefault();
             $('.modal, #overlay').addClass('active');

@@ -1,3 +1,8 @@
+// This script is used alongside the `site.js` script.
+// It functions as a lookup with helper functions the this.layerCtrl
+// keys are based on the naming convention
+// of the .mbtiles built for this project.
+
 var Layers = function() {
     this.active = {
         sec: true,
@@ -217,6 +222,7 @@ var Layers = function() {
     this.pos = this.layerCtrl.length - 1;
 };
 
+// Returns a concatenated string of current layer results
 Layers.prototype.current = function() {
     var filtered = _.compact(this.filter(this.layerCtrl[this.pos].layers));
     if (!this.layerCtrl[this.pos]) return;
@@ -224,10 +230,14 @@ Layers.prototype.current = function() {
     return filtered.join(',djohnson.');
 };
 
+// Which layers are active?
+// Returns result based on the filter method below
 Layers.prototype.activeLayers = function() {
     return this.filter(this.layerCtrl[this.pos].layers);
 };
 
+// Run an iterator to return layers which are active
+// based on the current state of the this.active object
 Layers.prototype.filter = function(layers) {
     var active = this.active;
     return _.filter(layers, function(v, k) {
@@ -235,11 +245,13 @@ Layers.prototype.filter = function(layers) {
     });
 };
 
+// Based on the position of the slider, return the current month
 Layers.prototype.month = function() {
     if (!this.layerCtrl[this.pos]) return;
     return this.layerCtrl[this.pos].month;
 };
 
+// Return the length of the layerCtrl object
 Layers.prototype.length = function() {
     return this.layerCtrl.length;
 };

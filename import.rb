@@ -1,5 +1,21 @@
 #!/usr/bin/env ruby
 
+# The purpose of this script is to run an export function on each of
+# the .csv files located in the data directory. The script returns
+# a formated .json file with names based on the id of the map layers.
+# See `_includes/js/data.js` for reference. A returned json file looks
+# something like this:
+#
+#   {
+#     "Orientale": {
+#       "month": "Feb-11",
+#       "value": 27
+#     }
+#   }
+#
+# A province name is followed by the month and the number of occurance's
+# an attack occurred during that month.
+
 require 'rubygems'
 require 'json'
 require 'csv'

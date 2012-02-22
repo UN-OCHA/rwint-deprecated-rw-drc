@@ -63,10 +63,7 @@ Jekyll has a default chronological pagination system. Posts are ordered such tha
     --------     ---------
      1           0200-01-02-about.html
      2           0200-01-01-data.html
-     2       	 0200-01-01-sources.html
+     2       	   0200-01-01-sources.html
 
 ###Notes
-Where something requires explanation there are inline notes in the code. See line [1-16 in site.js](https://github.com/developmentseed/internews-media/blob/gh-pages/_includes/js/site.js#L1-16)
-
-
-This is practice 
+Where something requires explanation there are inline notes in the code.
