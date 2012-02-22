@@ -1,4 +1,4 @@
-body {
+ body {
   background: #fff;
   font: 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #333;
@@ -428,8 +428,8 @@ ul.layers {
         margin-top: -1px;
         margin-right: 1px;
         }
-        ul.layers li a#idp span { background-position: -210px -55px; }
-        ul.layers li a#ret span { background-position: -210px -20px; }
+        ul.layers li a#idp span { background-position: -210px -20px; }
+        ul.layers li a#ret span { background-position: -210px -55px; }
         ul.layers li a#lra span { background-position: -210px -125px; }
         ul.layers li a#sec span { background-position: -210px -90px; }
 
