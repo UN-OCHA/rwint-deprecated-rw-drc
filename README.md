@@ -113,3 +113,5 @@ The asterisk means select all, and the following rows are counting or adding dat
 ##Map Design 
 
 This comes much easier, as it follows a css-type like language called carto. All of the basics and more advanced options of styling your data can be found in the [mapbox.com/help](http://mapbox.com/help), starting with [styling data](http://mapbox.com/tilemill/docs/crashcourse/styling/) section.
+
+
