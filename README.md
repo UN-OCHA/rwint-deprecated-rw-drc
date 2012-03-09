@@ -12,7 +12,7 @@ This documentation is divded into two parts. The first section covers how to set
 
 
 ### Forking the project
-To use this project as a starting point, [fork the repository](http://help.github.com/fork-a-repo). This will create a new copy of the project on github. Make changes by setting up a local repo, and then commit/push changes to github.
+To use this project as a starting point, [fork the repository](http://help.github.com/fork-a-repo). This will create a new copy of the project on github. Make changes by setting up a local repo by cloning it to the file or directory that you desire, and then from there you can make changes and commit/push them to github. For example, I have a local github folder that I navigate to with `cd Documents/github/` to clone all github projects. Then i navigate into the sepcific project to commit and push changes. 
 
 ###Files
 -----
