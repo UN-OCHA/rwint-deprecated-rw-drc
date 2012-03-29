@@ -46,7 +46,7 @@ a {
   }
 a.close,
 .icon {
-  background: transparent url(images/sprite2.png) no-repeat 0 0;
+  background: transparent url(images/sprite.png) no-repeat 0 0;
   display: block;
   text-indent: -999em;
   }
@@ -139,7 +139,7 @@ table tbody + tbody {
     float: left;
     }
   #branding a.rw {
-    background:#F4F4F0 url(images/sprite2.png) 0px 0px no-repeat;
+    background:#F4F4F0 url(images/sprite.png) 0px 0px no-repeat;
     width: 110px;
     height: 30px;
     display: block;
@@ -503,7 +503,7 @@ ul.layers {
     cursor: pointer;
     }
   .dragdealer .bar {
-    background: transparent url(images/sprite2.png) no-repeat 0 -40px;
+    background: transparent url(images/sprite.png) no-repeat 0 -40px;
     width: 85px;
     color: white;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.30);
