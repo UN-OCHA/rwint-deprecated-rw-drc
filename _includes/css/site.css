@@ -28,7 +28,7 @@ h6 { font-size: 11px; margin: 0; }
   line-height: 18px;
   }
 h2.title {
-  margin: 20px 0 10px;
+  margin: 22px 0 10px;
   }
 small {
   font-size: 11px;
@@ -46,17 +46,17 @@ a {
   }
 a.close,
 .icon {
-  background: transparent url(images/sprite.png) no-repeat 0 0;
+  background: transparent url(images/sprite2.png) no-repeat 0 0;
   display: block;
   text-indent: -999em;
   }
 
 /* Table styling */
 table {
-  max-width: 100%;
+  max-width: 70%;
   border-collapse: collapse;
   border-spacing: 0;
-  width: 100%;
+  width: 70%;
   margin-bottom: 18px;
   }
 table th,
@@ -118,30 +118,66 @@ table tbody + tbody {
 /* --------------------------------------
   Page Layout and basic styling
 ----------------------------------------- */
-#header {
-  background: #333;
-  height: 40px;
-  border-bottom: 1px solid #999;
-  -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  position: relative;
-  z-index: 1000;
-  padding: 10px;
+
+#usertools {
+  height: 20px;
+  background: #E8E8E4;
+  border-width: 0px 1px;
+  border-style: solid;
+  border-color: #D8D8D4;
+}
+
+#branding {
+  height: 38px;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+  border-color: #E4E4E0 #E4E4E0 #D4D4D0;
+  background: #F4F4F0;
   }
-  #header a {
+  #branding a {
     float: left;
     }
-  #header a.rw {
-    background: transparent url(images/sprite.png) no-repeat 0 0;
+  #branding a.rw {
+    background:#F4F4F0 url(images/sprite2.png) 0px 0px no-repeat;
     width: 110px;
     height: 30px;
     display: block;
     position: absolute;
     text-indent: -999em;
-    top: 15px;
+    top: 21px;
     left: 15px;
     }
+
+#page-title {
+  position: relative;
+  padding: 3px 9px 9px 12px;
+  background: #E8F4F4;
+  min-height: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #DCECF0 #DCECF0 #D0E0E4;
+  margin-top: 20px;
+  -moz-box-shadow: 0px 4px 8px rgba(0, 0, 0, .3);
+   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, .3);
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, .3);
+   z-index: 500;
+  }
+  .page-title {
+  height: 24px;
+  overflow: hidden;
+  font-size: 20px;
+  text-shadow: white 0px 1px 0px;
+  margin-right: 10px;
+  white-space: nowrap;
+  }
+  .page-subtitle {
+  height: 20px;
+  font-weight: normal;
+  white-space: nowrap;
+  margin-top: -10px;
+  font-size: 14px;
+  }
 
 #interactive {
 	position: relative;
@@ -174,14 +210,14 @@ table tbody + tbody {
   background: #fff;
   border-left: 1px solid #D4D4D0;
   border-right: 1px solid #D4D4D0;
-  -moz-box-shadow: 0 -8px 8px rgba(0, 0, 0, .3);
-  -webkit-box-shadow: 0 -8px 8px rgba(0, 0, 0, .3);
-  box-shadow: 0 -8px 8px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0px -4px 8px rgba(0, 0, 0, .3);
+   -webkit-box-shadow: 0px -4px 8px rgba(0, 0, 0, .3);
+   box-shadow: 0px -4px 8px rgba(0, 0, 0, .3);
   }
   #sidebar-inner {
     padding-bottom: 110px;
     overflow: auto;
-    height: 480px;
+    height: 822px;
     }
 #slider {
   background: white;
@@ -266,13 +302,14 @@ table tbody + tbody {
 .wax-tooltip {
   position: absolute;
   height: auto;
-  background: #fff;
+  background: rgba(255,255,255, 1);
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, .45);
   -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  width: 338px;
+  width: auto;
+  max-width: 300px;
   height: 100%;
   height: auto!important;
   max-height: 100%;
@@ -466,7 +503,7 @@ ul.layers {
     cursor: pointer;
     }
   .dragdealer .bar {
-    background: transparent url(images/sprite.png) no-repeat 0 -40px;
+    background: transparent url(images/sprite2.png) no-repeat 0 -40px;
     width: 85px;
     color: white;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.30);
