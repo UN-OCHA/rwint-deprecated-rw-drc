@@ -226,6 +226,11 @@ table tbody + tbody {
 /* --------------------------------------
   Map
 ----------------------------------------- */
+#year-select {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  }
 #controls {
   position: absolute;
   top: 10px;
@@ -237,7 +242,7 @@ table tbody + tbody {
   box-shadow: 0 0 8px rgba(0, 0, 0, .3);
   height: 50px;
   z-index: 50;
-  width: 180px;
+  width: 60px;
   text-shadow: 0 1px 0 #fff;
   }
   #controls a {
@@ -255,12 +260,11 @@ table tbody + tbody {
       display: block;
       left: 0;
       top: 24px;
-      width: 49px;
+      width: 50px;
       padding: 0 5px;
       height: 25px;
       border-top: 1px solid #999;
       text-align: center;
-      border-right: 1px solid #999;
       line-height: 25px;
       }
     #controls a.zoomer {
@@ -279,9 +283,8 @@ table tbody + tbody {
       z-index: 100;
       }
     #controls a.zoomout {
-      left: 28px;
+      left: 29px;
       border-left: 1px solid #ccc;
-      border-right: 1px solid #999;
       }
     #controls a.zoomdisabled:active,
     #controls a.zoomdisabled {
