@@ -10,6 +10,29 @@
 input, select, textarea  {
   font: 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
   }
+/* Forms */
+select,
+input[type=text] {
+  background: white;
+  border: 1px solid #a0a0a0;
+  outline: 0;
+  padding: 0 5px;
+  box-shadow: inset #ddd 0 1px 2px;
+  box-sizing: border-box;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  }
+select {
+  width: 100px;
+  }
+input[type=text]:focus {
+  border-color:#59b;
+  box-shadow:
+    #6ac 0 0 4px,
+    inset #ddd 0 2px 3px;
+  }
+
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
   font-weight: normal;
@@ -53,6 +76,7 @@ a.close,
 
 /* Table styling */
 table {
+  background: #fff;
   max-width: 70%;
   border-collapse: collapse;
   border-spacing: 0;
@@ -61,127 +85,92 @@ table {
   }
 table th,
 table td {
-  padding: 4px 5px;
+  padding: 8px;
   line-height: 18px;
   text-align: left;
-  border-top: 1px solid #D4D4D0;
+  width: 20%;
   }
 table th {
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 500;
   vertical-align: bottom;
   }
 table td {
   vertical-align: top;
+  border-top: 1px dotted #444;
   }
 table thead:first-child tr th,
 table thead:first-child tr td {
   border-top: 0;
+  border-bottom: 1px solid #444;
   }
 table tbody + tbody {
-  border-top: 2px solid #D4D4D0;
+  border-top: 1px dotted #444;
   }
 
 .table {
-  background: #fff;
   height: 265px;
-  }
-.table th,
-.table td {
-  padding: 8px;
-  line-height: 18px;
-  text-align: left;
-  border-top: 1px solid #ddd;
-  width: 20%;
-  }
-.table td {
-  vertical-align: top;
-  }
-.table-bordered {
-  border: 1px solid #ddd;
-  border-collapse: separate;
-  *border-collapse: collapsed;
-  }
-.table-bordered th + th,
-.table-bordered td + td,
-.table-bordered th + td,
-.table-bordered td + th {
-  border-left: 1px solid #ddd;
-  }
-.table thead:first-child tr th,
-.table thead:first-child tr td,
-.table-bordered thead:first-child tr:first-child th,
-.table-bordered tbody:first-child tr:first-child th,
-.table-bordered tbody:first-child tr:first-child td {
-  border-top: 0;
+  margin-top: 20px;
   }
 
 /* --------------------------------------
   Page Layout and basic styling
 ----------------------------------------- */
-
-#usertools {
-  height: 20px;
-  background: #E8E8E4;
-  border-width: 0px 1px;
-  border-style: solid;
-  border-color: #D8D8D4;
-}
-
 #branding {
   height: 38px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 5px 0 1px;
   width: 100%;
-  border-color: #E4E4E0 #E4E4E0 #D4D4D0;
+  border-color: #E8E8E4 #E4E4E0 #D4D4D0;
   background: #F4F4F0;
   }
   #branding a {
     float: left;
     }
   #branding a.rw {
-    background:#F4F4F0 url(images/sprite.png) 0px 0px no-repeat;
+    background: transparent url(images/sprite.png) no-repeat 0 0;
     width: 110px;
     height: 30px;
     display: block;
     position: absolute;
     text-indent: -999em;
-    top: 21px;
-    left: 15px;
+    top: 10px;
+    left: 10px;
     }
 
 #page-title {
   position: relative;
-  padding: 3px 9px 9px 12px;
+  padding: 5px 10px;
   background: #E8F4F4;
-  min-height: 40px;
+  height: 60px;
   border-style: solid;
-  border-width: 1px;
-  border-color: #DCECF0 #DCECF0 #D0E0E4;
-  margin-top: 20px;
-  -moz-box-shadow: 0px 4px 8px rgba(0, 0, 0, .3);
-   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, .3);
-   box-shadow: 0px 4px 8px rgba(0, 0, 0, .3);
-   z-index: 500;
+  border-width: 1px 0;
+  border-color: #DCECF0 transparent #D0E0E4;
+  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+  z-index: 500;
   }
   .page-title {
-  height: 24px;
-  overflow: hidden;
-  font-size: 20px;
-  text-shadow: white 0px 1px 0px;
-  margin-right: 10px;
-  white-space: nowrap;
-  }
+    overflow: hidden;
+    font-size: 20px;
+    text-shadow: white 0px 1px 0px;
+    margin-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+    }
   .page-subtitle {
-  height: 20px;
-  font-weight: normal;
-  white-space: nowrap;
-  margin-top: -10px;
-  font-size: 14px;
-  }
+    height: 20px;
+    font-weight: normal;
+    white-space: nowrap;
+    margin-top: -10px;
+    font-size: 14px;
+    }
 
 #interactive {
-	position: relative;
-  height: 560px;
+  position: relative;
+  height: 479px;
+  border-bottom: 1px solid #a0a0a0;
   }
 #map-container {
   background: #fff url(images/bg.png) repeat 0 0;
@@ -241,14 +230,15 @@ table tbody + tbody {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: white;
+  background: #fff;
   border: 1px solid #999;
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
   box-shadow: 0 0 8px rgba(0, 0, 0, .3);
   height: 50px;
   z-index: 50;
-  width: 60px;
+  width: 180px;
+  text-shadow: 0 1px 0 #fff;
   }
   #controls a {
     font: bold 13px/28px 'Helvetica Neue', Helvetica, sans-serif;
@@ -260,25 +250,28 @@ table tbody + tbody {
       -webkit-box-shadow: inset rgba(0,0,0,0.1) 0px 1px 3px;
       }
     #controls a.share {
+      background: white;
       position: absolute;
       display: block;
-      right: 0;
-      top: 22px;
-      width: 50px;
+      left: 0;
+      top: 24px;
+      width: 49px;
       padding: 0 5px;
-      height: 27px;
+      height: 25px;
       border-top: 1px solid #999;
       text-align: center;
+      border-right: 1px solid #999;
+      line-height: 25px;
       }
     #controls a.zoomer {
+      background: #fff;
       text-decoration: none;
       position: absolute;
       text-align: center;
       width: 30px;
-      height: 22px;
-      line-height: 22px;
-      top: 0;
-      left: 0;
+      height: 24px;
+      line-height: 24px;
+      top: 0; left: 0;
       -moz-transition: color 0.1s linear;
       -o-transition: color 0.1s linear;
       -webkit-transition: color 0.1s linear;
@@ -286,8 +279,9 @@ table tbody + tbody {
       z-index: 100;
       }
     #controls a.zoomout {
-      left: 29px;
+      left: 28px;
       border-left: 1px solid #ccc;
+      border-right: 1px solid #999;
       }
     #controls a.zoomdisabled:active,
     #controls a.zoomdisabled {
@@ -296,6 +290,10 @@ table tbody + tbody {
       box-shadow: none;
       color: #ccc;
       cursor: default;
+      }
+    #controls #year-select {
+      float: right;
+      margin: 2px 10px 0 0;
       }
 
 /* Map Teaser Tooltips */
@@ -447,7 +445,7 @@ ul.layers {
     ul.layers li.active a{
       background: fafaf8;
       border-color: #a0a0a0;
-      color: #333;
+      color: #444;
       }
       ul.layers li.active a:after {
         background: transparent url(images/arrow-left.png) no-repeat 0 0;

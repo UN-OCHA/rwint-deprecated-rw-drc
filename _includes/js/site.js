@@ -18,6 +18,7 @@
 //  See the root `_includes/map-interactive.html` page as example.
 (function(context) {
     var RW = RW || {};
+    var year = year || '2011';
 
     RW.interactive = function() {
 
@@ -73,7 +74,7 @@
                 $('#map-bg').remove();
                 $('#map').attr('id','map-bg').after('<div id="map"></div>');
             }
-            var jObject = baseUrl + baseLayers.join(',') + (',djohnson.') + layers.current() + '.jsonp'
+            var jObject = baseUrl + baseLayers.join(',') + (',djohnson.') + layers.current(year) + '.jsonp'
             wax.tilejson(jObject, function(tilejson) {
                 tilejson.minzoom = 4;
                 tilejson.maxzoom = 8;
@@ -141,7 +142,7 @@
         // drag.animationCallback has stopped.
         var refreshOnce = _.debounce(function() {
             if (!initialized) {
-                refreshAll();
+                refreshAll(year);
             }
             initialized = true;
         }, 100);
@@ -169,7 +170,7 @@
                 // template this uses the js utility _.template
                 // See http://documentcloud.github.com/underscore/#template
                 // for more details.
-                if (loaded >= _.size(layers.activeLayers())) {
+                if (loaded >= _.size(layers.activeLayers(year))) {
                     var tableTemplate = '<% _.each(tableData, function(values, province) { %>'
                             + '<tr>'
                             + '<td><%= province %></td>'
@@ -186,7 +187,7 @@
                     });
                 }
             };
-            _.each(layers.activeLayers(), function(layer) {
+            _.each(layers.activeLayers(year), function(layer) {
                 $.getJSON('data/json/' + layer + '.json', function(data) {
                     buildTable(data, layer);
                 });
@@ -209,12 +210,12 @@
         var drag = new Dragdealer('slider', {
             x: 0,
             speed: 10,
-            steps: layers.length(),
+            steps: layers.length(year),
             animationCallback: function(x) {
-                pos = Math.round(x * (layers.length() - 1));
-                if (pos < 0 || pos >= layers.length()) return;
+                pos = Math.round(x * (layers.length(year) - 1));
+                if (pos < 0 || pos >= layers.length(year)) return;
                 layers.pos = pos;
-                $('#slide-bar').html(layers.month());
+                $('#slide-bar').html(layers.month(year));
                 refreshOnce();
             },
             callback: function(x) {
@@ -225,9 +226,15 @@
 
         // On window resize, trigger the calculation of the space dragdealer occupies.
         $(window).resize(function(e) {
-           drag.documentResizeHandler(e);
+          drag.documentResizeHandler(e);
         });
 
+        $('#year-select').find('select').change(function () {
+          if (year != $(this).val()) {
+            year = $(this).val();
+            refreshAll();
+          }
+        });
         // ul.layers li are the layer selection links located in the
         // right-hand sidebar. if an active layer is not set, set it.
         // grab the link id and pass it to layers.active if the
@@ -271,7 +278,7 @@
             document.getElementById('facebook').href = facebook;
 
             var center = m.pointLocation(new mm.Point(m.dimensions.x/2,m.dimensions.y/2));
-            var embedUrl = 'http://api.tiles.mapbox.com/v2/' + baseLayers.join(',') + (',') + layers.current() + '/mm/zoompan,tooltips,legend,bwdetect.html#' + m.coordinate.zoom + '/' + center.lat + '/' + center.lon;
+            var embedUrl = 'http://api.tiles.mapbox.com/v2/' + baseLayers.join(',') + (',') + layers.current(year) + '/mm/zoompan,tooltips,legend,bwdetect.html#' + m.coordinate.zoom + '/' + center.lat + '/' + center.lon;
             $('#embed-code-field textarea').attr('value', '<iframe src="' + embedUrl + '" frameborder="0" width="650" height="500"></iframe>');
             $('#embed-code')[0].tabindex = 0;
             $('#embed-code')[0].select();
