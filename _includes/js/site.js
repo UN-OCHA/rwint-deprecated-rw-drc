@@ -150,11 +150,6 @@
         // This function builds out our table on the site and when
         // complete hands things off to the drawMap function.
         var refreshAll = function() {
-            // If there are no active layers, we don't need to show the
-            // slider so fade it out.
-            $('ul.layers li.active').length > 0
-                ? $('.dragdealer').animate({'opacity': 1}, 'fast')
-                : $('.dragdealer').animate({'opacity': 0}, 'fast');
             var tableData = {};
             var loaded = 0;
             // Based on the json request, construct the table based on
@@ -229,7 +224,7 @@
           drag.documentResizeHandler(e);
         });
 
-        $('#year-select').find('select').change(function () {
+        $('#year-select').change(function () {
           if (year != $(this).val()) {
             year = $(this).val();
             refreshAll();

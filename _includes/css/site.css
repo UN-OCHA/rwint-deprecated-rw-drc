@@ -77,27 +77,28 @@ a.close,
 /* Table styling */
 table {
   background: #fff;
-  max-width: 70%;
   border-collapse: collapse;
   border-spacing: 0;
-  width: 70%;
-  margin-bottom: 18px;
+  width: 100%;
+  margin-bottom: 20px;
   }
+  /*table#drc-monthly-data {*/
+    /*width: 70%;*/
+    /*}*/
 table th,
 table td {
-  padding: 8px;
+  padding: 4px 5px;
   line-height: 18px;
   text-align: left;
   width: 20%;
   }
 table th {
-  font-size: 14px;
   font-weight: 500;
   vertical-align: bottom;
   }
 table td {
-  vertical-align: top;
-  border-top: 1px dotted #444;
+  vertical-align: middle;
+  border-top: 1px dotted #E4E4E0;
   }
 table thead:first-child tr th,
 table thead:first-child tr td {
@@ -105,7 +106,7 @@ table thead:first-child tr td {
   border-bottom: 1px solid #444;
   }
 table tbody + tbody {
-  border-top: 1px dotted #444;
+  border-top: 1px dotted #E4E4E0;
   }
 
 .table {
@@ -116,13 +117,19 @@ table tbody + tbody {
 /* --------------------------------------
   Page Layout and basic styling
 ----------------------------------------- */
+.limiter {
+  max-width: 1000px;
+  margin: 0 auto;
+  }
 #branding {
   height: 38px;
   border-style: solid;
-  border-width: 5px 0 1px;
+  border-width: 5px 1px 1px;
+  border-color: #E4E4E0 #E4E4E0 #D4D4D0;
+  margin-bottom: 20px;
   width: 100%;
-  border-color: #E8E8E4 #E4E4E0 #D4D4D0;
   background: #F4F4F0;
+  position: relative;
   }
   #branding a {
     float: left;
@@ -130,12 +137,11 @@ table tbody + tbody {
   #branding a.rw {
     background: transparent url(images/sprite.png) no-repeat 0 0;
     width: 110px;
-    height: 30px;
+    height: 35px;
     display: block;
     position: absolute;
     text-indent: -999em;
-    top: 10px;
-    left: 10px;
+    top: 2px; left: 10px;
     }
 
 #page-title {
@@ -144,17 +150,14 @@ table tbody + tbody {
   background: #E8F4F4;
   height: 60px;
   border-style: solid;
-  border-width: 1px 0;
-  border-color: #DCECF0 transparent #D0E0E4;
-  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
-  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+  border-width: 1px;
+  border-color: #DCECF0 #DCECF0 #a0a0a0;
   z-index: 500;
   }
   .page-title {
     overflow: hidden;
     font-size: 20px;
-    text-shadow: white 0px 1px 0px;
+    text-shadow: #fff 0 1px 0;
     margin-right: 10px;
     white-space: nowrap;
     font-weight: bold;
@@ -175,9 +178,8 @@ table tbody + tbody {
 #map-container {
   background: #fff url(images/bg.png) repeat 0 0;
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 70%;
+  top: 0; left: 0;
+  width: 64%;
   height: 100%;
   }
 #map-bg,
@@ -189,35 +191,18 @@ table tbody + tbody {
   width: 100%;
   height: 100%;
   }
+  #map {
+    border-left: 1px solid #a0a0a0;
+    }
 #sidebar {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 0; bottom: 0;
   z-index: 100;
-  width: 30%;
+  width: 36%;
   height: 100%;
   background: #fff;
-  border-left: 1px solid #D4D4D0;
-  border-right: 1px solid #D4D4D0;
-  -moz-box-shadow: 0px -4px 8px rgba(0, 0, 0, .3);
-   -webkit-box-shadow: 0px -4px 8px rgba(0, 0, 0, .3);
-   box-shadow: 0px -4px 8px rgba(0, 0, 0, .3);
-  }
-  #sidebar-inner {
-    padding-bottom: 110px;
-    overflow: auto;
-    height: 822px;
-    }
-#slider {
-  background: white;
-  position: absolute;
-  bottom: 0;
-  height: 36px;
-  width: 100%;
-  border-top: 1px solid #999;
-  -moz-box-shadow: inset 0 4px 4px rgba(0, 0, 0, .15);
-  -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, .15);
-  box-shadow: inset 0 4px 4px rgba(0, 0, 0, .15);
+  border-left: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
   }
 .inner {
 	padding: 0 10px;
@@ -228,25 +213,23 @@ table tbody + tbody {
 ----------------------------------------- */
 #year-select {
   position: absolute;
-  bottom: 50px;
+  bottom: 45px;
   left: 10px;
   }
 #controls {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 10px; right: 10px;
   background: #fff;
-  border: 1px solid #999;
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+  border: 1px solid #a0a0a0;
+  -moz-box-shadow: 0 0 6px rgba(0,0,0,0.25);
+  box-shadow: 0 0 6px rgba(0,0,0,.25);
   height: 50px;
   z-index: 50;
   width: 60px;
   text-shadow: 0 1px 0 #fff;
   }
   #controls a {
-    font: bold 13px/28px 'Helvetica Neue', Helvetica, sans-serif;
+    font: 500 13px/28px 'Helvetica Neue', Helvetica, sans-serif;
     color: #404040;
     }
     #controls a:active {
@@ -294,30 +277,22 @@ table tbody + tbody {
       color: #ccc;
       cursor: default;
       }
-    #controls #year-select {
-      float: right;
-      margin: 2px 10px 0 0;
-      }
 
 /* Map Teaser Tooltips */
 .wax-tooltip {
   position: absolute;
   height: auto;
-  background: rgba(255,255,255, 1);
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, .45);
-  -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  width: auto;
-  max-width: 300px;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid #a0a0a0;
+  -moz-box-shadow: 0 0 6px rgba(0,0,0,0.25);
+  box-shadow: 0 0 6px rgba(0,0,0,.25);
+  max-width: 360px;
   height: 100%;
   height: auto!important;
-  max-height: 100%;
+  max-height: 360px;
   padding: 10px;
-  z-index: 5000;
-  top: 0;
-  left: 0;
+  z-index: 1000;
+  top: 10px; left: 10px;
   overflow: auto;
   }
   .wax-tooltip h2 {
@@ -375,7 +350,7 @@ table tbody + tbody {
     padding: 5px 10px 10px;
     }
   .modal.active {
-    top: 20%;
+    top: 10%;
     }
   #share h3 {
     font-weight: bold;
@@ -400,7 +375,7 @@ table tbody + tbody {
     background: #fff;
     color: #fff;
     font-weight: bold;
-    border: 2px solid #999;
+    border: 2px solid #a0a0a0;
     }
   #twitter {
     background: #0ac;
@@ -425,46 +400,46 @@ a.close {
   Sidebar
 ----------------------------------------- */
 ul.layers {
-  margin: 40px 0 20px;
+  margin: 30px 0 20px;
   }
   ul.layers li a{
-    color: #a4a4a4;
+    color: #a0a0a0;
     border-top: 1px solid #D4D4D0;
     display: block;
-    height: 29px;
+    height: 34px;
     padding-left: 10px;
-    line-height: 30px;
+    line-height: 34px;
     font-size: 11px;
     overflow: hidden;
-    font-weight: bold;
+    font-weight: 500;
     }
     ul.layers li.last a { border-bottom: 1px solid #d4d4d0; }
     ul.layers li.active {
       background: none;
       }
     ul.layers li a:hover {
-      color: #999;
+      color: #a0a0a0;
       }
     ul.layers li.active a{
       background: fafaf8;
       border-color: #a0a0a0;
-      color: #444;
+      color: #333;
       }
       ul.layers li.active a:after {
-        background: transparent url(images/arrow-left.png) no-repeat 0 0;
+        background: transparent url(images/arrow.png) no-repeat 0 0;
         position: absolute;
         content: '';
         margin-top: -1px;
-        left: -19px;
-        width: 20px;
-        height: 30px;
+        left: -18px;
+        width: 18px;
+        height: 35px;
         }
       ul.layers li a span {
         float: right;
         width: 30px;
         height: 30px;
-        margin-top: -1px;
-        margin-right: 1px;
+        margin-top: 2px;
+        margin-right: 5px;
         }
         ul.layers li a#idp span { background-position: -210px -20px; }
         ul.layers li a#ret span { background-position: -210px -55px; }
@@ -482,21 +457,26 @@ ul.layers {
   .disclaimer-inner {
     background: #fff8e0;
     border-top: 1px solid #E7DFCA;
-    color: #666;
-    padding: 10px;
-    height: 60px;
-    height: auto!important;
-    max-height: 80px;
-    overflow: hidden;
+    padding: 10px 10px 12px;
+    line-height: 16px;
     }
 
 /* --------------------------------------
   Time Slider
 ----------------------------------------- */
+#slider {
+  background: #fff;
+  height: 34px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #a0a0a0;
+  border-left: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 4px 6px rgba(0,0,0,0.10);
+  box-shadow: inset 0 4px 6px rgba(0,0,0,0.10);
+  }
 .dragdealer {
   position: relative;
-  float: left;
-  height: 60px;
   }
   .dragdealer .handle {
     position: absolute;
@@ -510,28 +490,30 @@ ul.layers {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.30);
     bottom: -1px;
     line-height: 60px;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
-    height: 50px;
+    height: 48px;
     }
 
 /* --------------------------------------
   Footer
 ----------------------------------------- */
 #footer {
+  border-top: 1px solid #E4E4E0;
   background: #fff;
-  height: 40px;
+  margin-top: 10px;
+  height: 60px;
   line-height: 40px;
   }
   #footer ul {
-    margin-left: 10px;
+    margin-left: 0;
     }
     #footer ul li {
       float: left;
       }
       #footer ul li a {
-        font-weight: 500;
-        color: #999;
+        color: #B33;
+        text-decoration: underline;
         margin-right: 10px;
         }
 
