@@ -128,7 +128,7 @@ table tbody + tbody {
 .table {
   height: 265px;
   margin-top: 20px;
-  width: 64%;
+  width: 68%;
   }
 
 /* --------------------------------------
@@ -191,7 +191,7 @@ table tbody + tbody {
 #interactive {
   position: relative;
   height: 479px;
-  width: 64%;
+  width: 68%;
   border-bottom: 1px solid #a0a0a0;
   }
 #map-container {
@@ -217,14 +217,14 @@ table tbody + tbody {
   position: absolute;
   right: 0; bottom: 0; top: 108px;
   z-index: 100;
-  width: 36%;
-  height: 855px;
+  width: 32%;
+  height: 885px;
   background: #fff;
-  
   border-right: 1px solid #a0a0a0;
-  -moz-box-shadow: 0px -6px 8px rgba(0, 0, 0, .3);
-   -webkit-box-shadow: 0px -6px 8px rgba(0, 0, 0, .3);
-   box-shadow: 0px -6px 8px rgba(0, 0, 0, .3);
+  border-left: 1px solid #a0a0a0;
+  -moz-box-shadow: 0px -8px 8px rgba(0, 0, 0, .3);
+   -webkit-box-shadow: 0px -8px 8px rgba(0, 0, 0, .3);
+   box-shadow: 0px -8px 8px rgba(0, 0, 0, .3);
   }
 .inner {
 	padding: 0 10px;
@@ -479,11 +479,12 @@ ul.layers {
       height: 500px;
       background: #F4F4F0;
       margin-bottom: 20px;
+      overflow: hidden;
     }    
 
     .graphs img {
-      padding-left: 15px;
-      padding-top: 15px;    
+      padding-left: 20px;
+      padding-top: 20px;    
     }
 .disclaimer {
   position: absolute;
@@ -537,7 +538,7 @@ ul.layers {
 #footer {
   border-top: 1px solid #999;
   background: #E4E4E0;;
-  margin-top: 20px;
+  margin-top: 50px;
   height: 60px;
   line-height: 40px;
   }
