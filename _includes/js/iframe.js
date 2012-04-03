@@ -23,8 +23,8 @@
 
         var m, mm = com.modestmaps;
         var baseLayers = [
-            'djohnson.africa_baselayer',
-            'djohnson.africa_borders'
+            'reliefweb.africa_baselayer',
+            'reliefweb.africa_borders'
         ];
         var baseUrl = 'http://api.tiles.mapbox.com/v3/';
         // initializes the Layers object in `data.js`
@@ -45,7 +45,7 @@
                 $('#map-bg').remove();
                 $('#map').attr('id','map-bg').after('<div id="map"></div>');
             }
-            var jObject = baseUrl + baseLayers.join(',') + (',djohnson.') + layers.current() + '.jsonp'
+            var jObject = baseUrl + baseLayers.join(',') + (',reliefweb.') + layers.current() + '.jsonp'
             wax.tilejson(jObject, function(tilejson) {
                 tilejson.minzoom = 4;
                 tilejson.maxzoom = 8;

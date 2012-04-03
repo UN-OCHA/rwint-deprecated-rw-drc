@@ -74,7 +74,7 @@
                 $('#map-bg').remove();
                 $('#map').attr('id','map-bg').after('<div id="map"></div>');
             }
-            var jObject = baseUrl + baseLayers.join(',') + (',djohnson.') + layers.current(year) + '.jsonp'
+            var jObject = baseUrl + baseLayers.join(',') + (',reliefweb.') + layers.current(year) + '.jsonp'
             wax.tilejson(jObject, function(tilejson) {
                 tilejson.minzoom = 4;
                 tilejson.maxzoom = 8;

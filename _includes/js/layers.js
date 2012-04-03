@@ -233,7 +233,7 @@ Layers.prototype.current = function(year) {
     var filtered = _.compact(this.filter(this.layerCtrl[year][this.pos].layers));
     if (!this.layerCtrl[year][this.pos]) return;
     else if (filtered.length === 0) return;
-    return filtered.join(',djohnson.');
+    return filtered.join(',reliefweb.');
 };
 
 // Which layers are active?
