@@ -24,8 +24,8 @@
 
         var m, mm = com.modestmaps;
         var baseLayers = [
-            'djohnson.africa_baselayer',
-            'djohnson.africa_borders'
+            'reliefweb.africa',
+            'reliefweb.drc-borders'
         ];
         var baseUrl = 'http://api.tiles.mapbox.com/v3/';
         // initializes the Layers object in `data.js`
