@@ -27,6 +27,7 @@
             'reliefweb.africa',
             'reliefweb.drc-borders'
         ];
+        
         var baseUrl = 'http://api.tiles.mapbox.com/v3/';
         // initializes the Layers object in `data.js`
         var layers = window.layers = new Layers();
@@ -61,12 +62,15 @@
                 layers.active[$(el).find('a').attr('id')] = $(el).hasClass('active');
             });
         }
+        
+        
 
         // This function builds out our map. It gets requested when
         // a layer link has been triggered on our off or a timeline
         // slider has been moved around. See the wax docs for further
         // explanation: mapbox.com/wax
         var drawMap = function() {
+         
             var om;
 
             if (RW._map) {
@@ -74,7 +78,7 @@
                 $('#map-bg').remove();
                 $('#map').attr('id','map-bg').after('<div id="map"></div>');
             }
-            var jObject = baseUrl + baseLayers.join(',') + (',reliefweb.') + layers.current(year) + '.jsonp'
+            var jObject = baseUrl + baseLayers.join(',') + (',reliefweb.') + layers.current(year)  + '.jsonp'
             wax.tilejson(jObject, function(tilejson) {
                 tilejson.minzoom = 4;
                 tilejson.maxzoom = 8;
@@ -231,9 +235,9 @@
           }
         });
         // ul.layers li are the layer selection links located in the
-        // right-hand sidebar. if an active layer is not set, set it.
+        // right-hand sidebar. If an active layer is not set, set it.
         // grab the link id and pass it to layers.active if the
-        // elements parent has the class of active. Finally run the
+        // element's parent has the class of active. Finally run the
         // refreshAll() function.
         $('ul.layers li a').click(function(e) {
             e.preventDefault();
