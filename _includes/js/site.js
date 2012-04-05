@@ -186,6 +186,9 @@
                     });
                 }
             };
+            // $('.graphs img').attr('src', 'newurl');
+            $('.graphs img').hide();
+            $('.graphs img.year' + year).show();
             _.each(layers.activeLayers(year), function(layer) {
                 $.getJSON('data/json/' + layer + '.json', function(data) {
                     buildTable(data, layer);
@@ -233,6 +236,7 @@
             year = $(this).val();
             refreshAll();
           }
+          
         });
         // ul.layers li are the layer selection links located in the
         // right-hand sidebar. If an active layer is not set, set it.
