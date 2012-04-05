@@ -268,7 +268,7 @@ table tbody + tbody {
       width: 50px;
       padding: 0 5px;
       height: 25px;
-      border-top: 1px solid #999;
+      border-top: 1p x solid #999;
       text-align: center;
       line-height: 25px;
       }
@@ -473,10 +473,9 @@ ul.layers {
   }
   .graphs {
       border: 1px solid #D4D4D0;
-      margin: 10;
       width: 90%;
       margin: 0 auto;
-      height: 500px;
+      height: 510px;
       background: #F4F4F0;
       margin-bottom: 20px;
       overflow: hidden;
