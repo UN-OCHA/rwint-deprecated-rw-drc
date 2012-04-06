@@ -12,7 +12,7 @@ This documentation is divded into two parts. The first section covers how to set
 
 
 ### Forking the project
-To use this project as a starting point, [fork the repository](http://help.github.com/fork-a-repo). This will create a new copy of the project on github. Make changes by setting up a local repo by cloning it to the file or directory that you desire, and then from there you can make changes and commit/push them to github. For example, I have a local github folder that I navigate to with `cd Documents/github/` to clone all github projects. Then i navigate into the sepcific project to commit and push changes. 
+To use this project as a starting point, [fork the repository](http://help.github.com/fork-a-repo). This will create a new copy of the project on github. Make changes by setting up a local repo by cloning it to the file or directory that you desire, and then from there you can make changes and commit/push them to github. For example, I have a local github folder that I navigate to with `cd Documents/github/` to clone all github projects. Then i navigate into the spcecific project to commit and push changes. 
 
 ###Files
 -----
@@ -113,3 +113,19 @@ The asterisk means select all, and the following rows are counting or adding dat
 ##Map Design 
 
 This comes much easier, as it follows a css-type like language called carto. All of the basics and more advanced options of styling your data can be found in the [mapbox.com/help](http://mapbox.com/help), starting with [styling data](http://mapbox.com/tilemill/docs/crashcourse/styling/) section.
+
+##Google image chart Graphs
+
+The charts that show up on the side bar in the site are created in the [google image chart wizard](https://developers.google.com/chart/image/docs/chart_wizard), which allows you to change the margins, styling and size of different kinds of charts. 
+
+However you can easily recreate the charts in the DRC site with the same styling by changing the URLs inserted in the <img> tags within <div='graphs'>. These are tagged with <class='year2010'> or <class='2011'> etc., which is read by the javascript to know when to appear with the year selector. See below:
+
+![](https://img.skitch.com/20120406-d6qh7aff173a16ktkun745xer1.jpg)
+
+These three image tags result in three unique graphs. The data and parameters are defined by the different tags within the URL, and separated by the `&` symbol. Below are the three parameters that must be changed in order to create a new URL for a graph. More information about the other components of these charts can [be found here](https://developers.google.com/chart/image/docs/chart_params).
+ 
+ - the title, `chtt=`
+ - the data, `chd=t:`  the different data sets represented here are seperated by a pipe `|`
+ - the img class (to match the year of the data you're inserting)
+ 
+![](https://img.skitch.com/20120406-x3715g5spckk9utppr4239khb6.jpg)
