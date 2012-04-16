@@ -117,7 +117,7 @@
                 m.addCallback('drawn', function(modestmap, e) {
                     var hash = '#'
                         + m.getCenter()['lat']
-                        + ',' +  m.getCenter()['lon']
+                        + ',' + m.getCenter()['lon']
                         + ',' + m.getZoom()
                         + '&layers=' + currentActiveLayers();
 
@@ -187,8 +187,11 @@
                 }
             };
             // $('.graphs img').attr('src', 'newurl');
-            $('.graphs img').hide();
-            $('.graphs img.year' + year).show();
+                 $('.test span').hide();
+            $('.test img').hide();
+      
+            $('.test img.year' + year).show();
+                $('.test span.year' + year).show();
             _.each(layers.activeLayers(year), function(layer) {
                 $.getJSON('data/json/' + layer + '.json', function(data) {
                     buildTable(data, layer);

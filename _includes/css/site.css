@@ -96,7 +96,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   }
   /*table#drc-monthly-data {*/
     /*width: 70%;*/
@@ -127,7 +127,7 @@ table tbody + tbody {
 
 .table {
   height: 265px;
-  margin-top: 20px;
+  margin-top: 15px;
   width: 68%;
   }
 
@@ -268,7 +268,7 @@ table tbody + tbody {
       width: 50px;
       padding: 0 5px;
       height: 25px;
-      border-top: 1p x solid #999;
+      border-top: 1px solid #999;
       text-align: center;
       line-height: 25px;
       }
@@ -498,8 +498,16 @@ ul.layers {
     }
 
 /* --------------------------------------
-  Time Slider
+  Time Slider & Totals
 ----------------------------------------- */
+.totals {
+  font-size: 18px;
+  padding: 10px 0 0 10px;
+}
+.totals span {
+  color: #b73232;
+  font-weight: bold;
+}
 #slider {
   background: #fff;
   height: 34px;
@@ -532,12 +540,11 @@ ul.layers {
     }
 
 /* --------------------------------------
-  Footer
+   
 ----------------------------------------- */
 #footer {
   border-top: 1px solid #999;
   background: #fff;
-  margin-top: 30px;
   height: 60px;
   line-height: 40px;
   }
