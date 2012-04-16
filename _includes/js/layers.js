@@ -262,5 +262,5 @@ Layers.prototype.month = function(year) {
 // Return the length of the layerCtrl object
 Layers.prototype.length = function(year) {
     year = year || '2011';
-    return Object.keys(this.layerCtrl[year]).length;
+    return _.keys(this.layerCtrl[year]).length;
 };
