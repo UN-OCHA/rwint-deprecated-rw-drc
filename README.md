@@ -76,7 +76,7 @@ Jekyll has a default chronological pagination system. Posts are ordered such tha
     --------     ---------
      1           0200-01-02-about.html
      2           0200-01-01-data.html
-     2       	   0200-01-01-sources.html
+     2       	 0200-01-01-sources.html
 
 ###Notes
 Where something requires explanation there are inline notes in the code.
@@ -129,3 +129,14 @@ These three image tags result in three unique graphs. The data and parameters ar
  - the img class (to match the year of the data you're inserting)
  
 ![](https://img.skitch.com/20120406-x3715g5spckk9utppr4239khb6.jpg)
+
+
+##Changing the Returnee and IDP Totals
+
+![](https://img.skitch.com/20120509-jupetxn7ch2sh9whw91i2fc67k.jpg)
+
+The totals are just like the Google image charts, which have classes to determine what year they appear on, for example `<class='year2010'>` or `<class='2011'>`. 
+
+It's also essential to add `style="display: none;` so that all of the numbers don't display on page load. This can be seen below from the file `map-interactive.html`, with arrows pointing to where you add the new numbers. These numbers were collected by running a query on the appropriate IDP and Returnee files to add the numbers for a given year. 
+
+![](https://img.skitch.com/20120509-fgc4j8gkktks2kh2bhmbym2yae.jpg)
