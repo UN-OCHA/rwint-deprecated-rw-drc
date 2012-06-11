@@ -187,8 +187,7 @@
                 }
             };
             // $('.graphs img').attr('src', 'newurl');
-                 $('.test span').hide();
-            $('.test img').hide();
+                 $('.graphs img').hide();
       
             $('.test img.year' + year).show();
                 $('.test span.year' + year).show();
