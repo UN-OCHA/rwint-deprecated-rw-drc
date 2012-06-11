@@ -187,10 +187,10 @@
                 }
             };
             // $('.graphs img').attr('src', 'newurl');
-                 $('.graphs img').hide();
-      
+            $('.graphs img').hide();
+            $('.test span#years').hide();
             $('.test img.year' + year).show();
-                $('.test span.year' + year).show();
+            $('.test span.year' + year).show();
             _.each(layers.activeLayers(year), function(layer) {
                 $.getJSON('data/json/' + layer + '.json', function(data) {
                     buildTable(data, layer);
