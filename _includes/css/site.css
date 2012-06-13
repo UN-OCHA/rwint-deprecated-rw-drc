@@ -486,7 +486,7 @@ ul.layers {
       padding-top: 28px;    
     }
 .disclaimer {
-  position: absolute;
+  /*position: absolute;*/
   width: 100%;
   bottom: 0;
   }
