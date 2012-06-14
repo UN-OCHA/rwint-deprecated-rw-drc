@@ -4,7 +4,7 @@
 // of the .mbtiles built for this project.
 
 var Layers = function() {
-    var year = year || '2011';
+    var year = year || '2012';
     this.active = {
       sec: true,
       lra: true,
@@ -12,6 +12,62 @@ var Layers = function() {
 		  idp: true
     };
     this.layerCtrl = {
+      '2012': [
+		{
+          'month': 'January',
+          'layers': {
+              'sec': '',
+              'lra': '',
+              'idp': 'idp-jan-12',
+              'ret': 'ret-jan-12'
+          }
+      },
+      {
+          'month': 'February',
+          'layers': {
+            'sec': '',
+            'lra': '',
+            'idp': 'idp-jan-12',
+            'ret': 'ret-jan-12'
+          }
+      },
+      {
+          'month': 'March',
+          'layers': {
+            'sec': '',
+            'lra': '',
+            'idp': 'idp-jan-12',
+            'ret': 'ret-jan-12'
+          }
+      },
+      {
+          'month': 'April',
+          'layers': {
+            'sec': '',
+            'lra': '',
+            'idp': 'idp-apr-12',
+            'ret': 'ret-apr-12'
+          }
+      },
+      {
+          'month': 'May',
+          'layers': {
+            'sec': 'sec-may-12',
+            'lra': 'lra-may-12',
+            'idp': 'idp-apr-12',
+            'ret': 'ret-apr-12'
+          }
+      },
+      {
+          'month': 'June',
+          'layers': {
+            'sec': 'sec-jun-12',
+            'lra': 'lra-jun-12',
+            'idp': 'idp-apr-12',
+            'ret': 'ret-apr-12'
+          }
+      }
+	  ],
       '2011': [
         {
             'month': 'January',
@@ -229,7 +285,7 @@ var Layers = function() {
 
 // Returns a concatenated string of current layer results
 Layers.prototype.current = function(year) {
-    year = year || '2011';
+    year = year || '2012';
     var filtered = _.compact(this.filter(this.layerCtrl[year][this.pos].layers));
     if (!this.layerCtrl[year][this.pos]) return;
     else if (filtered.length === 0) return;
@@ -239,7 +295,7 @@ Layers.prototype.current = function(year) {
 // Which layers are active?
 // Returns result based on the filter method below
 Layers.prototype.activeLayers = function(year) {
-    year = year || '2011';
+    year = year || '2012';
     return this.filter(this.layerCtrl[year][this.pos].layers);
 };
 
@@ -254,13 +310,13 @@ Layers.prototype.filter = function(layers) {
 
 // Based on the position of the slider, return the current month
 Layers.prototype.month = function(year) {
-    year = year || '2011';
+    year = year || '2012';
     if (!this.layerCtrl[year][this.pos]) return;
     return this.layerCtrl[year][this.pos].month;
 };
 
 // Return the length of the layerCtrl object
 Layers.prototype.length = function(year) {
-    year = year || '2011';
+    year = year || '2012';
     return _.keys(this.layerCtrl[year]).length;
 };
