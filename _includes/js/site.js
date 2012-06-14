@@ -18,7 +18,7 @@
 //  See the root `_includes/map-interactive.html` page as example.
 (function(context) {
     var RW = RW || {};
-    var year = year || '2011';
+    var year = year || '2012';
 
     RW.interactive = function() {
 
