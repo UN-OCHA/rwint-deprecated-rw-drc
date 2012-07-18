@@ -140,3 +140,26 @@ The totals are just like the Google image charts, which have classes to determin
 It's also essential to add `style="display: none;` so that all of the numbers don't display on page load. This can be seen below from the file `map-interactive.html`, with arrows pointing to where you add the new numbers. These numbers were collected by running a query on the appropriate IDP and Returnee files to add the numbers for a given year. 
 
 ![](https://img.skitch.com/20120509-fgc4j8gkktks2kh2bhmbym2yae.jpg)
+
+
+##Updating JSON Files to Populate the Tables
+
+To update the tables and maps for new data, such as 2012 data, you need to start by adding a the appropriate option to the year selector from the "map-interactive.html" file. The new line is in bold, and for the map to load with 2012 selected, you need to move the 'selected' parameter to 2012 as well. 
+
+ <select id='year-select'>
+      <option value='2011'>2011</option>
+      <option value='2010'>2010</option>
+      **<option value='2012 selected='selected''>2012</option>**
+    </select>
+    
+Then you need to change the default year in the site.js file to 2012 instead of 2011 on [line 21](https://github.com/RWMaps/rw-drc/blob/gh-pages/_includes/js/site.js#L21).
+
+**var year = year || '2012';**
+
+In the `layers.js` file, add 2012 data (pointing to the 2012 layers), which will directly inform which JSON files are searched for to fill the table. Here is an example of the new [layers.js](https://gist.github.com/1e0a30a59a514a1069a2) file with new values for 2012. These map layers don't exist yet, but it is what they should be named once created.  
+
+Lastly, you need to create the new JSON files. This can be done by updating the data, "idp.csv, sec.csv, lra.csv, and ret.csv" files and then running the import.rb script. Here is a [brief tutorial](http://ruby.about.com/od/tutorials/a/commandline_2.htm) on running ruby scripts in your command line. The script was custom written to import the specific formats of each csv and turn them into JSONs, so it is essential that the new data matches the original format of each csv. 
+
+The tables will only populate if the data layers are appropriately filled out in `layers.js` with a corresponding valid JSON in `data/JSON` for each layer. If even one of these JSONs is missing or invalid, the whole table will break, even though the map still loads any layers. 
+
+The other option is to manually create JSONs for each month for 2012, by copying and pasting the format for each type (lra, idp, sec, ret) into a new file, and changing the values. For example, you can create a new file in the data/json directory called idp-jan-12.json, and fill it with new values, so long as this matches the same format set up in the 2011 JSONs. 
