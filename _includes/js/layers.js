@@ -16,8 +16,8 @@ var Layers = function() {
 		{
           'month': 'January',
           'layers': {
-              'sec': '',
-              'lra': '',
+              'sec': 'sec-jan-12',
+              'lra': 'lra-jan-12',
               'idp': 'idp-jan-12',
               'ret': 'ret-jan-12'
           }
@@ -25,8 +25,8 @@ var Layers = function() {
       {
           'month': 'February',
           'layers': {
-            'sec': '',
-            'lra': '',
+            'sec': 'sec-feb-12',
+            'lra': 'lra-feb-12',
             'idp': 'idp-jan-12',
             'ret': 'ret-jan-12'
           }
@@ -34,8 +34,8 @@ var Layers = function() {
       {
           'month': 'March',
           'layers': {
-            'sec': '',
-            'lra': '',
+            'sec': 'sec-mar-12',
+            'lra': 'lra-mar-12',
             'idp': 'idp-jan-12',
             'ret': 'ret-jan-12'
           }
@@ -43,8 +43,8 @@ var Layers = function() {
       {
           'month': 'April',
           'layers': {
-            'sec': '',
-            'lra': '',
+            'sec': 'sec-apr-12',
+            'lra': 'lra-apr-12',
             'idp': 'idp-apr-12',
             'ret': 'ret-apr-12'
           }
@@ -155,8 +155,8 @@ var Layers = function() {
             'layers': {
               'sec': 'sec-oct-11',
               'lra': 'lra-oct-11',
-              'idp': 'idp-jul-11',
-              'ret': 'ret-jul-11'
+              'idp': 'idp-oct-11',
+              'ret': 'ret-oct-11'
             }
         },
         {
@@ -164,8 +164,17 @@ var Layers = function() {
             'layers': {
               'sec': 'sec-nov-11',
               'lra': 'lra-nov-11',
-              'idp': 'idp-jul-11',
-              'ret': 'ret-jul-11'
+              'idp': 'idp-oct-11',
+              'ret': 'ret-oct-11'
+            }
+        },
+		{
+            'month': 'December',
+            'layers': {
+              'sec': 'sec-dec-11',
+              'lra': 'lra-dec-11',
+              'idp': 'idp-oct-11',
+              'ret': 'ret-oct-11'
             }
         }
       ],
@@ -173,109 +182,109 @@ var Layers = function() {
         {
             'month': 'January',
             'layers': {
-                'sec': '',
-                'lra': '',
-                'idp': '',
-                'ret': ''
+                'sec': 'sec-jan-10',
+                'lra': 'lra-jan-10',
+                'idp': 'idp-jan-10',
+                'ret': 'ret-jan-10'
             }
         },
         {
             'month': 'February',
             'layers': {
-                'sec': '',
-                'lra': '',
-                'idp': '',
-                'ret': ''
+                'sec': 'sec-feb-10',
+                'lra': 'lra-feb-10',
+                'idp': 'idp-jan-10',
+                'ret': 'ret-jan-10'
             }
         },
         {
             'month': 'March',
             'layers': {
-                'sec': '',
-                'lra': '',
-                'idp': '',
-                'ret': ''
+                'sec': 'sec-mar-10',
+                'lra': 'lra-mar-10',
+                'idp': 'idp-jan-10',
+                'ret': 'ret-jan-10'
             }
         },
         {
             'month': 'April',
             'layers': {
-                'sec': '',
-                'lra': '',
-                'idp': '',
-                'ret': ''
+                'sec': 'sec-apr-10',
+                'lra': 'lra-apr-10',
+                'idp': 'idp-apr-10',
+                'ret': 'ret-apr-10'
             }
         },
         {
             'month': 'May',
             'layers': {
-                'sec': '',
-                'lra': '',
-                'idp': '',
-                'ret': ''
+                'sec': 'sec-may-10',
+                'lra': 'lra-may-10',
+                'idp': 'idp-apr-10',
+                'ret': 'ret-apr-10'
             }
         },
         {
             'month': 'June',
             'layers': {
-                'sec': '',
-                'lra': '',
-                'idp': '',
-                'ret': ''
+                'sec': 'sec-jun-10',
+                'lra': 'lra-jun-10',
+                'idp': 'idp-apr-10',
+                'ret': 'ret-apr-10'
             }
         },
         {
             'month': 'July',
             'layers': {
-                'sec': '',
-                'lra': '',
-                'idp': '',
-                'ret': ''
+                'sec': 'sec-jul-10',
+                'lra': 'lra-jul-10',
+                'idp': 'idp-jul-10',
+                'ret': 'ret-jul-10'
             }
         },
         {
             'month': 'August',
             'layers': {
-                'sec': '',
-                'lra': '',
-                'idp': '',
-                'ret': ''
+                'sec': 'sec-aug-10',
+                'lra': 'lra-aug-10',
+                'idp': 'idp-jul-10',
+                'ret': 'ret-jul-10'
             }
         },
         {
             'month': 'September',
             'layers': {
-                'sec': '',
-                'lra': '',
-                'idp': '',
-                'ret': ''
+                'sec': 'sec-sep-10',
+                'lra': 'lra-sep-10',
+                'idp': 'idp-jul-10',
+                'ret': 'ret-jul-10'
             }
         },
         {
             'month': 'October',
             'layers': {
-                'sec': '',
-                'lra': '',
-                'idp': '',
-                'ret': ''
+                'sec': 'sec-oct-10',
+                'lra': 'lra-oct-10',
+                'idp': 'idp-oct-10',
+                'ret': 'ret-oct-10'
             }
         },
         {
             'month': 'November',
             'layers': {
-                'sec': '',
-                'lra': '',
-                'idp': '',
-                'ret': ''
+                'sec': 'sec-nov-10',
+                'lra': 'lra-nov-10',
+                'idp': 'idp-oct-10',
+                'ret': 'ret-oct-10'
             }
         },
         {
             'month': 'December',
             'layers': {
-                'sec': '',
-                'lra': '',
-                'idp': '',
-                'ret': ''
+                'sec': 'sec-dec-10',
+                'lra': 'lra-dec-10',
+                'idp': 'idp-oct-10',
+                'ret': 'ret-oct-10'
             }
         }
       ]
