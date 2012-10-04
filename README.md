@@ -162,4 +162,13 @@ Lastly, you need to create the new JSON files. This can be done by updating the 
 
 The tables will only populate if the data layers are appropriately filled out in `layers.js` with a corresponding valid JSON in `data/JSON` for each layer. If even one of these JSONs is missing or invalid, the whole table will break, even though the map still loads any layers. 
 
-The other option is to manually create JSONs for each month for 2012, by copying and pasting the format for each type (lra, idp, sec, ret) into a new file, and changing the values. For example, you can create a new file in the data/json directory called idp-jan-12.json, and fill it with new values, so long as this matches the same format set up in the 2011 JSONs. 
+The other option is to manually create JSONs for each month for 2012, by copying and pasting the format for each type (lra, idp, sec, ret) into a new file, and changing the values. For example, you can create a new file in the data/json directory called idp-jan-12.json, and fill it with new values, so long as this matches the same format set up in the 2011 JSONs.
+
+##Updating the world map baselayer
+
+The world map is originally set with a baselayer ([releifweb.africa](https://tiles.mapbox.com/reliefweb/map/africa)) and a borders layer ([reliefweb.drc-borders](https://tiles.mapbox.com/reliefweb/map/drc-borders)). These can both be easily changed in the [site.js](https://github.com/RWMaps/rw-drc/blob/gh-pages/_includes/js/site.js#L26) file
+
+Note that the two layers are separated by a comma, if you upload one baselayer that includes both the base map and borders, you will only need one map layer with no ending commas. 
+
+Use the MapBox [create a map](http://mapbox.com/help/#creating_a_new_map) feature to create a custom world base map that can have terrain, labels turned on or off, and any color for the ocean and land. 
+
