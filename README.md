@@ -170,5 +170,11 @@ The world map is originally set with a baselayer ([releifweb.africa](https://til
 
 Note that the two layers are separated by a comma, if you upload one baselayer that includes both the base map and borders, you will only need one map layer with no ending commas. 
 
-Use the MapBox [create a map](http://mapbox.com/help/#creating_a_new_map) feature to create a custom world base map that can have terrain, labels turned on or off, and any color for the ocean and land. 
+Use the MapBox [create a map](http://mapbox.com/help/#creating_a_new_map) feature to create a custom world base map that can have terrain, labels turned on or off, and any color for the ocean and land. Then when you are done, click save, and then embed. This will pull up a window that has the tilejson url that you need, such as mine seen below. However the reliefweb account will look like reliefweb.map-xxxxxx.
+
+![](https://img.skitch.com/20121004-xdq78jewf5kadrdy98e3fcyp78.jpg). 
+
+This tilejson url replaces the current layers in the site.js file. 
+
+The custom layer made by Relief Web can be combined with an custom MapBox basemap that just has the ocean, as done here in [this example](http://d.tiles.mapbox.com/v3/djohnson.map-m9l4eaq3,reliefweb.1_AVMU_World.html#5.00/10.674/34.673). 
 
