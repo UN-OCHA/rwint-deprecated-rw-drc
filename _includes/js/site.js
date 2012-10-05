@@ -231,15 +231,26 @@
 
         // On window resize, trigger the calculation of the space dragdealer occupies.
         $(window).resize(function(e) {
-          drag.documentResizeHandler(e);
+        drag.documentResizeHandler(e);
         });
 
         $('#year-select').change(function () {
           if (year != $(this).val()) {
             year = $(this).val();
+
+            // Reset the value of the steps in dragdealer
+            // and run the function that calculates the stepratios.
+            drag.steps = layers.length(year);
+            drag.setSteps();
+            drag.setValue(0);
+            pos = 0;
+            
+            layers.pos = pos;
+            $('#slide-bar').html(layers.month(year));
+            
             refreshAll();
           }
-          
+
         });
         // ul.layers li are the layer selection links located in the
         // right-hand sidebar. If an active layer is not set, set it.
