@@ -24,8 +24,9 @@
 
         var m, mm = com.modestmaps;
         var baseLayers = [
-            'reliefweb.africa',
-            'reliefweb.drc-borders'
+            'reliefweb.map-v4b1gazj',
+			//'reliefweb.africa',
+            //'reliefweb.drc-borders'
         ];
         
         var baseUrl = 'http://api.tiles.mapbox.com/v3/';
