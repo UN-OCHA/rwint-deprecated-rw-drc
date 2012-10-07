@@ -1,0 +1,81 @@
+{
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        12.807742515169233,
+        -12.570778519078537,
+        30.751074907062407,
+        4.549526394168615
+      ],
+      "Datasource": {
+        "type": "sqlite",
+        "file": "../../../data/cod_boundaries/admin3-centroids.sqlite",
+        "table": "(select b.month, a.GEOMETRY, a.OGC_FID, \ncount(unique_id) as num_events,\nsum(num_deaths) as num_deaths,\nsum(num_injured) as num_injured,\ngroup_concat ('<tr><td>' || date_incident  ||'</td><td>' || locality  || ' </td><td>' ||  type_incident || '</td><td>' || num_injured || '</td><td>' ||  num_deaths || '</td></tr>',   ' ') as drc_interactivity\nfrom admin3_centroids a join security_events b\non a.nom=b.territory\ngroup by month,territory)",
+        "attachdb": "security_events@../../../data/sqlite/security.sqlite",
+        "extent": ""
+      },
+      "id": "sec2009",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "sec2009"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        12.807742515169233,
+        -12.570778519078537,
+        30.751074907062407,
+        4.549526394168615
+      ],
+      "Datasource": {
+        "type": "sqlite",
+        "file": "../../../data/cod_boundaries/admin3-centroids.sqlite",
+        "table": "(select b.month, a.GEOMETRY, a.OGC_FID, \ncount(unique_id) as num_events,\nsum(num_deaths) as num_deaths,\nsum(num_injured) as num_injured,\ngroup_concat ('<tr><td>' || date_incident  ||'</td><td>' || locality  || ' </td><td>' ||  type_incident || '</td><td>' || num_injured || '</td><td>' ||  num_deaths || '</td></tr>',   ' ') as drc_interactivity\nfrom admin3_centroids a join sec2012 b\non a.nom=b.territory\ngroup by month,territory)",
+        "attachdb": "sec@../../../data/sqlite/sec2012.sqlite",
+        "extent": ""
+      },
+      "id": "sec2012",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "sec2012"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "",
+  "description": ""
+}
