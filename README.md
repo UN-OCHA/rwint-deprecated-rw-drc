@@ -110,6 +110,37 @@ Now you should have two SQLite databases, one for LRA attacks, and one for admin
       
 The asterisk means select all, and the following rows are counting or adding data so that as we aggregate by district, we won't lose individual information about each attack. This yield a table with a row for each territory of each month in the data with aggregated attacks, people killed, and people kidnapped. 
 
+###Group concatenation 
+
+It's important in the query above to include a [group_concat](http://www.sqlite.org/lang_aggfunc.html) function which will retain the data for each row (representing one event) even though we're aggregating the data by province and month with `group by` statements. 
+
+This is done with a `group_concat` line after your `select` statement. You add in quotation marks the characters that you wish to exist between each concenated item. In our case, we want to build this into a table, so we put table html inbetween each item, and each column that we're concatenating is separated by pipes `||`. Finally, we have to finish the `group_concat` with a `,   ' ') `, to avoid trailing spaces. 
+
+Here's an example of a query with a group_concat command for the sec2012 data: 
+
+`(select b.month, a.GEOMETRY, a.OGC_FID, 
+count(unique_id) as num_events,
+sum(num_deaths) as num_deaths,
+sum(num_injured) as num_injured,
+group_concat ('<tr><td>' || date_incident  ||'</td><td>' || locality  || ' </td><td>' ||  type_incident || '</td><td>' || num_injured || '</td><td>' ||  num_deaths || '</td></tr>',   ' ') as drc_interactivity
+from admin3_centroids a join sec2012 b
+on a.nom=b.territory
+group by month,territory)`
+
+This outputs a column in your resulting data that will have the concenated information from each row that was aggregated on month, and territory. We can now reference this column in our tooltips by wrapping it in the rest of hte HTML that makes up a table. As seen here: 
+
+`<table>
+<th>Date</th>
+<th>Location</th>
+<th>Reason</th>
+<th>Casualties</th>
+<th>Injured</th>
+
+{{{drc_interactivity}}}
+</table>
+`
+
+
 ##Map Design 
 
 This comes much easier, as it follows a css-type like language called carto. All of the basics and more advanced options of styling your data can be found in the [mapbox.com/help](http://mapbox.com/help), starting with [styling data](http://mapbox.com/tilemill/docs/crashcourse/styling/) section.
