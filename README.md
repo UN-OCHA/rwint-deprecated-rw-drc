@@ -127,15 +127,16 @@ Here's an example of a query with a group_concat command for the sec2012 data:
      on a.nom=b.territory
      group by month,territory)
 
-This outputs a column in your resulting data that will have the concenated information from each row that was aggregated on month, and territory. We can now reference this column in our tooltips by wrapping it in the rest of hte HTML that makes up a table. You need to open this with `<table>` and then include a table header `<th>` for each column in your outputted table. 
-    <table>
+This outputs a column in your resulting data that will have the concenated information from each row that was aggregated on month, and territory. We can now reference this column in our tooltips by wrapping it in the rest of hte HTML that makes up a table. You need to open this with `<table>` and then include a table header `<th>` for each column in your outputted table. Your table does not need quotes as shown here, they are just included to prevent the README file from turning this into an actual table.
+    
+    "<table>
     <th>Date</th>
     <th>Location</th>
     <th>Reason</th>
     <th>Casualties</th>
     <th>Injured</th>
     {{{drc_interactivity}}}
-    </table>
+    </table>"
     
 The `{{{drc_interactivity}}}` matches the name of the column we outputted in our `group_concat` statement, so this would change if your `group_concat` output changed. 
 
