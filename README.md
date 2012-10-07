@@ -122,21 +122,22 @@ Here's an example of a query with a group_concat command for the sec2012 data:
      count(unique_id) as num_events,
      sum(num_deaths) as num_deaths,
      sum(num_injured) as num_injured,
-     **group_concat ('<tr><td>' || date_incident  ||'</td><td>' || locality  || ' </td><td>' ||  type_incident || '</td><td>' || num_injured || '</td><td>' ||  num_deaths || '</td></tr>',   ' ') as drc_interactivity**
+     group_concat ('<tr><td>' || date_incident  ||'</td><td>' || locality  || ' </td><td>' ||  type_incident || '</td><td>' || num_injured || '</td><td>' ||  num_deaths || '</td></tr>',   ' ') as drc_interactivity
      from admin3_centroids a join sec2012 b
      on a.nom=b.territory
      group by month,territory)
 
 This outputs a column in your resulting data that will have the concenated information from each row that was aggregated on month, and territory. We can now reference this column in our tooltips by wrapping it in the rest of hte HTML that makes up a table. You need to open this with `<table>` and then include a table header `<th>` for each column in your outputted table. 
-
-    "<table>"
+    <table>
     <th>Date</th>
     <th>Location</th>
     <th>Reason</th>
     <th>Casualties</th>
-    "<th>Injured</th>"
+    <th>Injured</th>
     {{{drc_interactivity}}}
-    "</table>"
+    </table>
+    
+The `{{{drc_interactivity}}}` matches the name of the column we outputted in our `group_concat` statement, so this would change if your `group_concat` output changed. 
 
 
 ##Map Design 
