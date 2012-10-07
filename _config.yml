@@ -1,5 +1,0 @@
-auto: true
-server: true
-exclude:
-  - README.md
-baseurl: /rw-drc
