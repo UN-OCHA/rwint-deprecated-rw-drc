@@ -20,16 +20,6 @@
   ],
   "Layer": [
     {
-      "id": "countries",
-      "name": "countries",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "geometry": "polygon",
-      "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
-        "type": "shape"
-      }
-    },
-    {
       "geometry": "point",
       "extent": [
         12.807742515169233,
@@ -39,13 +29,13 @@
       ],
       "Datasource": {
         "type": "sqlite",
-        "file": "/Users/djohnson/github/rwmaps/rw-drc/data/cod_boundaries/admin3-centroids.sqlite",
-        "table": "(select * from admin3_centroids a, idp b where a.nom=b.province group by nom)",
-        "attachdb": "idp@/Users/djohnson/github/rwmaps/rw-drc/data/sqlite/idp.sqlite",
+        "file": "../../../data/cod_boundaries/admin1-centroids.sqlite",
+        "table": "(select *, a.OGC_FID,\ncast (number as integer) number_int\nfrom admin1_centroids a join idp b\non a.nom=b.province\ngroup by quarter,province)",
+        "attachdb": "idp@../../../data/sqlite/idp.sqlite",
         "extent": "",
         "id": "idp2011",
         "project": "idp",
-        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+        "srs": null
       },
       "id": "idp2011",
       "class": "",
@@ -55,8 +45,6 @@
       "name": "idp2011"
     }
   ],
-  "scale": 1,
-  "metatile": 2,
   "name": "",
   "description": ""
 }
