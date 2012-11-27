@@ -528,7 +528,7 @@ ul.layers {
     cursor: pointer;
     }
   .dragdealer .bar {
-    background: transparent url(images/sprite.png) no-repeat 0 -40px;
+    background: transparent url(images/sprite.png) no-repeat -9px -40px;
     width: 85px;
     color: white;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.30);
