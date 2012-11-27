@@ -115,6 +115,7 @@ table th {
 table td {
   vertical-align: middle;
   border-top: 1px dotted #E4E4E0;
+  border-right: 1px dotted #E4E4E0
   }
 table thead:first-child tr th,
 table thead:first-child tr td {
