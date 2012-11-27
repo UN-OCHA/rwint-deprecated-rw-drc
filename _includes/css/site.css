@@ -151,8 +151,8 @@ table tbody + tbody {
     }
   #branding a.rw {
     background: transparent url(images/sprite.png) no-repeat 0 0;
-    width: 110px;
-    height: 35px;
+    width: 120px;
+    height: 30px;
     display: block;
     position: absolute;
     text-indent: -999em;
