@@ -100,7 +100,7 @@ var Layers = function() {
             'month': 'April',
             'layers': {
               'sec': '',
-              'lra': 'lra-may-11',
+              'lra': 'lra-apr-11',
               'idp': 'idp-apr-11',
               'ret': 'ret-apr-11'
             }
