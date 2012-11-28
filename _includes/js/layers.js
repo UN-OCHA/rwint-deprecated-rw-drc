@@ -72,7 +72,7 @@ var Layers = function() {
         {
             'month': 'January',
             'layers': {
-                'sec': '',
+                'sec': 'sec-jan-11',
                 'lra': 'lra-jan-11',
                 'idp': 'idp-jan-11',
                 'ret': 'ret-jan-11'
@@ -81,7 +81,7 @@ var Layers = function() {
         {
             'month': 'February',
             'layers': {
-              'sec': '',
+              'sec': 'sec-feb-11',
               'lra': 'lra-feb-11',
               'idp': 'idp-jan-11',
               'ret': 'ret-jan-11'
@@ -90,7 +90,7 @@ var Layers = function() {
         {
             'month': 'March',
             'layers': {
-              'sec': '',
+              'sec': 'sec-mar-11',
               'lra': 'lra-mar-11',
               'idp': 'idp-jan-11',
               'ret': 'ret-jan-11'
@@ -99,7 +99,7 @@ var Layers = function() {
         {
             'month': 'April',
             'layers': {
-              'sec': '',
+              'sec': 'sec-apr-11',
               'lra': 'lra-apr-11',
               'idp': 'idp-apr-11',
               'ret': 'ret-apr-11'
