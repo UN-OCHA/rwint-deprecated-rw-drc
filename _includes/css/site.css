@@ -103,7 +103,7 @@ table {
     /*}*/
 table th,
 table td {
-  padding: 6px 10px 6px 40px;
+  padding: 6px 10px 6px 2px;
   line-height: 18px;
   text-align: right;
   width: 20%;
