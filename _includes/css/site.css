@@ -16,7 +16,6 @@ input[type=text] {
   background: white;
   border: 1px solid #a0a0a0;
   outline: 0;
-  padding: 0 5px;
   box-shadow: inset #ddd 0 1px 2px;
   box-sizing: border-box;
   -moz-border-radius: 2px;
