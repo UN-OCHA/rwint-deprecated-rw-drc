@@ -75,6 +75,42 @@ var Layers = function() {
             'idp': 'idp-jul-12',
             'ret': 'ret-jul-12'
           }
+      },
+      {
+          'month': 'August',
+          'layers': {
+            'sec': 'sec-aug-12',
+            'lra': 'lra-aug-12',
+            'idp': 'idp-jul-12',
+            'ret': 'ret-jul-12'
+          }
+      },
+      {
+          'month': 'September',
+          'layers': {
+            'sec': 'sec-sep-12',
+            'lra': 'lra-sep-12',
+            'idp': 'idp-jul-12',
+            'ret': 'ret-jul-12'
+          }
+      },
+      {
+          'month': 'October',
+          'layers': {
+            'sec': 'sec-oct-12',
+            'lra': 'lra-oct-12',
+            'idp': 'idp-oct-12',
+            'ret': 'ret-oct-12'
+          }
+      },
+      {
+          'month': 'November',
+          'layers': {
+            'sec': 'sec-nov-12',
+            'lra': 'lra-nov-12',
+            'idp': 'idp-oct-12',
+            'ret': 'ret-oct-12'
+          }
       }
 	  ],
       '2011': [
