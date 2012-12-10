@@ -66,6 +66,15 @@ var Layers = function() {
             'idp': 'idp-apr-12',
             'ret': 'ret-apr-12'
           }
+      },
+      {
+          'month': 'July',
+          'layers': {
+            'sec': 'sec-jul-12',
+            'lra': 'lra-jul-12',
+            'idp': 'idp-jul-12',
+            'ret': 'ret-jul-12'
+          }
       }
 	  ],
       '2011': [
