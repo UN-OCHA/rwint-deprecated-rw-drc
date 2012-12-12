@@ -93,7 +93,7 @@ var Layers = function() {
             'idp': 'idp-jul-12',
             'ret': 'ret-jul-12'
           }
-      },
+      }/*,
       {
           'month': 'October',
           'layers': {
@@ -111,7 +111,7 @@ var Layers = function() {
             'idp': 'idp-oct-12',
             'ret': 'ret-oct-12'
           }
-      }
+      }*/
 	  ],
       '2011': [
         {
